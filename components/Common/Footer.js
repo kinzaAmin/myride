@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
@@ -93,13 +94,15 @@ const Footer = () => {
                   <li className="hover:text-red-600">Get in touch</li>
                   <li className="hover:text-red-600">Packages</li>
                   <li className="hover:text-red-600">FAQs</li>
-                  <li className="hover:text-red-600">Terms & Condition</li>
-                  <li className="hover:text-red-600">Refusal</li>
-                  <li className="hover:text-red-600">Return Policy</li>
+
+             <li className="hover:text-red-600"> <Link href="/Terms">Terms And Conditions</Link></li> 
+
+                  <li className="hover:text-red-600"> <Link href="/Refusal"> Refusal</Link></li>
+                  <li className="hover:text-red-600"> <Link href="/ReturnPolicy ">Return Policy</Link></li>
                   <li className="hover:text-red-600">
-                    Delivery and Collection
+                  <Link href="/Delivery "> Delivery and Collection</Link> 
                   </li>
-                  <li className="hover:text-red-600">Privacy Policy</li>
+                  <li className="hover:text-red-600"><Link href="/PrivacyPolicy "> Privacy Policy </Link></li>
                 </ul>
               </div>
             </div>
