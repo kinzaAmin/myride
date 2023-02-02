@@ -4,6 +4,8 @@ import { Inter } from "@next/font/google";
 //import styles from '@/styles/Home.module.css'
 import Container from "@/components/ui/Container";
 import { useState } from "react";
+import Sliderr from "@/components/ui/Sliderr";
+import Slider1 from "@/components/ui/Slider1";
 //import YouTube from "react-youtube";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="md:w-[100%] w-[100%] bg-pink-[10%]">
+        <div className="md:w-[100%] w-[100%] bg-pink-[10%] mt-8">
           <Container>
             <div className="md:flex">
               <div className="flex gap-4 w-full">
@@ -69,29 +71,30 @@ export default function Home() {
                   picture-in-picture
                   web-share
                   allowFullScreen
-                  className="md:w-[500px] w-[700px] md:h-[500px] h-[500px]"
+                  className="md:w-[500px] w-[340px] md:h-[500px] h-[300px] md:ml-0 ml-32"
                 />
               </div>
             </div>
           </Container>
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
+
         <div className=" w-full h-[30%] mt-10 bg-background bg-center bg-cover bg-no-repeat">
           <Container>
-            <div className="text-center md:ml-0 pl-8 md:text-4xl text-lg font-semibold">
-              Smartest Payment Gateway for{" "}
-              <span className="text-red-600">Car Rentals</span>
+            <div className="text-center md:ml-0 ml-2 pl-7 text-4xl font-semibold">
+              Smartest Payment Gateway for
+              <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className="flex md:justify-between gap-8 mt-6">
+            <div className="flex md:justify-between gap-8 md:ml-0 ml-4 mt-6">
               <div className="">
-                <div className="relative w-[200px] h-[200px]">
+                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
                   <Image src="./onlineRegistration.svg" fill />
                 </div>
                 <div className="text-center mt-1">Sign Up for Free</div>
               </div>
               <div className="">
-                <div className="relative w-[200px] h-[200px]">
+                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
                   <Image src="/getApplication.webp" fill />
                 </div>
                 <div className="text-center mt-2">
@@ -104,7 +107,7 @@ export default function Home() {
               </div>
 
               <div className="">
-                <div className="relative w-[200px] h-[200px]">
+                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
                   <Image src="/RecevingPayments.webp" fill />
                 </div>
                 <div className="text-center mt-2">Start Receiving Payments</div>
@@ -112,8 +115,15 @@ export default function Home() {
             </div>
           </Container>
         </div>
+
+        {/*============================================================== SLIDER ===================================== */}
+
+        <div className="mt-5 ">
+          <Slider1 />
+        </div>
+
         {/*=============================================== content ===================================================*/}
-        <div className="mt-5">
+        <div className="mt-8">
           <Container>
             <div>
               <div className="flex gap-5">
@@ -134,7 +144,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="w-[50%] mt-2 ">
+                <div className="  md:flex  flex-col  w-[50%] mt-8 ">
                   <div className="flex md:gap-5 gap-10 justify-between">
                     <div className="flex gap-2">
                       <Image
@@ -187,8 +197,8 @@ export default function Home() {
         {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
         <div className="w-full h-auto mt-5">
           <Container>
-            <div className="md:flex flex flex-shrink-0  gap-7 mt-5">
-              <div className="w-[50%]">
+            <div className="w-full  flex flex-shrink-0  md:gap-7 gap-0 mt-5">
+              <div className="w-[50%]  pl-7 ">
                 <span className="text-4xl text-[#4f504d] font-semibold">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
@@ -207,22 +217,21 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative ml-[14%] flex-shrink-0 custom_img">
+              <div className="relative ml-[14%] flex-shrink-0 w-[300px]  h-[300px] ">
                 <Image src="/carCollction.webp" alt="tick" fill />
               </div>
             </div>
           </Container>
         </div>
         {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
-
-        <div className="w-full h-auto mt-5">
+        <div className="w-full h-auto mt-5 pb-4">
           <Container>
             <div className=" md:flex flex-shrink-0  gap-7 mt-5">
               <div className="relative  flex-shrink-0 custom_img1">
                 <Image src="/chooseUs.webp" alt="tick" fill />
               </div>
 
-              <div className="w-[50%]">
+              <div className="md:w-[50%] w-full">
                 {/* <div className="relative ml-[14%] flex-shrink-0 custom_img">
                   <Image src="/carCollction.webp" alt="tick" fill />
                 </div> */}
@@ -268,20 +277,31 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
+                  <div className=" pb-5  bg-[#bf0000] text-white text-base font-bold text-center md:w-[50%] w-full p-2 rounded mt-6 ">
+                    Checkout Our Awesome Packages
+                  </div>
                 </div>
               </div>
             </div>
           </Container>
         </div>
+        {/*================================================== Services============================================ */}
+
+        <div className="mt-8 ">
+          <p className="text-center text-4xl ">Services</p>
+          <div className="mt-8 ml-24 ">
+            <Sliderr />
+          </div>
+        </div>
 
         {/*================================================== FAQs=================================================== */}
-        <div className="bg-gray-100 mt-5">
+        <div className="bg-gray-100 mt-8 ">
           <Container>
-            <div>
+            <div className="w-full justify-between ">
               <span className="text-4xl">FAQs</span>
               <div className="md:flex justify-between w-full mt-5">
-                <div className="w-[45%]">
-                  <div className="bg-white w-[100%] ">
+                <div className="w-[50%]">
+                  <div className="bg-white ">
                     <div className="flex gap-3">
                       <div
                         className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
@@ -496,7 +516,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-45% md:mt-0 mt-5">
+                {/*=============================================== FAQs 2nd part ===========================================================*/}
+
+                <div className="w-[50%] md:mt-0 mt-5">
                   <div>
                     <div className="bg-white">
                       <div className="flex gap-3">
@@ -512,6 +534,7 @@ export default function Home() {
                         >
                           +
                         </div>
+
                         <div className="">
                           Do I Need Another Software for Credit Card Payments?
                         </div>
@@ -611,8 +634,7 @@ export default function Home() {
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq8(false)}
                           >
-                            {" "}
-                            -{" "}
+                            -
                           </div>
                           <div className="ml-4">
                             To activate your application, MyridePay requires
@@ -755,6 +777,146 @@ export default function Home() {
               </div>
             </div>
           </Container>
+        </div>
+        {/*======================================================== Create Your Online Payments Account Now======================================== */}
+        <div className="from-[#25252517] bg-background1 bg-center bg-cover bg-no-repeat mt-8">
+          <Container className="">
+            <div className="md:flex justify-between text-white ">
+              <div className="w-[50%] mt-5 mb-2">
+                <div>
+                  <span className="text-[25px] font-bold ">
+                    Ready to get started?
+                  </span>
+
+                  <p className="mt-3">
+                    Apply for the MyRidePay Online Payment Gateway Program
+                    online by submitting your details. <br />
+                    Our Agent will contact you and guide you through the whole
+                    process. Our Agent will contact you and guide you through
+                    the whole process.
+                  </p>
+                </div>
+
+                <div className="mt-8">
+                  <span className="text-[25px] font-bold ">Onboarding</span>
+
+                  <p className="mt-3">
+                    We will assess your credentials and request for relevant
+                    documentation, to assess the eligibility. Within 24 to 48
+                    hours we will confirm your account, and you can take the
+                    test tour or simply go live by integrating our payment
+                    portal.
+                  </p>
+                </div>
+
+                <div className="mt-8">
+                  <span className="text-[25px] font-bold ">Integration</span>
+
+                  <p className="mt-3">
+                    It is time to integrate our payment solutions on your car
+                    rental website and start receiving your payments through a
+                    secure, easier and faster method.
+                  </p>
+                </div>
+              </div>
+
+              <div className=" w-[50%] mt-5 ">
+                <p className="text-center">
+                  Create Your Online Payments Account Now
+                </p>
+
+                <div className="flex gap-4 ml-4 mt-5">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Company Name*"
+                    className="focus:outline:none focus:border:none w-full p-2"
+                  />
+
+                  <input
+                    type="text"
+                    required
+                    placeholder="Contact Person*"
+                    className="focus:outline:none  w-full p-2"
+                  />
+                </div>
+
+                <div className="flex  justify-between gap-10 ml-4 mt-5 w-full">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Contact Number*"
+                    className="focus:outline:none w-full  p-2"
+                  />
+
+                  <select
+                    name="Number of Cars*"
+                    id="cars"
+                    required
+                    className=" p-2 w-[560px]  text-black"
+                  >
+                    <option value="volvo">Number of Cars*</option>
+                    <option value="saab">(1-10)</option>
+                    <option value="mercedes">(11-30)</option>
+                    <option value="audi">(31-50)</option>
+                    <option value="audi">(50+)</option>
+                  </select>
+                </div>
+
+                <div className="bg-[#4f504d] font-bold md:w-[40%] w-full text-center p-3 rounded mt-8 ml-32">
+                  REQUEST FOR A CALL BACK
+                </div>
+
+                <div className="flex gap-3 md:visible  invisible mt-5 ml-14">
+                  <div className="relative md:w-[150px] w-[100px] md:h-[160px] h-[100px]">
+                    <Image src="./onlineRegistration.svg" fill />
+                  </div>
+
+                  <div className="relative md:w-[150px] w-[100px] md:h-[150px] h-[100px]">
+                    <Image src="/getApplication.webp" fill />
+                  </div>
+                  <div className="relative md:w-[150px] w-[100px] md:h-[150px] h-[100px]">
+                    <Image src="/RecevingPayments.webp" fill />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
+        {/*===================================================== Our Service Provider======================================= */}
+        <div className="w-full mt-8  ">
+          <div className="text-center "> Our Service Provider</div>
+          <div className="md:flex gap-5 mt-5">
+            <div className="bg-[#e9e9e9] p-3 md:w-[32%] sm:w-[60%] w-full">
+              <div className="text-center">Banking Service Provider</div>
+
+              <div className="flex w-full gap-8">
+                <div className="relative w-[200px] h-[100px]">
+                  <Image src="emirats.svg" alt="emirat" fill />
+                </div>
+
+                <div className="relative w-[200px] h-[100px]">
+                  <Image src="east.svg" alt="east" fill />
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3  md:mt-0 mt-5">
+              <div className="text-center mt-3 ">Banking Service Provider</div>
+
+              <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
+                <Image src="/paytab.webp" alt="emirat" fill />
+              </div>
+            </div>
+
+            <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3 md:mt-0 mt-5">
+              <div className="text-center mt-3 ">Technology Provider</div>
+
+              <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
+                <Image src="/Techbay.webp" alt="emirat" fill />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
