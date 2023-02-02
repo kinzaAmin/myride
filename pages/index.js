@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 //import styles from '@/styles/Home.module.css'
 import Container from "@/components/ui/Container";
 import { useState } from "react";
-import YouTube from "react-youtube";
+//import YouTube from "react-youtube";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -37,9 +37,9 @@ export default function Home() {
         <div className="md:w-[100%] w-[100%] bg-pink-[10%]">
           <Container>
             <div className="md:flex">
-              <div className="flex w-full">
-                <div className="w-[300px] text-center mt-[6%] ">
-                  <div className="md:text-4xl text-lg font-semibold">
+              <div className="flex gap-4 w-full">
+                <div className="w-[250px] text-center mt-[6%] ">
+                  <div className="md:text-2xl text-lg font-semibold">
                     One Stop solution
                     <p className="text-red-600">Payment Gateway</p> for car
                     Rental
@@ -76,8 +76,7 @@ export default function Home() {
           </Container>
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
-
-        <div className="mt-10">
+        <div className=" w-full h-[30%] mt-10 bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center md:ml-0 pl-8 md:text-4xl text-lg font-semibold">
               Smartest Payment Gateway for{" "}
@@ -109,6 +108,167 @@ export default function Home() {
                   <Image src="/RecevingPayments.webp" fill />
                 </div>
                 <div className="text-center mt-2">Start Receiving Payments</div>
+              </div>
+            </div>
+          </Container>
+        </div>
+        {/*=============================================== content ===================================================*/}
+        <div className="mt-5">
+          <Container>
+            <div>
+              <div className="flex gap-5">
+                <div className="w-[50%]">
+                  <span className="text-4xl text-[#4f504d] font-semibold">
+                    Going Global?
+                  </span>
+                  <p className="text-4xl text-[#4f504d] font-semibold">
+                    We got your business covered
+                  </p>
+                  <span className="w-10 text-[#4f504d] text-base">
+                    With MyridePay, geography will be history. To cater to
+                    online businesses with global reach, our secure and seamless
+                    global payment gateway can support customers by facilitating
+                    payments through multiple payment options like American
+                    Express, MasterCard, Visa, mada, SADAD, STC Pay, OmanNet and
+                    many more.
+                  </span>
+                </div>
+
+                <div className="w-[50%] mt-2 ">
+                  <div className="flex md:gap-5 gap-10 justify-between">
+                    <div className="flex gap-2">
+                      <Image
+                        src="./Tick.svg"
+                        alt="tick"
+                        width={20}
+                        height={10}
+                        className="relative"
+                      />
+                      Easy Monthly Installments
+                    </div>
+                    <div className="flex gap-2">
+                      <Image
+                        src="./Tick.svg"
+                        alt="tick"
+                        width={20}
+                        height={10}
+                        className="relative"
+                      />
+                      Payment Tokenization
+                    </div>
+                  </div>
+                  <div className="flex justify-between md:gap-5 gap-10 mt-14">
+                    <div className="flex gap-2">
+                      <Image
+                        src="./Tick.svg"
+                        alt="tick"
+                        width={20}
+                        height={10}
+                        className="relative"
+                      />
+                      Subscriptions
+                    </div>
+                    <div className="flex gap-2">
+                      <Image
+                        src="./Tick.svg"
+                        alt="tick"
+                        width={20}
+                        height={10}
+                        className="relative"
+                      />
+                      Recurring Payments
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
+        {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
+        <div className="w-full h-auto mt-5">
+          <Container>
+            <div className="md:flex flex flex-shrink-0  gap-7 mt-5">
+              <div className="w-[50%]">
+                <span className="text-4xl text-[#4f504d] font-semibold">
+                  Platform to Align Your Car Rental Collections Once and For All
+                </span>
+
+                <div>
+                  In any business platform, secure payments are the biggest
+                  concern. Car rental industry in UAE has vast prospects, and
+                  with that comes a concern to keep an established payment
+                  gateway for the renters all around the world. MyRide being the
+                  devotees for cars wanted an easy process of receiving,
+                  converting and tracking the payments received by the renters
+                  all around the world. Hence, MyRidePay was born. So no matter
+                  what kind of car rental industry you have, let us handle your
+                  payment gateway and be free of excessive processes to handle
+                  the payments.
+                </div>
+              </div>
+
+              <div className="relative ml-[14%] flex-shrink-0 custom_img">
+                <Image src="/carCollction.webp" alt="tick" fill />
+              </div>
+            </div>
+          </Container>
+        </div>
+        {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
+
+        <div className="w-full h-auto mt-5">
+          <Container>
+            <div className=" md:flex flex-shrink-0  gap-7 mt-5">
+              <div className="relative  flex-shrink-0 custom_img1">
+                <Image src="/chooseUs.webp" alt="tick" fill />
+              </div>
+
+              <div className="w-[50%]">
+                {/* <div className="relative ml-[14%] flex-shrink-0 custom_img">
+                  <Image src="/carCollction.webp" alt="tick" fill />
+                </div> */}
+
+                <span className="text-4xl text-[#4f504d] font-semibold">
+                  Why Choose MyRidePay for a Car Rental Gateway?
+                </span>
+
+                <div>
+                  To provide car rental companies with the most secure payment
+                  gateway, we have partnered with PayTabs. PayTabs is one of the
+                  leading payment gateway providers for every industry. Our
+                  years of experience in the automobile industry and PayTabs
+                  experience combined can solve all of your payment problems.
+                  <li>
+                    Accept payments from anywhere in the world with multiple
+                    alternative payment options, our payment gateway makes car
+                    rental for your customers hassle-free which subsequently
+                    helps you to grow your business.
+                  </li>
+                  <li>
+                    Payment security and fraud prevention are the main focus of
+                    this venture. We keep your customers data secure, so they
+                    can rely on you for your services.
+                  </li>
+                  <li>
+                    Boost your processing speed with this payment platform, more
+                    reliability and better acceptance rates.
+                  </li>
+                  <li>
+                    You will have a personal and dedicated account team and live
+                    transaction monitoring option for closer accessibility.
+                  </li>
+                  <li>
+                    Simple website integrations with API solutions, SDK, HTTPS
+                    redirection and secure hosting.
+                  </li>
+                  <li>
+                    Quickly receive access to the amount paid by your customers.
+                  </li>
+                  <li>
+                    Accept payments securely and immediately via Visa and
+                    Mastercard and we will settle your sales automatically to
+                    your bank account.
+                  </li>
+                </div>
               </div>
             </div>
           </Container>
