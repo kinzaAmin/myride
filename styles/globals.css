@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 .custom_img{
-  width: 23%;
-  height:auto;
+  width: 100% !important;
+  height:100% !important;
   position: relative;
 }
 
@@ -14,7 +14,15 @@
   height:auto;
   position: relative;
 }
-
+.footer_logo{
+  position: relative; 
+  width: 275px;
+  height: 40px;
+ 
+}
+.slick-arrow{
+  background-color: #66666680;
+}
 
 
  /* :root {

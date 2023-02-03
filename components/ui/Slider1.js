@@ -24,8 +24,7 @@ const Slider1 = () => {
   return (
     <div>
       <Container>
-
-        <Slider {...settings}>
+        <Slider {...settings} >
           <div className="relative h-24 w-5 shadow-md border ">
             <Image
               src="/AmericanExpress.svg"
@@ -46,7 +45,7 @@ const Slider1 = () => {
             <Image src="/Meeza.svg" fill alt="online payment system" />
           </div>
 
-          <div className=" relative h-24 w-10 shadow-md border  ">
+          <div className=" relative h-24 w-10 shadow-md border ml-1  ">
             <Image src="/UnionPay.svg" fill alt="online payment system" />
           </div>
 
@@ -54,7 +53,7 @@ const Slider1 = () => {
             <Image src="/Mada.svg" fill alt="online payment system" />
           </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ">
+          <div className=" relative h-24 w-10 shadow-md border ml-1">
             <Image src="/Fawry.svg" fill alt="online payment system" />
           </div>
 

@@ -8,8 +8,8 @@ const Header = () => {
       <div className="md:w-[100%] w-full h-[40%] ">
         <div className="md:w-[100%] xs:w-[100%] w-[100%] flex  h-[10%] bg-black ">
           <Container>
-            <div className="md:w-[89%]   w-[100%] md:flex items-center p-2 md:gap-10 gap-3 md:ml-[6%] ml-[30%] ">
-              <div className=" flex  md:w-[70%] w-[100%]">
+            <div className="md:w-[89%]  w-[100%] md:flex items-center p-2 md:gap-10 gap-3 md:ml-[6%] ml-[30%] ">
+              <div className=" flex  md:w-[70%] w-[15%]">
                 <Image
                   src="Call.svg"
                   width={20}
@@ -21,7 +21,7 @@ const Header = () => {
                   800-MYRIDE
                 </p>
               </div>
-              <div className=" flex">
+              <div className=" flex    md:visible  invisible ">
                 <Image
                   src="Email.svg"
                   width={20}
@@ -29,7 +29,7 @@ const Header = () => {
                   className=" relative"
                 />
 
-                <p className="md:text-white text:sm text:hidden ml-2 text-center  ">
+                <p className="md:text-white text:sm ml-2 text-center  ">
                   info@myridepay.com
                 </p>
               </div>
@@ -50,44 +50,52 @@ const Header = () => {
           </Container>
         </div>
 
-        <div className="w-full  sx:w-full flex p-5">
-          <Container className="flex">
+        <div className="w-full   flex p-5 bg-slate-600">
+          <div className=" relative shrink-0 w-[400px] h-[30px]">
             <Image
               src="./logo.svg"
-              width={20}
-              height={10}
+              fill
+              // width={20}
+              // height={10}
               alt="logo"
-              className="relative"
+              // className="relative"
             />
+          </div>
+          <Container className="flex ">
+            <div>
+              <div className="flex justify-between lg:gap-8 gap-7 lg:ml-[16%] md:ml-[9%]  lg:w-[90%] md:w-full md:visible invisible ">
+                <div className="cursor-pointer hover:border-b-2 border-orange-500">
+                  Getting Statrted
+                </div>
+                <div className="cursor-pointer hover:border-b-2 border-orange-500">
+                  Services
+                </div>
+                <div className="cursor-pointer hover:border-b-2 border-orange-500">
+                  Get In Touch
+                </div>
+                <div className="cursor-pointer hover:border-b-2 border-orange-500">
+                  Packages
+                </div>
+                <div className="cursor-pointer hover:border-b-2 border-orange-500">
+                  FAQs
+                </div>
 
-            <div className="md:flex justify-between ml-[25%] lg:w-[66%] md:w-full flex:hidden ">
-              <div className="cursor-pointer hover:border-b-2 border-orange-500">
-                Getting Statrted
-              </div>
-              <div className="cursor-pointer hover:border-b-2 border-orange-500">
-                Services
-              </div>
-              <div className="cursor-pointer hover:border-b-2 border-orange-500">
-                Get In Touch
-              </div>
-              <div className="cursor-pointer hover:border-b-2 border-orange-500">
-                Packages
-              </div>
-              <div className="cursor-pointer hover:border-b-2 border-orange-500">
-                FAQs
+                {/* <div> عربي</div> */}
+                <div className="flex hover:border-b-2 border-orange-500">
+                  <Image
+                    src="/flag.png"
+                    alt="language"
+                    width={30}
+                    height={20}
+                    className="relative"
+                  />
+
+                  <div className=" ml-3">عربي</div>
+                </div>
               </div>
 
-              {/* <div> عربي</div> */}
-              <div className="flex hover:border-b-2 border-orange-500">
-                <Image
-                  src="/flag.png"
-                  alt="language"
-                  width={30}
-                  height={20}
-                  className="relative"
-                />
-
-                <div className="">عربي</div>
+              <div className="md:invisible visible w-10 h-5 bg-black ml-24">
+                <hr />
               </div>
             </div>
           </Container>

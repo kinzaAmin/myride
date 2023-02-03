@@ -23,7 +23,7 @@ const Sliderr = ()=> {
     return (
       <div>
         <Container>
-          <Slider {...settings}>
+          <Slider {...settings} >
             <div className="   `">
               <div className="relative h-56 w-56 ">
                 <Image
@@ -54,7 +54,6 @@ const Sliderr = ()=> {
                   alt="online payment system"
                 />
               </div>
-
               <p className="ml-10">Payment Tokenization</p>
             </div>
             <div className="   `">
@@ -65,7 +64,6 @@ const Sliderr = ()=> {
                   alt="online payment system"
                 />
               </div>
-
               <p className="ml-14">Recurring Payments</p>
             </div>
             <div className="   `">
@@ -76,7 +74,6 @@ const Sliderr = ()=> {
                   alt="online payment system"
                 />
               </div>
-
               <p className="ml-14">Recurring Payments </p>
             </div>
             <div className=" ">
@@ -87,13 +84,11 @@ const Sliderr = ()=> {
                   alt="online payment system"
                 />
               </div>
-
               <p className="ml-3">Online Payment Solutions</p>
             </div>
 
-          
           </Slider>
-          
+        
         </Container>
       </div>
     );

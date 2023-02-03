@@ -36,65 +36,62 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="md:w-[100%] w-[100%] bg-pink-[10%] mt-8">
-          <Container>
-            <div className="md:flex">
-              <div className="flex gap-4 w-full">
-                <div className="w-[250px] text-center mt-[6%] ">
-                  <div className="md:text-2xl text-lg font-semibold">
-                    One Stop solution
-                    <p className="text-red-600">Payment Gateway</p> for car
-                    Rental
-                    <br />
-                    Industry In The <span className="text-red-600"> UAE</span>
-                  </div>
-
-                  <div className="mt-3 font-normal">
-                    Receive Payments Immediately and Securely
-                  </div>
+        <div className=" w-[100%] h-[150px]  mt-8 items-center pt-7 ">
+          <div className="md:flex md:p-0 p-4 ">
+            <div className="flex  bg-pink-50  lg:w-[55%] w-[900px]">
+              <div className="lg:w-[400px] w-[200px] text-center mt-[6%] lg:pt-20  ">
+                <div className="md:text-2xl text-lg font-semibold">
+                  One Stop solution
+                  <p className="text-red-600">Payment Gateway</p> for car Rental
+                  <br />
+                  Industry In The <span className="text-red-600"> UAE</span>
                 </div>
-                <div>
-                  <div className=" relative w-[360px] h-[360px]">
-                    <Image src="/main.png" fill alt="logo" />
-                  </div>
+
+                <div className="mt-3 font-normal">
+                  Receive Payments Immediately and Securely
                 </div>
               </div>
-              <div className="w-[10%] bg-black h-full rotate-90 ml-6"></div>
-              <div className="w-full h-auto ">
-                <iframe
-                  src="https://www.youtube.com/embed/pxOu8gO5mTI"
-                  frameborder="0"
-                  allow="accelerometer; autoplay"
-                  // clipboard-write
-                  encrypted-media="true"
-                  // gyroscope
-                  picture-in-picture
-                  web-share
-                  allowFullScreen
-                  className="md:w-[500px] w-[340px] md:h-[500px] h-[300px] md:ml-0 ml-32"
-                />
+              <div>
+                <div className=" relative lg:w-[390px] md:w-[250px] w-[200px] lg:h-[390px] md:h-[250px] h-[200px] md:pt-24 mt-12">
+                  <Image src="/main.png" fill alt="logo" />
+                </div>
               </div>
             </div>
-          </Container>
+            <div className="w-[4px] bg-black h-[390px] rotate-[-90] lg:visible invisible"></div>
+            {/* <div className="relative">
+              <iframe
+                src="https://www.youtube.com/embed/pxOu8gO5mTI"
+                frameborder="0"
+                allow="accelerometer; autoplay"
+                // clipboard-write
+                encrypted-media="true"
+                // gyroscope
+                picture-in-picture
+                web-share
+                allowFullScreen
+                className="   lg:w-[580px] w-[430px] lg:h-[390px] md:h-[390px] h-[200px] "
+              />
+            </div> */}
+          </div>
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className=" w-full h-[30%] mt-10 bg-background bg-center bg-cover bg-no-repeat">
+        <div className=" w-full h-[30%] md:mt-72 mt-44 bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center md:ml-0 ml-2 pl-7 text-4xl font-semibold">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className="flex md:justify-between gap-8 md:ml-0 ml-4 mt-6">
+            <div className="flex justify-between ml-0  mt-3">
               <div className="">
                 <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
                   <Image src="./onlineRegistration.svg" fill />
                 </div>
                 <div className="text-center mt-1">Sign Up for Free</div>
               </div>
-              <div className="">
-                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
+              <div className=" ">
+                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px] lg:ml-0 md:ml-12 ml-[50px] ">
                   <Image src="/getApplication.webp" fill />
                 </div>
                 <div className="text-center mt-2">
@@ -107,7 +104,7 @@ export default function Home() {
               </div>
 
               <div className="">
-                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
+                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px] md:ml-0 ml-6">
                   <Image src="/RecevingPayments.webp" fill />
                 </div>
                 <div className="text-center mt-2">Start Receiving Payments</div>
@@ -126,12 +123,12 @@ export default function Home() {
         <div className="mt-8">
           <Container>
             <div>
-              <div className="flex gap-5">
-                <div className="w-[50%]">
-                  <span className="text-4xl text-[#4f504d] font-semibold">
+              <div className="md:flex gap-5">
+                <div className="md:w-[50%] w-full">
+                  <span className="text-2xl text-[#4f504d] font-semibold">
                     Going Global?
                   </span>
-                  <p className="text-4xl text-[#4f504d] font-semibold">
+                  <p className=" text-2xl text-[#4f504d] font-semibold">
                     We got your business covered
                   </p>
                   <span className="w-10 text-[#4f504d] text-base">
@@ -144,49 +141,49 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="  md:flex  flex-col  w-[50%] mt-8 ">
-                  <div className="flex md:gap-5 gap-10 justify-between">
-                    <div className="flex gap-2">
+                <div className="  md:flex  flex-col  md:w-[50%] w-full mt-8 md:ml-0 sm:ml-44 ml-24">
+                  <div className="md:flex md:gap-5 gap-10 justify-between ">
+                    <div className="md:flex gap-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative"
+                        className="relative  md:ml-0 ml-20 "
                       />
                       Easy Monthly Installments
                     </div>
-                    <div className="flex gap-2">
+                    <div className="md:flex gap-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative"
+                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
                       />
-                      Payment Tokenization
+                      <span className="md:ml-0 ml-4">Payment Tokenization</span>
                     </div>
                   </div>
-                  <div className="flex justify-between md:gap-5 gap-10 mt-14">
-                    <div className="flex gap-2">
+                  <div className="md:flex justify-between md:gap-5 gap-10 md:mt-14 ">
+                    <div className="md:flex gap-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative"
+                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
                       />
-                      Subscriptions
+                      <span className="md:ml-0 ml-11">Subscriptions</span>
                     </div>
-                    <div className="flex gap-2">
+                    <div className="md:flex gap-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative"
+                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
                       />
-                      Recurring Payments
+                      <span className="md:ml-0 ml-7">Recurring Payments</span>
                     </div>
                   </div>
                 </div>
@@ -197,13 +194,13 @@ export default function Home() {
         {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
         <div className="w-full h-auto mt-5">
           <Container>
-            <div className="w-full  flex flex-shrink-0  md:gap-7 gap-0 mt-5">
-              <div className="w-[50%]  pl-7 ">
-                <span className="text-4xl text-[#4f504d] font-semibold">
+            <div className="w-full  md:flex flex-shrink-0  md:gap-7 gap-0 mt-5">
+              <div className="md:w-[50%] w-full  pl-7 ">
+                <span className="text-2xl text-center  md:text-left text-[#4f504d] font-semibold">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
 
-                <div>
+                <div className="text-[#4f504d] font-normal md:text-left text-center">
                   In any business platform, secure payments are the biggest
                   concern. Car rental industry in UAE has vast prospects, and
                   with that comes a concern to keep an established payment
@@ -217,26 +214,22 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative ml-[14%] flex-shrink-0 w-[300px]  h-[300px] ">
+              <div className="relative ml-[14%] flex-shrink-0 w-[300px]  h-[300px]  ">
                 <Image src="/carCollction.webp" alt="tick" fill />
               </div>
             </div>
           </Container>
         </div>
         {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
-        <div className="w-full h-auto mt-5 pb-4">
+        <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
-            <div className=" md:flex flex-shrink-0  gap-7 mt-5">
-              <div className="relative  flex-shrink-0 custom_img1">
+            <div className="  w-full md:flex md:flex-shrink-0  md:gap-7  mt-5">
+              <div className="relative lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[320px] w-[350px] md:h-[320px] h-[380px]">
                 <Image src="/chooseUs.webp" alt="tick" fill />
               </div>
 
-              <div className="md:w-[50%] w-full">
-                {/* <div className="relative ml-[14%] flex-shrink-0 custom_img">
-                  <Image src="/carCollction.webp" alt="tick" fill />
-                </div> */}
-
-                <span className="text-4xl text-[#4f504d] font-semibold">
+              <div className=" w-[100%] md:text-left text-center md:p-0 p-4 ">
+                <span className="md:text-2xl text-lg text-[#4f504d] font-semibold">
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>
 
@@ -277,7 +270,7 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
-                  <div className=" pb-5  bg-[#bf0000] text-white text-base font-bold text-center md:w-[50%] w-full p-2 rounded mt-6 ">
+                  <div className=" md:pb-5  bg-[#bf0000] text-white md:text-base text-sm font-bold text-center md:w-[50%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
                     Checkout Our Awesome Packages
                   </div>
                 </div>
@@ -285,22 +278,22 @@ export default function Home() {
             </div>
           </Container>
         </div>
-        {/*================================================== Services============================================ */}
+        {/*================================================== Services Slider ============================================ */}
 
-        <div className="mt-8 ">
-          <p className="text-center text-4xl ">Services</p>
-          <div className="mt-8 ml-24 ">
+        <div className="mt-8 w-full ">
+          <p className="text-center text-4xl text-[] ">Services</p>
+          <div className="mt-8 md:ml-24 ml-5 ">
             <Sliderr />
           </div>
         </div>
 
-        {/*================================================== FAQs=================================================== */}
-        <div className="bg-gray-100 mt-8 ">
+        {/*================================================== FAQs =================================================== */}
+        <div className=" mt-8 ">
           <Container>
-            <div className="w-full justify-between ">
-              <span className="text-4xl">FAQs</span>
+            <div className="w-full justify-between  ">
+              <span className="text-4xl ">FAQs</span>
               <div className="md:flex justify-between w-full mt-5">
-                <div className="w-[50%]">
+                <div className="md:w-[50%] w-full bg-gray-100">
                   <div className="bg-white ">
                     <div className="flex gap-3">
                       <div
@@ -473,9 +466,9 @@ export default function Home() {
                     )}
                   </div>
 
-                  <div>
+                  <div className="">
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5">
+                      <div className="flex gap-2 mt-5">
                         <div
                           className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                           onClick={() => {
@@ -518,7 +511,7 @@ export default function Home() {
 
                 {/*=============================================== FAQs 2nd part ===========================================================*/}
 
-                <div className="w-[50%] md:mt-0 mt-5">
+                <div className="md:w-[50%] bg-gray-100 w-full md:mt-0 mt-5">
                   <div>
                     <div className="bg-white">
                       <div className="flex gap-3">
@@ -779,10 +772,10 @@ export default function Home() {
           </Container>
         </div>
         {/*======================================================== Create Your Online Payments Account Now======================================== */}
-        <div className="from-[#25252517] bg-background1 bg-center bg-cover bg-no-repeat mt-8">
+        <div className="from-[#25252517] bg-background1 bg-center bg-cover bg-no-repeat mt-8 pl-4">
           <Container className="">
             <div className="md:flex justify-between text-white ">
-              <div className="w-[50%] mt-5 mb-2">
+              <div className="md:w-[50%] w-full mt-5 mb-2">
                 <div>
                   <span className="text-[25px] font-bold ">
                     Ready to get started?
@@ -820,40 +813,40 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className=" w-[50%] mt-5 ">
-                <p className="text-center">
+              <div className=" md:w-[50%] w-full mt-5 ">
+                <p className="md:text-center">
                   Create Your Online Payments Account Now
                 </p>
 
-                <div className="flex gap-4 ml-4 mt-5">
+                <div className="md:flex gap-4 md:ml-4 mt-5">
                   <input
                     type="text"
                     required
                     placeholder="Company Name*"
-                    className="focus:outline:none focus:border:none w-full p-2"
+                    className="focus:outline:none focus:border:none md:w-full w-[90%] p-2"
                   />
 
                   <input
                     type="text"
                     required
                     placeholder="Contact Person*"
-                    className="focus:outline:none  w-full p-2"
+                    className="focus:outline:none  md:w-full w-[90%] p-2 md:mt-0 mt-3"
                   />
                 </div>
 
-                <div className="flex  justify-between gap-10 ml-4 mt-5 w-full">
+                <div className="md:flex  justify-between gap-10 md:ml-4 md:mt-5 mt-3 w-full">
                   <input
                     type="text"
                     required
                     placeholder="Contact Number*"
-                    className="focus:outline:none w-full  p-2"
+                    className="focus:outline:none md:w-full w-[90%]  p-2"
                   />
 
                   <select
                     name="Number of Cars*"
                     id="cars"
                     required
-                    className=" p-2 w-[560px]  text-black"
+                    className=" p-2 md:w-[560px] w-[90%] md:mt-0 mt-3  text-black"
                   >
                     <option value="volvo">Number of Cars*</option>
                     <option value="saab">(1-10)</option>
@@ -863,7 +856,7 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="bg-[#4f504d] font-bold md:w-[40%] w-full text-center p-3 rounded mt-8 ml-32">
+                <div className="bg-[#4f504d] font-bold md:w-[40%] w-[80%] text-center p-3 rounded mt-8 md:ml-32 ml-10">
                   REQUEST FOR A CALL BACK
                 </div>
 
@@ -885,10 +878,14 @@ export default function Home() {
         </div>
         {/*===================================================== Our Service Provider======================================= */}
         <div className="w-full mt-8  ">
-          <div className="text-center "> Our Service Provider</div>
+          <div className="text-center md:text-4xl text-2xl text-[#4f504d] ">
+            Our Service Provider
+          </div>
           <div className="md:flex gap-5 mt-5">
             <div className="bg-[#e9e9e9] p-3 md:w-[32%] sm:w-[60%] w-full">
-              <div className="text-center">Banking Service Provider</div>
+              <div className="text-center text-2xl">
+                Banking Service Provider
+              </div>
 
               <div className="flex w-full gap-8">
                 <div className="relative w-[200px] h-[100px]">
@@ -902,7 +899,9 @@ export default function Home() {
             </div>
 
             <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3  md:mt-0 mt-5">
-              <div className="text-center mt-3 ">Banking Service Provider</div>
+              <div className="text-center mt-3 text-2xl ">
+                Payment Gateway Provider
+              </div>
 
               <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
                 <Image src="/paytab.webp" alt="emirat" fill />
@@ -910,7 +909,9 @@ export default function Home() {
             </div>
 
             <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3 md:mt-0 mt-5">
-              <div className="text-center mt-3 ">Technology Provider</div>
+              <div className="text-center mt-3 text-2xl">
+                Technology Provider
+              </div>
 
               <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
                 <Image src="/Techbay.webp" alt="emirat" fill />
