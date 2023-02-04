@@ -34,11 +34,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="md:w-[100%] w-[100%] bg-pink-[10%]">
-          <Container>
-            <div className="md:flex">
-              <div className="flex w-full">
-                <div className="w-[300px] text-center mt-[6%] ">
+        <div className="  w-full bg-pink-50">
+         
+            <div className=" w-full md:flex   ">
+              {/* <div className="flex w-[50%]   ">
+                <div className="w-[400px] text-center mt-20   ">
                   <div className="md:text-4xl text-lg font-semibold">
                     One Stop solution
                     <p className="text-red-600">Payment Gateway</p> for car
@@ -52,13 +52,18 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <div className=" relative w-[360px] h-[360px]">
-                    <Image src="/main.png" fill alt="logo" />
+                  <div className="  w-[300px] ">
+                    <Image src="/main.png" fill alt="logo" className="custom_img" />
                   </div>
                 </div>
+              </div> */}
+              <div className="w-[50%]">
+              <div className="w-full">
+                <Image src="/poster1.png" fill alt="poster" className="custom_img"/>
               </div>
-              <div className="w-[10%] bg-black h-full rotate-90 ml-6"></div>
-              <div className="w-full h-auto ">
+              </div>
+              
+              <div className="w-[50%] ">
                 <iframe
                   src="https://www.youtube.com/embed/pxOu8gO5mTI"
                   frameborder="0"
@@ -69,11 +74,11 @@ export default function Home() {
                   picture-in-picture
                   web-share
                   allowFullScreen
-                  className="md:w-[500px] w-[700px] md:h-[500px] h-[500px]"
+                  className="custom_img"
                 />
               </div>
             </div>
-          </Container>
+         
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 

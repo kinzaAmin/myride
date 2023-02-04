@@ -3,7 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.custom_img{
+  width: 100% !important;
+  height:100% !important;
+  position: relative !important;
+}
  /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

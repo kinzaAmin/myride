@@ -1,57 +1,81 @@
 import React from "react";
 
 import Image from "next/image";
+import Container from "../ui/Container";
 const Header = () => {
   return (
     <>
-      <div className="md:w-[100%] w-full h-[40%] ">
-        <div className="md:w-[100%] xs:w-[100%] w-[100%] flex justify-end h-[10%] bg-black ">
-          <div className="md:w-[100%]   w-[100%] md:flex items-center p-2 md:gap-10 gap-3 md:ml-[6%] ml-[30%] ">
-            <div className=" md:w-[100%] w-[100%]">
-              <p className="text-white md:text-sm text:xs text-center md:ml-[38%] w-full md:mr-0 mr-[90%] ">
-                800-MYRIDE
-              </p>
+      <div>
+        <div className="w-full bg-[#4F504D] px-[15px] justify-end ">
+          <Container>
+            <div className=" w-full flex justify-end   gap-10 py-[5px]">
+              <div className="flex justify-between w-[130px]">
+                <div className="w-[20px]">
+                  <Image
+                    src="/Call.svg"
+                    fill
+                    alt="call-icon"
+                    className="custom_img"
+                  />
+                </div>
+                <span>800-MYRIDE</span>
+              </div>
+
+              <div className="flex justify-between w-[180px]">
+                <div className="w-[20px]">
+                  <Image
+                    src="/Email.svg"
+                    fill
+                    alt="login-icon"
+                    className="custom_img"
+                  />
+                </div>
+                <span>info@myridepay.com</span>
+              </div>
+
+              <div className="flex justify-between w-[80px]">
+                <div className="w-[20px]">
+                  <Image
+                    src="/Login.svg"
+                    fill
+                    alt="login-icon"
+                    className="custom_img"
+                  />
+                </div>
+                <span>Login</span>
+              </div>
             </div>
-            <div className=" ">
-              <p className="md:text-white text:sm text:hidden  ">
-                info@myridepay.com
-              </p>
-            </div>
-            <div className=" bg-gray-500 cursor-pointer text-center md:ml:0 ml-10 text-white p-1 rounded items-center sm:w-[15%] xs:w-[20%] w-[30%] ">
-              Login
-            </div>
-          </div>
+          </Container>
         </div>
 
-        <div className="w-full sx:w-full flex p-5">
-          <div className=" relative w-[20%] ">
-            <Image src="./logo.svg" fill alt="logo" />
-          </div>
+        <div className="">
+          <Container>
+            <div className="flex justify-between py-6 w-[100%]   ">
+              <div className=" flex ">
+                <div className="w-[250px]">
+                  <Image src="logo.svg" fill className="custom_img" />
+                </div>
+              </div>
 
-          <div className="md:flex justify-between ml-[25%] lg:w-[66%] md:w-full flex:hidden ">
-            <div className="cursor-pointer hover:border-b-2 border-orange-500">
-              Getting Statrted
+              <ul className="flex gap-16  items-center justify-end ">
+                <li>Getting Started</li>
+                <li>Services</li>
+                <li>Get In Touch</li>
+                <li>FAQs</li>
+                <li className="flex gap-4">
+                  <div className="w-[30px] h-[20px]">
+                    <Image
+                      src="/flag.png"
+                      fill
+                      alt="flag"
+                      className="custom_img"
+                    />
+                  </div>
+                  <span>عربى</span>
+                </li>
+              </ul>
             </div>
-            <div className="cursor-pointer hover:border-b-2 border-orange-500">
-              Services
-            </div>
-            <div className="cursor-pointer hover:border-b-2 border-orange-500">
-              Get In Touch
-            </div>
-            <div className="cursor-pointer hover:border-b-2 border-orange-500">
-              Packages
-            </div>
-            <div className="cursor-pointer hover:border-b-2 border-orange-500">
-              FAQs
-            </div>
-
-            {/* <div> عربي</div> */}
-            <div className="relative w-[6%]">
-              <Image src="/flag.png" alt="language" fill />
-            </div>
-
-            <div className="hover:border-b-2 border-orange-500">عربي</div>
-          </div>
+          </Container>
         </div>
       </div>
     </>
