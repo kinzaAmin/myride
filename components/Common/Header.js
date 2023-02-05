@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <div>
-        <div className="w-full bg-[#4F504D] px-[15px] justify-end ">
+        <div className="w-full bg-[#4F504D] px-[15px] justify-end font-raleway ">
           <Container>
             <div className=" w-full flex justify-end   gap-10 py-[5px]">
               <div className="flex justify-between w-[130px]">

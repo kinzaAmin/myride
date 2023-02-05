@@ -35,39 +35,7 @@ export default function Home() {
         <div className="  w-full bg-pink-50">
          
             <div className=" w-full md:flex   ">
-              {/* <div className="flex w-[50%]   ">
-                <div className="w-[400px] text-center mt-20   ">
-                  <div className="md:text-4xl text-lg font-semibold">
-                    One Stop solution
-                    <p className="text-red-600">Payment Gateway</p> for car
-                    Rental
-                    <br />
-                    Industry In The <span className="text-red-600"> UAE</span>
-                  </div>
-
-                  <div className="mt-3 font-normal">
-                    Receive Payments Immediately and Securely
-                  </div>
-                </div>
-                <div>
-                  <div className="  w-[300px] ">
-                    <Image src="/main.png" fill alt="logo" className="custom_img" />
-                  </div>
-        <div className=" w-[100%] h-[150px]  mt-8 items-center pt-7 ">
-          <div className="md:flex md:p-0 p-4 ">
-            <div className="flex  bg-pink-50  lg:w-[55%] w-[900px]">
-              <div className="lg:w-[400px] w-[200px] text-center mt-[6%] lg:pt-20  ">
-                <div className="md:text-2xl text-lg font-semibold">
-                  One Stop solution
-                  <p className="text-red-600">Payment Gateway</p> for car Rental
-                  <br />
-                  Industry In The <span className="text-red-600"> UAE</span>
-                </div>
-
-                <div className="mt-3 font-normal">
-                  Receive Payments Immediately and Securely
-                </div>
-              </div> */}
+         
               <div className="w-[50%]">
               <div className="w-full">
                 <Image src="/poster1.png" fill alt="poster" className="custom_img"/>
@@ -95,36 +63,36 @@ export default function Home() {
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className=" w-full h-[30%] md:mt-72 mt-44 bg-background bg-center bg-cover bg-no-repeat">
+        <div className=" w-full h-[30%] mt-[20px] bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center md:ml-0 ml-2 pl-7 text-4xl font-semibold">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className="flex justify-between ml-0  mt-3">
-              <div className="">
-                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px]">
-                  <Image src="./onlineRegistration.svg" fill />
+            <div className=" w-full flex justify-between ml-0  py-5">
+              <div className="gap-4">
+                <div className="w-[223px]  ">
+                  <Image src="./onlineRegistration.svg" fill className="custom_img" />
                 </div>
-                <div className="text-center mt-1">Sign Up for Free</div>
+                <div className="text-center ">Sign Up for Free</div>
               </div>
-              <div className=" ">
-                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px] lg:ml-0 md:ml-12 ml-[50px] ">
-                  <Image src="/getApplication.webp" fill />
+              <div className=" gap-4 ">
+                <div className="w-[223px] ">
+                  <Image src="/getApplication.webp" fill className="custom_img"  />
                 </div>
-                <div className="text-center mt-2">
-                  Get Application Approval within 24 hours
+                <div className="text-center ">
+                  Get Application Approval <br/> within 24 hours
                 </div>
 
-                <div className="bg-[#ff0000] text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
+                <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
                   <span className=" ">Sign Up</span>
                 </div>
               </div>
 
-              <div className="">
-                <div className="relative md:w-[200px] w-[100px] md:h-[200px] h-[100px] md:ml-0 ml-6">
-                  <Image src="/RecevingPayments.webp" fill />
+              <div className="gap-4">
+                <div className=" w-[223px] ">
+                  <Image src="/RecevingPayments.webp" fill className="custom_img" />
                 </div>
                 <div className="text-center mt-2">Start Receiving Payments</div>
               </div>
@@ -160,7 +128,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="  md:flex  flex-col  md:w-[50%] w-full mt-8 md:ml-0 sm:ml-44 ml-24">
+                <div className=" w-[50%] md:flex  flex-col  md:w-[50%] w-full mt-8 md:ml-0 sm:ml-44 ml-24">
                   <div className="md:flex md:gap-5 gap-10 justify-between ">
                     <div className="md:flex gap-2">
                       <Image
@@ -214,7 +182,7 @@ export default function Home() {
         <div className="w-full h-auto mt-5">
           <Container>
             <div className="w-full  md:flex flex-shrink-0  md:gap-7 gap-0 mt-5">
-              <div className="md:w-[50%] w-full  pl-7 ">
+              <div className="md:w-[50%] w-full  ">
                 <span className="text-2xl text-center  md:text-left text-[#4f504d] font-semibold">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
@@ -232,9 +200,10 @@ export default function Home() {
                   the payments.
                 </div>
               </div>
-
-              <div className="relative ml-[14%] flex-shrink-0 w-[300px]  h-[300px]  ">
-                <Image src="/carCollction.webp" alt="tick" fill />
+               <div className="w-[50%] pl-[13%]">
+              <div className=" w-[288px] h-[310px]  ">
+                <Image src="/carCollction.webp" alt="car" fill className="custom_img" />
+              </div>
               </div>
             </div>
           </Container>
@@ -243,11 +212,12 @@ export default function Home() {
         <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
             <div className="  w-full md:flex md:flex-shrink-0  md:gap-7  mt-5">
-              <div className="relative lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[320px] w-[350px] md:h-[320px] h-[380px]">
-                <Image src="/chooseUs.webp" alt="tick" fill />
+            <div className="w-[50%]">
+              <div className=" lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
+                <Image src="/chooseUs.webp" alt="tick" fill className="custom_img" />
               </div>
-
-              <div className=" w-[100%] md:text-left text-center md:p-0 p-4 ">
+</div>
+              <div className=" w-[50%] md:text-left text-center md:p-0 p-4 ">
                 <span className="md:text-2xl text-lg text-[#4f504d] font-semibold">
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>

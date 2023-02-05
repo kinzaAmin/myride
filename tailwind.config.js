@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -15,6 +18,15 @@ module.exports = {
         background1: "url('/background1.png')",
         // // "footer-texture": "url('/img/footer-texture.png')",
       },
+      fontFamily: {
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+        raleway: "Raleway",
+        nova: "Proxima Nova",
+      },
+      colors: {
+        primary: "#ff0000",
+        darkGray: "#4F504D",
+      }
     },
   },
   plugins: [],

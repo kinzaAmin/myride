@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[40%] bg-slate-500 text-white flex-col pt-3 justify-between md:p-0 p-7">
+      <div className="w-full h-[40%] grid-col-4 bg-darkGray text-[#e4e4e4] font-raleway text-white flex-col pt-3 justify-between md:p-0 p-7">
         {/* <div className="flex justify-between">
           <div>
             <div>USEFUL LINKS</div>
@@ -40,46 +40,43 @@ const Footer = () => {
           </div>
         </div> */}
         <Container>
-          <div className="md:flex   justify-between gap-6">
+          <div className="grid grid-cols-4   gap-6">
             <div className="flex-col justify-between md:w-[30%] w-full h-[10%]">
-              <div className=" footer_logo mt-5">
-                <Image src="./footerLogo.svg" fill alt="logo" />
+              <div className=" footer_logo mt-5 w-[250px] ">
+                <Image src="./footerLogo.svg" fill alt="logo" className="custom_img" />
               </div>
 
-              {/* <div className=" flex w-full mt-2">
-                <div className="w-[30%] h-[1px] bg-[#ff0000]"></div>
-                <div className="w-[70%] h-[1px] bg-black"></div>
-              </div> */}
-              <div className="fex-col justify-between mt-3 md:text-sm text:xs">
-                <div>
+             
+              <div className=" w-60 fex-col justify-between mt-3 md:text-sm text:xs font-raleway leading-7">
+                <div className="">
                   MyridePay is a one stop solution payment gateway for car
                   rental Industries in UAE. We provide secure, fast and easy
                   options to receive and manage your payments by your clients.
                   Owned by Myride Middle East DMCC.
                 </div>
-                <div className="flex gap-5 w-[68%] ml-7 mt-5">
-                  <div className=" relative  md:w-full sm:w-[6%] w-6 lg:h-11 md:h-6 sm:h-6 h-6 bg-white rounded-full   ">
+                <div className=" w-[65%]  flex gap-2 mt-5 ">
+                  <div className=" w-[70px] h-[30px] bg-white rounded-full   ">
                     <Image
                       src="./Twitter.svg"
                       fill
                       alt="fb logo"
-                      className="cursor-pointer "
+                      className="cursor- custom_img "
                     />
                   </div>
-                  <div className=" relative  md:w-full sm:w-[6%] w-6 lg:h-11 md:h-6 h-6 cursor-pointer  bg-white rounded-full hover:bg-[#ff0000] ">
+                  <div className=" relative  w-[70px] h-[30px]  cursor-pointer  bg-white rounded-full hover:bg-[#ff0000] ">
                     <Image src="./Facebook.svg" fill alt="fb logo" />
                   </div>
-                  <div className=" relative   md:w-full sm:w-[6%] w-6  lg:h-11 md:h-6 h-6 cursor-pointer  bg-white rounded-full">
+                  <div className=" relative   md:w-[70px] md:h-[30px] cursor-pointer  bg-white rounded-full">
                     <Image src="./Insta.svg" fill alt="fb logo" />
                   </div>
-                  <div className=" relative  md:w-full sm:w-[6%] w-6 lg:h-11 md:h-6 h-6 cursor-pointer  bg-white rounded-full ">
+                  <div className=" relative w-[70px] h-[30px] cursor-pointer  bg-white rounded-full ">
                     <Image src="./Linkedin.svg" fill alt="fb logo" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="md:mt-0 mt-6">
+            <div className="md:mt-0 mt-6 font-light">
               <div className="text-2xl mt-5  font-bold ">USEFUL LINKS</div>
               <div className=" flex w-full mt-2">
                 <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>
@@ -192,6 +189,12 @@ const Footer = () => {
                       <div className="md:w-[30%] w-14 h-[1px] bg-[#ff0000]"></div>
                       <div className="w-[70%] h-[1px] bg-black"></div>
                     </div>
+                   <div className="mt-4">
+
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462561.6591536894!2d55.227488!3d25.076022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f1d1d5afb1fc4aa!2sRentMyRide%20%7C%20Luxury%20Car%20Rental%20In%20Dubai!5e0!3m2!1sen!2sus!4v1675619009645!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+              </div>
                   </div>
                 </div>
               </div>
