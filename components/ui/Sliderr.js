@@ -21,74 +21,78 @@ const Sliderr = ()=> {
     };
      //setTimeout(() => setLoading(false), 3000);
     return (
-      <div>
+      <div className="">
         <Container>
-          <Slider {...settings} >
-            <div className="   `">
-              <div className="relative h-56 w-56 ">
+          <Slider {...settings}>
+            <div className=" text-[25px] font-sans ">
+              <div className="w-[373px] h-[290px] ">
                 <Image
                   src="/OnlinePayment.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
 
-              <p className="ml-2">Online Payment Solutions</p>
+              <p className="text-center">Online Payment Solutions</p>
             </div>
-            <div className="   `">
-              <div className=" relative  h-56 w-56 ">
+            <div className="   text-[25px] font-sans">
+              <div className=" w-[373px] h-[290px] ">
                 <Image
                   src="/PaymentLinks.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
 
-              <p className="ml-14">Payment Links</p>
+              <p className="text-center">Payment Links</p>
             </div>
-            <div className="   `">
-              <div className=" relative  h-56 w-56 ">
+            <div className=" text-[25px] font-sans">
+              <div className=" w-[373px] h-[290px] ">
                 <Image
                   src="/PaymentTokenization.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
-              <p className="ml-10">Payment Tokenization</p>
+              <p className="text-center">Payment Tokenization</p>
             </div>
-            <div className="   `">
-              <div className=" relative  h-56 w-56 ">
+            <div className="text-[25px] font-sans">
+              <div className="w-[373px] h-[290px] ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
-              <p className="ml-14">Recurring Payments</p>
+              <p className="text-center">Recurring Payments</p>
             </div>
-            <div className="   `">
-              <div className=" relative  h-56 w-56 ">
+            <div className="text-[25px] font-sans">
+              <div className="w-[373px] h-[290px] ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
-              <p className="ml-14">Recurring Payments </p>
+              <p className="text-center">Recurring Payments </p>
             </div>
-            <div className=" ">
-              <div className=" relative  h-56 w-56 ">
+            <div className=" text-[25px] font-sans  ">
+              <div className="w-[373px] h-[290px] ">
                 <Image
                   src="/OnlinePayment.webp"
                   fill
                   alt="online payment system"
+                  className="custom_img"
                 />
               </div>
-              <p className="ml-3">Online Payment Solutions</p>
+              <p className="text-center">Online Payment Solutions</p>
             </div>
-
           </Slider>
-        
         </Container>
       </div>
     );

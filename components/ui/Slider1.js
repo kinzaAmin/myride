@@ -24,51 +24,99 @@ const Slider1 = () => {
   return (
     <div>
       <Container>
-        <Slider {...settings} >
-          <div className="relative h-24 w-5 shadow-md border ">
-            <Image
-              src="/AmericanExpress.svg"
-              fill
-              alt="online payment system"
-            />
-          </div>
+        <div className="w-[1140px] h-[142px] gap-4 mr-7">
+          <Slider {...settings}>
+            <div className=" w-[120px] h-[90px] shadow-md ">
+              <Image
+                src="/AmericanExpress.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative  h-24 w-10 shadow-md border ml-2 ">
-            <Image src="/StcPay.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md   ">
+              <Image
+                src="/StcPay.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative  h-24 w-10 shadow-md border   ">
-            <Image src="/PayPal.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md   ">
+              <Image
+                src="/PayPal.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-2 ">
-            <Image src="/Meeza.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md  ">
+              <Image
+                src="/Meeza.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-1  ">
-            <Image src="/UnionPay.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md    ">
+              <Image
+                src="/UnionPay.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-2 ">
-            <Image src="/Mada.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md  ">
+              <Image
+                src="/Mada.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-1">
-            <Image src="/Fawry.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md  ">
+              <Image
+                src="/Fawry.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-2 ">
-            <Image src="/VISA.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md  ">
+              <Image
+                src="/VISA.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ">
-            <Image src="/MasterCard.svg" fill alt="online payment system" />
-          </div>
+            <div className=" w-[120px] h-[90px] shadow-md  ">
+              <Image
+                src="/MasterCard.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
 
-          <div className=" relative h-24 w-10 shadow-md border ml-2">
-            <Image src="/Value.svg" fill alt="online payment system" />
-          </div>
-        </Slider>
+            <div className="w-[120px] h-[90px]  shadow-md  ">
+              <Image
+                src="/Value.svg"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
+            </div>
+          </Slider>
+        </div>
       </Container>
     </div>
   );

@@ -33,69 +33,86 @@ export default function Home() {
       </Head>
       <main>
         <div className="  w-full bg-pink-50">
-         
-            <div className=" w-full md:flex   ">
-         
-              <div className="w-[50%]">
+          <div className=" w-full md:flex   ">
+            <div className="w-[50%]">
               <div className="w-full">
-                <Image src="/poster1.png" fill alt="poster" className="custom_img"/>
-              </div>
-              </div>
-
-              
-              <div className="w-[50%] ">
-                <iframe
-                  src="https://www.youtube.com/embed/pxOu8gO5mTI"
-                  frameborder="0"
-                  allow="accelerometer; autoplay"
-                  // clipboard-write
-                  encrypted-media="true"
-                  // gyroscope
-                  picture-in-picture
-                  web-share
-                  allowFullScreen
+                <Image
+                  src="/poster1.png"
+                  fill
+                  alt="poster"
                   className="custom_img"
                 />
               </div>
             </div>
-         
 
+            <div className="w-[50%] ">
+              <iframe
+                src="https://www.youtube.com/embed/pxOu8gO5mTI"
+                frameborder="0"
+                allow="accelerometer; autoplay"
+                // clipboard-write
+                encrypted-media="true"
+                // gyroscope
+                picture-in-picture
+                web-share
+                allowFullScreen
+                className="custom_img"
+              />
+            </div>
+          </div>
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className=" w-full h-[30%] mt-[20px] bg-background bg-center bg-cover bg-no-repeat">
+        <div className=" w-full h-[448px] mt-[20px]  bg-background bg-center bg-cover bg-no-repeat">
           <Container>
-            <div className="text-center md:ml-0 ml-2 pl-7 text-4xl font-semibold">
+            <div className="text-center md:ml-0 ml-2 text-3xl  font-bold leading-1 font-nova">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className=" w-full flex justify-between ml-0  py-5">
-              <div className="gap-4">
+            <div className=" w-full  grid grid-cols-3 items-center mt-5 text-darkGray font-nova text-lg leading-7 mx-20 justify-between">
+              <div className=" flex-col justify-between  ">
                 <div className="w-[223px]  ">
-                  <Image src="./onlineRegistration.svg" fill className="custom_img" />
+                  <Image
+                    src="./onlineRegistration.svg"
+                    fill
+                    className="custom_img"
+                  />
                 </div>
-                <div className="text-center ">Sign Up for Free</div>
+                <div className="ml-14  ">Sign Up for Free</div>
               </div>
-              <div className=" gap-4 ">
-                <div className="w-[223px] ">
-                  <Image src="/getApplication.webp" fill className="custom_img"  />
+              <div className=" flex-col justify-between items-center">
+                <div className="w-[223px]  ">
+                  <Image
+                    src="/getApplication.webp"
+                    fill
+                    className="custom_img"
+                  />
                 </div>
-                <div className="text-center ">
-                  Get Application Approval <br/> within 24 hours
+                <div className=" ml-6 ">
+                  Get Application Approval <br />{" "}
+                  <span className="ml-10">within 24 hours</span>
                 </div>
 
-                <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
+                {/* <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
                   <span className=" ">Sign Up</span>
-                </div>
+                </div> */}
               </div>
 
-              <div className="gap-4">
+              <div className="flex-col  gap-24">
                 <div className=" w-[223px] ">
-                  <Image src="/RecevingPayments.webp" fill className="custom_img" />
+                  <Image
+                    src="/RecevingPayments.webp"
+                    fill
+                    className="custom_img"
+                  />
                 </div>
-                <div className="text-center mt-2">Start Receiving Payments</div>
+                <div className="ml-10">Start Receiving Payments</div>
               </div>
+            </div>
+
+            <div className="bg-[#ff0000] font-serif font-normal   text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] w-24 rounded p-1 text-center mt-5 ml-[48%]">
+              <span className=" ">Sign Up</span>
             </div>
           </Container>
         </div>
@@ -112,13 +129,13 @@ export default function Home() {
             <div>
               <div className="md:flex gap-5">
                 <div className="md:w-[50%] w-full">
-                  <span className="text-2xl text-[#4f504d] font-semibold">
+                  <span className="text-[22px] text-darkGray font-serif font-semibold">
                     Going Global?
                   </span>
-                  <p className=" text-2xl text-[#4f504d] font-semibold">
+                  <p className=" text-[22px] text-darkGray font-serif font-semibold">
                     We got your business covered
                   </p>
-                  <span className="w-10 text-[#4f504d] text-base">
+                  <span className="w-10 text-darkGray text-base font-light text-[16px]">
                     With MyridePay, geography will be history. To cater to
                     online businesses with global reach, our secure and seamless
                     global payment gateway can support customers by facilitating
@@ -128,7 +145,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className=" w-[50%] md:flex  flex-col  md:w-[50%] w-full mt-8 md:ml-0 sm:ml-44 ml-24">
+                <div className=" w-[50%] md:flex  flex-col  md:w-[50%]  mt-8 md:ml-0 sm:ml-44 ml-24 text-[18px] font-sans text-darkGray">
                   <div className="md:flex md:gap-5 gap-10 justify-between ">
                     <div className="md:flex gap-2">
                       <Image
@@ -181,13 +198,13 @@ export default function Home() {
         {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
         <div className="w-full h-auto mt-5">
           <Container>
-            <div className="w-full  md:flex flex-shrink-0  md:gap-7 gap-0 mt-5">
+            <div className="w-full  md:flex flex-shrink-0  md:gap-7 mt-5 text-[16px] font-sans ">
               <div className="md:w-[50%] w-full  ">
-                <span className="text-2xl text-center  md:text-left text-[#4f504d] font-semibold">
+                <span className="text-2xl text-center   md:text-left  font-medium ">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
 
-                <div className="text-[#4f504d] font-normal md:text-left text-center">
+                <div className="w-[456px] md:text-left text-center text-darkGray ">
                   In any business platform, secure payments are the biggest
                   concern. Car rental industry in UAE has vast prospects, and
                   with that comes a concern to keep an established payment
@@ -200,10 +217,15 @@ export default function Home() {
                   the payments.
                 </div>
               </div>
-               <div className="w-[50%] pl-[13%]">
-              <div className=" w-[288px] h-[310px]  ">
-                <Image src="/carCollction.webp" alt="car" fill className="custom_img" />
-              </div>
+              <div className="w-[50%] pl-[13%]">
+                <div className=" w-[288px] h-[310px]  ">
+                  <Image
+                    src="/carCollction.webp"
+                    alt="car"
+                    fill
+                    className="custom_img"
+                  />
+                </div>
               </div>
             </div>
           </Container>
@@ -211,18 +233,23 @@ export default function Home() {
         {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
         <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
-            <div className="  w-full md:flex md:flex-shrink-0  md:gap-7  mt-5">
-            <div className="w-[50%]">
-              <div className=" lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
-                <Image src="/chooseUs.webp" alt="tick" fill className="custom_img" />
+            <div className="  w-full md:flex md:flex-shrink-0  md:gap-7  mt-5  font-sans">
+              <div className="w-[50%]">
+                <div className=" lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
+                  <Image
+                    src="/chooseUs.webp"
+                    alt="tick"
+                    fill
+                    className="custom_img"
+                  />
+                </div>
               </div>
-</div>
               <div className=" w-[50%] md:text-left text-center md:p-0 p-4 ">
-                <span className="md:text-2xl text-lg text-[#4f504d] font-semibold">
+                <span className=" text-2xl font-semibold">
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>
 
-                <div>
+                <div className="text-[16px]  text-darkGray w-[537px]">
                   To provide car rental companies with the most secure payment
                   gateway, we have partnered with PayTabs. PayTabs is one of the
                   leading payment gateway providers for every industry. Our
@@ -259,7 +286,7 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
-                  <div className=" md:pb-5  bg-[#bf0000] text-white md:text-base text-sm font-bold text-center md:w-[50%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
+                  <div className=" md:pb-5 text-[16px] font-serif px-[5px] py-[15px]  bg-[#bf0000] text-white md:text-base text-sm font-bold text-center md:w-[56%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
                     Checkout Our Awesome Packages
                   </div>
                 </div>
@@ -269,9 +296,11 @@ export default function Home() {
         </div>
         {/*================================================== Services Slider ============================================ */}
 
-        <div className="mt-8 w-full ">
-          <p className="text-center text-4xl text-[] ">Services</p>
-          <div className="mt-8 md:ml-24 ml-5 ">
+        <div className="mt-8 w-full  ">
+          <p className="text-center text-4xl text-[2rem] font-normal ">
+            Services
+          </p>
+          <div className="mt-8  ">
             <Sliderr />
           </div>
         </div>
@@ -280,49 +309,46 @@ export default function Home() {
         <div className=" mt-8 ">
           <Container>
             <div className="w-full justify-between  ">
-              <span className="text-4xl ">FAQs</span>
+              <span className="text-4xl text-[#212529] text-[24px] indent-[22px] font-raleway px-6 ">
+                FAQs
+              </span>
               <div className="md:flex justify-between w-full mt-5">
                 <div className="md:w-[50%] w-full bg-gray-100">
                   <div className="bg-white ">
-                    <div className="flex gap-3">
-                      <div
-                        className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
-                        onClick={() => {
-                          setFaq1(true);
-                          setFaq2(false);
-                          setFaq3(false);
-                          setFaq4(false);
-                          setFaq5(false);
-                        }}
-                      >
-                        +
-                      </div>
-
-                      {/* <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
-                          onClick={() => setFaq1(false)}
-                        >
-                          -
-                        </div> */}
-
-                      <div className="w-[100%]">
-                        When Can You Integrate with MyridePay Payment Gateway?
-                      </div>
-                    </div>
-                    <hr />
-                    {Faq1 ? (
-                      <div className="flex justify-between mt-5">
+                    <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      {Faq1 ? (
                         <div
                           className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq1(false)}
                         >
                           -
                         </div>
-                        <div className="pl-4">
+                      ) : (
+                        <div
+                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          onClick={() => {
+                            setFaq1(true);
+                            setFaq2(false);
+                            setFaq3(false);
+                            setFaq4(false);
+                            setFaq5(false);
+                          }}
+                        >
+                          +
+                        </div>
+                      )}
+
+                      <div className="w-[100%]">
+                        When Can You Integrate with MyridePay Payment Gateway?
+                      </div>
+                    </div>
+
+                    {Faq1 ? (
+                      <div className="flex border-t-2 pt-3">
+                        <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                           MyridePay offers a test before you go live. You can
-                          register online and <br /> test our services. Once you
-                          are satisfied, you can integrate the gateway and go
-                          live.
+                          register online and test our services. Once you are
+                          satisfied, you can integrate the gateway and go live.
                         </div>
                       </div>
                     ) : (
@@ -330,42 +356,44 @@ export default function Home() {
                     )}
                   </div>
                   <div>
-                    <div className="bg-white">
-                      <div className="flex  gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
-                          onClick={() => {
-                            setFaq1(false),
-                              setFaq2(true),
-                              setFaq3(false),
-                              setFaq4(false),
-                              setFaq5(false);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="">What is a Payment Gateway?</div>
-                      </div>
-                      <hr />
-                      {Faq2 ? (
-                        <div className="flex justify-between mt-5">
+                    <div className="bg-white ">
+                      <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq2 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq2(false)}
                           >
                             -
                           </div>
-                          <div className="pl-4">
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq2(true),
+                                setFaq3(false),
+                                setFaq4(false),
+                                setFaq5(false);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="">What is a Payment Gateway?</div>
+                      </div>
+
+                      {Faq2 ? (
+                        <div className="flex border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             Whenever someone makes a payment through their
-                            credit card, <br /> the information is sent to the
-                            cardholder’s account to check if the <br />
-                            transaction is allowed or not. In an E-commerce
-                            setting, this process is done <br /> via Payment
-                            Gateway. Every company who wishes to accept <br />
-                            credit cards require a safe portal through which the
-                            transactions can <br />
-                            pass. MyridePay offers a secure portal for online
-                            payments for car rental companies.
+                            credit card, the information is sent to the
+                            cardholder’s account to check if the transaction is
+                            allowed or not. In an E-commerce setting, this
+                            process is done via Payment Gateway. Every company
+                            who wishes to accept credit cards require a safe
+                            portal through which the transactions can pass.
+                            MyridePay offers a secure portal for online payments
+                            for car rental companies.
                           </div>
                         </div>
                       ) : (
@@ -373,38 +401,39 @@ export default function Home() {
                       )}
                     </div>
                     <div className="bg-white">
-                      <div className="flex  gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
-                          onClick={() => {
-                            setFaq1(false),
-                              setFaq2(false),
-                              setFaq3(true),
-                              setFaq4(false),
-                              setFaq5(false);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="">
-                          How Long Does It Take To Integrate MyridePay Payment
-                          Gateway?
-                        </div>
-                      </div>
-
-                      <hr />
-                      {Faq3 ? (
-                        <div className="flex justify-between mt-5">
+                      <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq3 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq3(false)}
                           >
                             -
                           </div>
-                          <div className="pl-4">
+                        ) : (
+                          <div
+                            className="w-[10%]  bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq2(false),
+                                setFaq3(true),
+                                setFaq4(false),
+                                setFaq5(false);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="">
+                          How Long Does It Take To Integrate MyridePay Payment
+                          Gateway?
+                        </div>
+                      </div>
+
+                      {Faq3 ? (
+                        <div className="flex border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             The integration process of MyridePay Payment Gateway
-                            can <br />
-                            take anywhere between 24 to 48 hours.
+                            can take anywhere between 24 to 48 hours.
                           </div>
                         </div>
                       ) : (
@@ -414,40 +443,41 @@ export default function Home() {
                   </div>
 
                   <div className="bg-white">
-                    <div className="flex gap-3  mt-5">
-                      <div
-                        className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                        onClick={() => {
-                          setFaq1(false),
-                            setFaq2(false),
-                            setFaq2(false),
-                            setFaq3(false),
-                            setFaq4(true),
-                            setFaq5(false);
-                        }}
-                      >
-                        +
-                      </div>
-                      <div className="">
-                        What Do I Need to Start Accepting Credit Cards?
-                      </div>
-                    </div>
-
-                    <hr />
-                    {Faq4 ? (
-                      <div className="flex justify-between mt-5">
+                    <div className="flex gap-3  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      {Faq4 ? (
                         <div
                           className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq4(false)}
                         >
                           -
                         </div>
-                        <div className="pl-4">
+                      ) : (
+                        <div
+                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                          onClick={() => {
+                            setFaq1(false),
+                              setFaq2(false),
+                              setFaq2(false),
+                              setFaq3(false),
+                              setFaq4(true),
+                              setFaq5(false);
+                          }}
+                        >
+                          +
+                        </div>
+                      )}
+                      <div className="">
+                        What Do I Need to Start Accepting Credit Cards?
+                      </div>
+                    </div>
+
+                    {Faq4 ? (
+                      <div className="flex  border-t-2 pt-3">
+                        <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                           You need a working online website for renting cars.
-                          Once we <br />
-                          have verified your credentials, you will be provided
-                          with a <br /> login and password bank account with our
-                          affiliated bank.
+                          Once we have verified your credentials, you will be
+                          provided with a login and password bank account with
+                          our affiliated bank.
                         </div>
                       </div>
                     ) : (
@@ -457,38 +487,40 @@ export default function Home() {
 
                   <div className="">
                     <div className="bg-white">
-                      <div className="flex gap-2 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq1(false),
-                              setFaq1(false),
-                              setFaq2(false),
-                              setFaq3(false),
-                              setFaq4(false),
-                              setFaq5(true);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="text-center">
-                          What Kind of Credit/Debit Cards are Accepted?
-                        </div>
-                      </div>
-
-                      <hr />
-                      {Faq5 ? (
-                        <div className="flex justify-between mt-5 ">
+                      <div className="flex gap-2 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq5 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq5(false)}
                           >
                             -
                           </div>
-                          <div className="pl-4">
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq1(false),
+                                setFaq2(false),
+                                setFaq3(false),
+                                setFaq4(false),
+                                setFaq5(true);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="text-center">
+                          What Kind of Credit/Debit Cards are Accepted?
+                        </div>
+                      </div>
+
+                      {Faq5 ? (
+                        <div className="flex justify-between border-t-2 pt-3 ">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             You will be able to accept major credit/debit cards
-                            from MasterCard, <br /> Visa, American Express* at
-                            this moment. We will be adding more card processors
+                            from MasterCard, Visa, American Express* at this
+                            moment. We will be adding more card processors
                           </div>
                         </div>
                       ) : (
@@ -503,42 +535,42 @@ export default function Home() {
                 <div className="md:w-[50%] bg-gray-100 w-full md:mt-0 mt-5">
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq6(true),
-                              setFaq7(false),
-                              setFaq8(false),
-                              setFaq9(false),
-                              setFaq10(true);
-                          }}
-                        >
-                          +
-                        </div>
-
-                        <div className="">
-                          Do I Need Another Software for Credit Card Payments?
-                        </div>
-                      </div>
-
-                      <hr />
-                      {Faq6 ? (
-                        <div className="flex mt-5 ">
+                      <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq6 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq6(false)}
                           >
                             -
                           </div>
-                          <div className="ml-3">
-                            Our system works with all the operating <br />
-                            systems and mobile operating systems,
-                            <br /> so you don’t have to plug in any other
-                            software.
-                            <br /> Once you have created an account with us, we
-                            will provide you <br />
-                            with simple coding and you’re done.
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(true),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(true);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+
+                        <div className="">
+                          Do I Need Another Software for Credit Card Payments?
+                        </div>
+                      </div>
+
+                      {Faq6 ? (
+                        <div className="flex border-t-2 pt-3 ">
+                          <div className=" px-7 font-normal text-[16px] font-sans text-[#212529]">
+                            Our system works with all the operating systems and
+                            mobile operating systems, so you don’t have to plug
+                            in any other software.Once you have created an
+                            account with us, we will provide you with simple
+                            coding and you’re done.
                           </div>
                         </div>
                       ) : (
@@ -549,34 +581,36 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq6(false),
-                              setFaq7(true),
-                              setFaq8(false),
-                              setFaq9(false),
-                              setFaq10(false);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="">
-                          Can I Get Details of the Payments?
-                        </div>
-                      </div>
-
-                      <hr />
-                      {Faq7 ? (
-                        <div className="flex mt-5 ">
+                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq7 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq7(false)}
                           >
                             -
                           </div>
-                          <div className="ml-3">
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(true),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(false);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="">
+                          Can I Get Details of the Payments?
+                        </div>
+                      </div>
+
+                      {Faq7 ? (
+                        <div className="flex border-t-2 pt-3 ">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             Details of transactions are available 24/7 in your
                             account. You can check them anytime.
                           </div>
@@ -589,19 +623,28 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq6(false),
-                              setFaq7(false),
-                              setFaq8(true),
-                              setFaq9(false),
-                              setFaq10(false);
-                          }}
-                        >
-                          +
-                        </div>
+                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq8 ? (
+                          <div
+                            className="w-[15%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq8(false)}
+                          >
+                            -
+                          </div>
+                        ) : (
+                          <div
+                            className="w-[15%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(true),
+                                setFaq9(false),
+                                setFaq10(false);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
                         <div className="">
                           What Documents do I require to get a Payment
                           Gateway?an I have multiple activities in a single
@@ -609,37 +652,28 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <hr />
                       {Faq8 ? (
-                        <div className="flex  mt-5 ">
-                          <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
-                            onClick={() => setFaq8(false)}
-                          >
-                            -
-                          </div>
-                          <div className="ml-4">
+                        <div className="flex  border-t-2 pt-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center ">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             To activate your application, MyridePay requires
-                            clear scanned <br /> copy the following documents:
+                            clear scanned copy the following documents:
                             <li>
                               Personal IDs issued by the Government of Your Car
-                              Rental <br />
-                              Business owner and partner(s) if any.
+                              Rental Business owner and partner(s) if any.
                             </li>
                             <li>
                               Government Issued Business License/Commercial
-                              Registration <br />
-                              (CR).
+                              Registration (CR).
                             </li>
                             <li>
                               Company’s Bank Statement (3 months) on the Bank’s
-                              official letterhead, <br /> containing complete
-                              account information IBAN,
-                              <br /> account number, beneficiary name etc.
+                              official letterhead, containing complete account
+                              information IBAN, account number, beneficiary name
+                              etc.
                             </li>
                             <li>
                               Your logo will be required after signing up when
-                              you have started <br /> using the payment gateway.
+                              you have started using the payment gateway.
                             </li>
                             <li>
                               Proof of Address (eg: Rental lease, Electricity
@@ -648,13 +682,11 @@ export default function Home() {
                             <li>Rental Company’s Terms and Conditions.</li>
                             <li>MOA / if Applicable.</li>
                             Further documentation can be demanded to help
-                            demonstrate <br />
-                            the financial stability and continuity of the
-                            business. Note: Upload clear <br /> copies of the
+                            demonstrate the financial stability and continuity
+                            of the business. Note: Upload clear copies of the
                             requested documents. State required details as
-                            accurately <br /> as possible to avoid delays in the
-                            approval process. Contact us <br /> for further
-                            assistance.
+                            accurately as possible to avoid delays in the
+                            approval process. Contact us for further assistance.
                           </div>
                         </div>
                       ) : (
@@ -665,34 +697,36 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq6(false),
-                              setFaq7(false),
-                              setFaq8(false),
-                              setFaq9(true),
-                              setFaq10(false);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="">
-                          Why is My Payment Gateway Taking Long to be Live?
-                        </div>
-                      </div>
-
-                      <hr />
-                      {Faq9 ? (
-                        <div className="flex  mt-5 ">
+                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq9 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq9(false)}
                           >
                             -
                           </div>
-                          <div className="ml-3">
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(true),
+                                setFaq10(false);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="">
+                          Why is My Payment Gateway Taking Long to be Live?
+                        </div>
+                      </div>
+
+                      {Faq9 ? (
+                        <div className="flex   border-t-2 pt-3 ">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             Here are some reasons for delays in your Account.
                             <li>
                               There is an issue with the validity of the
@@ -716,37 +750,38 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5">
-                        <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
-                          onClick={() => {
-                            setFaq6(false),
-                              setFaq7(false),
-                              setFaq8(false),
-                              setFaq9(false),
-                              setFaq10(true);
-                          }}
-                        >
-                          +
-                        </div>
-                        <div className="">What is a Pay-Out Schedule?</div>
-                      </div>
-
-                      <hr />
-                      {Faq10 ? (
-                        <div className="flex  mt-5 ">
+                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq10 ? (
                           <div
                             className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq10(false)}
                           >
                             -
                           </div>
-                          <div className="ml-3">
+                        ) : (
+                          <div
+                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(true);
+                            }}
+                          >
+                            +
+                          </div>
+                        )}
+                        <div className="">What is a Pay-Out Schedule?</div>
+                      </div>
+
+                      {Faq10 ? (
+                        <div className="flex  border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
                             Car rentals will be paid within 10-20 days. However,
-                            MyridePay may hold <br /> the amount for a longer
-                            period, including but not limited to a <br />
-                            proprietary set of rules, chargeback rates,
-                            transaction behaviour, and <br />
+                            MyridePay may hold the amount for a longer period,
+                            including but not limited to a proprietary set of
+                            rules, chargeback rates, transaction behaviour, and
                             other supplemental data about your business.
                           </div>
                         </div>
@@ -766,23 +801,32 @@ export default function Home() {
             <div className="md:flex justify-between text-white ">
               <div className="md:w-[50%] w-full mt-5 mb-2">
                 <div>
-                  <span className="text-[25px] font-bold ">
+                  <span className="text-[25px] font-bold text-[#FFFFFF] ">
                     Ready to get started?
                   </span>
 
-                  <p className="mt-3">
-                    Apply for the MyRidePay Online Payment Gateway Program
-                    online by submitting your details. <br />
-                    Our Agent will contact you and guide you through the whole
-                    process. Our Agent will contact you and guide you through
-                    the whole process.
-                  </p>
+                  <span className="text-[16px] text-[#FFFFFF] font-sans font-light">
+                    <p className="w-[90%]">
+                      Apply for the MyRidePay Online Payment Gateway Program
+                      online by submitting your details.
+                    </p>
+                    <p>
+                      Our Agent will contact you and guide you through the whole
+                      process.
+                    </p>
+                    <p>
+                      Our Agent will contact you and guide you through the whole
+                      process.
+                    </p>
+                  </span>
                 </div>
 
                 <div className="mt-8">
-                  <span className="text-[25px] font-bold ">Onboarding</span>
+                  <span className="text-[25px] font-bold text-[#FFFFFF]">
+                    Onboarding
+                  </span>
 
-                  <p className="mt-3">
+                  <p className="mt-3 text-[16px] text-[#FFFFFF] font-sans font-light ">
                     We will assess your credentials and request for relevant
                     documentation, to assess the eligibility. Within 24 to 48
                     hours we will confirm your account, and you can take the
@@ -792,9 +836,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <span className="text-[25px] font-bold ">Integration</span>
+                  <span className="text-[25px] font-bold text-[#FFFFFF]">
+                    Integration
+                  </span>
 
-                  <p className="mt-3">
+                  <p className="mt-3 text-[16px] text-[#FFFFFF] font-sans font-light">
                     It is time to integrate our payment solutions on your car
                     rental website and start receiving your payments through a
                     secure, easier and faster method.
@@ -803,39 +849,39 @@ export default function Home() {
               </div>
 
               <div className=" md:w-[50%] w-full mt-5 ">
-                <p className="md:text-center">
+                <p className="md:text-center font-semibold font-raleway text-[25px]">
                   Create Your Online Payments Account Now
                 </p>
 
-                <div className="md:flex gap-4 md:ml-4 mt-5">
+                <div className="md:flex gap-4 md:ml-4 mt-5 text-[#7A8489]">
                   <input
                     type="text"
                     required
                     placeholder="Company Name*"
-                    className="focus:outline:none focus:border:none md:w-full w-[90%] p-2"
+                    className="focus:outline-0 focus:border:none md:w-full w-[90%] p-2"
                   />
 
                   <input
                     type="text"
                     required
                     placeholder="Contact Person*"
-                    className="focus:outline:none  md:w-full w-[90%] p-2 md:mt-0 mt-3"
+                    className="focus:outline-0  md:w-full w-[90%] p-2 md:mt-0 mt-3"
                   />
                 </div>
 
-                <div className="md:flex  justify-between gap-10 md:ml-4 md:mt-5 mt-3 w-full">
+                <div className="md:flex  justify-between gap-8 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
                   <input
                     type="text"
                     required
                     placeholder="Contact Number*"
-                    className="focus:outline:none md:w-full w-[90%]  p-2"
+                    className="focus:outline-0 w-full   p-2"
                   />
 
                   <select
                     name="Number of Cars*"
                     id="cars"
                     required
-                    className=" p-2 md:w-[560px] w-[90%] md:mt-0 mt-3  text-black"
+                    className=" p-2 md:w-full md:mt-0 mt-3 focus:outline-0  "
                   >
                     <option value="volvo">Number of Cars*</option>
                     <option value="saab">(1-10)</option>
@@ -845,20 +891,32 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="bg-[#4f504d] font-bold md:w-[40%] w-[80%] text-center p-3 rounded mt-8 md:ml-32 ml-10">
+                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center text-[16px] font-sans rounded mt-8 md:ml-44 ml-10 cursor-pointer">
                   REQUEST FOR A CALL BACK
                 </div>
 
                 <div className="flex gap-3 md:visible  invisible mt-5 ml-14">
-                  <div className="relative md:w-[150px] w-[100px] md:h-[160px] h-[100px]">
-                    <Image src="./onlineRegistration.svg" fill />
+                  <div className="w-[163px]">
+                    <Image
+                      src="./onlineRegistration.svg"
+                      fill
+                      className="custom_img"
+                    />
                   </div>
 
-                  <div className="relative md:w-[150px] w-[100px] md:h-[150px] h-[100px]">
-                    <Image src="/getApplication.webp" fill />
+                  <div className="w-[163px]">
+                    <Image
+                      src="/getApplication.webp"
+                      fill
+                      className="custom_img"
+                    />
                   </div>
-                  <div className="relative md:w-[150px] w-[100px] md:h-[150px] h-[100px]">
-                    <Image src="/RecevingPayments.webp" fill />
+                  <div className="w-[163px]">
+                    <Image
+                      src="/RecevingPayments.webp"
+                      fill
+                      className="custom_img"
+                    />
                   </div>
                 </div>
               </div>
@@ -867,43 +925,63 @@ export default function Home() {
         </div>
         {/*===================================================== Our Service Provider======================================= */}
         <div className="w-full mt-8  ">
-          <div className="text-center md:text-4xl text-2xl text-[#4f504d] ">
+          <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] ">
             Our Service Provider
           </div>
-          <div className="md:flex gap-5 mt-5">
-            <div className="bg-[#e9e9e9] p-3 md:w-[32%] sm:w-[60%] w-full">
-              <div className="text-center text-2xl">
+          <div className="md:flex justify-between  mt-5">
+            <div className="bg-[#e9e9e9]  p-6 md:w-[400px] h-[188px] sm:w-[60%] w-full">
+              <div className="text-center text-[24px] text-[#212529] font-raleway font-semibold">
                 Banking Service Provider
               </div>
 
-              <div className="flex w-full gap-8">
-                <div className="relative w-[200px] h-[100px]">
-                  <Image src="emirats.svg" alt="emirat" fill />
+              <div className="flex w-full mt-10 gap-5">
+                <div className="relative  w-[180px] h-[42px]">
+                  <Image
+                    src="emirats.svg"
+                    alt="emirat"
+                    fill
+                    className="custom_img"
+                  />
                 </div>
 
-                <div className="relative w-[200px] h-[100px]">
-                  <Image src="east.svg" alt="east" fill />
+                <div className="relative w-[180px] h-[42px]">
+                  <Image
+                    src="east.svg"
+                    alt="east"
+                    fill
+                    className="custom_img"
+                  />
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3  md:mt-0 mt-5">
-              <div className="text-center mt-3 text-2xl ">
+            <div className="bg-[#e9e9e9] md:w-[400px] h-[188px] sm:w-[60%] w-full p-6  md:mt-0 mt-5">
+              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold ">
                 Payment Gateway Provider
               </div>
 
-              <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
-                <Image src="/paytab.webp" alt="emirat" fill />
+              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-8 ml-24">
+                <Image
+                  src="/paytab.webp"
+                  alt="emirat"
+                  fill
+                  className="custom_img"
+                />
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[32%] sm:w-[60%] w-full p-3 md:mt-0 mt-5">
-              <div className="text-center mt-3 text-2xl">
+            <div className="bg-[#e9e9e9] md:w-[400px] sm:w-[188px] w-full p-6 md:mt-0 mt-5">
+              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold">
                 Technology Provider
               </div>
 
-              <div className="relative w-[200px] h-[50px] mt-5 lg:ml-24 md:ml-8 ml-24">
-                <Image src="/Techbay.webp" alt="emirat" fill />
+              <div className=" w-[200px] h-[45px] mt-10 lg:ml-24 md:ml-8 ml-24">
+                <Image
+                  src="/Techbay.webp"
+                  alt="emirat"
+                  fill
+                  className="custom_img"
+                />
               </div>
             </div>
           </div>
