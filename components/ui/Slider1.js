@@ -24,7 +24,7 @@ const Slider1 = () => {
   return (
     <div>
       <Container>
-        <div className="w-[1140px] h-[142px] gap-4 mr-7">
+        <div className="lg::w-[1140px] md:w-[905px] sm:w-[900px] w-[440px] h-[142px] gap-4 ml-5">
           <Slider {...settings}>
             <div className=" w-[120px] h-[90px] shadow-md ">
               <Image

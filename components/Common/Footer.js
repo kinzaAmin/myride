@@ -7,9 +7,9 @@ const Footer = () => {
     <>
       <div className="w-full h-[40%]  bg-darkGray text-[#e4e4e4] font-raleway  flex-col pt-3 justify-between md:p-0 p-7">
         <Container>
-          <div className="grid grid-cols-4 gap-12  ">
+          <div className="grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-2 ">
             <div className="flex-col justify-between md:w-[30%] w-full h-[10%]">
-              <div className=" footer_logo mt-5 w-[250px] ">
+              <div className=" footer_logo mt-5 lg:w-[250px] w-[180px] ">
                 <Image
                   src="./footerLogo.svg"
                   fill
@@ -18,15 +18,15 @@ const Footer = () => {
                 />
               </div>
 
-              <div className=" w-60 fex-col justify-between mt-3 md:text-sm text:xs font-raleway leading-7">
-                <div className="text-[#e4e4e4] text-[16px] font-light font-sans leading-7 w-[255px] h-[190px]">
+              <div className=" lg:w-60 md:w-40 w-full fex-col justify-between mt-3 md:text-sm text:xs font-raleway leading-7">
+                <div className="text-[#e4e4e4] text-[16px] font-light font-sans leading-7 lg:w-[255px] md:w-[180px] w-full ">
                   MyridePay is a one stop solution payment gateway for car
                   rental Industries in UAE. We provide secure, fast and easy
                   options to receive and manage your payments by your clients.
                   Owned by Myride Middle East DMCC.
                 </div>
-                <div className=" w-[57%]  flex gap-1 mt-5 ">
-                  <div className=" w-[70px] h-[30px] bg-white rounded-full   ">
+                <div className="   w-full  flex gap-1 lg:mt-5   ">
+                  <div className="lg:w-[33px] md:w-[50px]  w-[30px]  md:h-[30px] bg-white rounded-full   ">
                     <Image
                       src="./Twitter.svg"
                       fill
@@ -34,14 +34,29 @@ const Footer = () => {
                       className="cursor- custom_img "
                     />
                   </div>
-                  <div className=" relative  w-[70px] h-[30px]  cursor-pointer  bg-white rounded-full hover:bg-[#ff0000] ">
-                    <Image src="./Facebook.svg" fill alt="fb logo" />
+                  <div className=" lg:w-[33px] md:w-[50px] w-[30px]  md:h-[30px]  cursor-pointer  bg-white rounded-full hover:bg-[#ff0000] ">
+                    <Image
+                      src="./Facebook.svg"
+                      fill
+                      alt="fb logo"
+                      className="cursor- custom_img "
+                    />
                   </div>
-                  <div className=" relative   md:w-[70px] md:h-[30px] cursor-pointer  bg-white rounded-full">
-                    <Image src="./Insta.svg" fill alt="fb logo" />
+                  <div className=" lg:w-[33px]   md:w-[50px]  w-[30px] md:h-[30px] cursor-pointer  bg-white rounded-full">
+                    <Image
+                      src="./Insta.svg"
+                      fill
+                      alt="fb logo"
+                      className="cursor- custom_img "
+                    />
                   </div>
-                  <div className=" relative w-[70px] h-[30px] cursor-pointer  bg-white rounded-full ">
-                    <Image src="./Linkedin.svg" fill alt="fb logo" />
+                  <div className=" lg:w-[33px] md:w-[50px]  w-[30px] h-[30px] md:h-[30px]  cursor-pointer  bg-white rounded-full ">
+                    <Image
+                      src="./Linkedin.svg"
+                      fill
+                      alt="fb logo"
+                      className="cursor- custom_img "
+                    />
                   </div>
                 </div>
               </div>
@@ -62,59 +77,59 @@ const Footer = () => {
                     Getting started
                   </p>
                 </div>
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     Services
                   </p>
                 </div>
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     Get in touch
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     Packages
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">FAQs</p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     <Link href="/Terms">Terms & Conditions</Link>
                   </p>
                 </div>
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     <pnk href="/Refusal"> Refusal</pnk>
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     <Link href="/ReturnPopcy ">Return Policy</Link>
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     <Link href="/Depvery "> Depvery and Collection</Link>
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
                     <Link href="/PrivacyPopcy"> Privacy Policy </Link>
@@ -168,25 +183,55 @@ const Footer = () => {
                   <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>
                   <div className="w-[70%] h-[1px] bg-black"></div>
                 </div>
-                <div className="mt-3 md:pl-4 pl-0 text-[#e4e4e4]">
+                <div className="mt-3 md:pl-1 md:text-sm pl-0 text-[#e4e4e4]">
                   <div>
-                    <div>
-                      <div></div>
+                    <div className="flex lg:gap-2 gap-1 text:sm">
+                      <div className="w-5 ">
+                        <Image
+                          src="/email1.svg"
+                          alt=""
+                          fill
+                          className="custom_img "
+                        />
+                      </div>
                       <div>info@myridepay.com</div>
                     </div>
 
-                    <div>
-                      <div></div>
+                    <div className="flex gap-2 mt-3">
+                      <div className="w-5">
+                        <Image
+                          src="/telephone.svg"
+                          alt=""
+                          fill
+                          className="custom_img "
+                        />
+                      </div>
                       <div>+971 4 566 7048</div>
                     </div>
-                    <div>
-                      <div></div>
+                    <div className="flex gap-2 mt-3">
+                      <div className="w-5">
+                        <Image
+                          src="/phone-call.svg"
+                          alt=""
+                          fill
+                          className="custom_img "
+                        />
+                      </div>
                       <div>+971 56 204 3727</div>
                     </div>
 
-                    <div>
-                      <div></div>
-                      <div>Jumeirah Lake Towers, Dubai</div>
+                    <div className=" md:w-[150px] w-full flex gap-2 md:mt-0 mt-4">
+                      <div className="md:w-5 w-4">
+                        <Image
+                          src="/Map.svg"
+                          alt=""
+                          fill
+                          className="custom_img "
+                        />
+                      </div>
+                      <div className="md:mt-4 ">
+                        Jumeirah Lake Towers, Dubai
+                      </div>
                     </div>
                   </div>
 
@@ -210,7 +255,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 md:text-base sm:text-xsw xs:text-[5px]">
             © Copyright 2022 Myride Pay. All Rights Reserved.
           </div>
         </Container>

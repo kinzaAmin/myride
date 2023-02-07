@@ -32,9 +32,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="  w-full bg-pink-50">
+        <div className="  w-full h-auto bg-pink-50">
           <div className=" w-full md:flex   ">
-            <div className="w-[50%]">
+            <div className="md:w-[50%] w-full">
               <div className="w-full">
                 <Image
                   src="/poster1.png"
@@ -45,7 +45,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-[50%] ">
+            <div className="md:w-[50%] w-full ">
               <iframe
                 src="https://www.youtube.com/embed/pxOu8gO5mTI"
                 frameborder="0"
@@ -63,35 +63,35 @@ export default function Home() {
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className=" w-full h-[448px] mt-[20px]  bg-background bg-center bg-cover bg-no-repeat">
+        <div className=" w-full md:h-[448px] mt-[20px]  bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center md:ml-0 ml-2 text-3xl  font-bold leading-1 font-nova">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className=" w-full  grid grid-cols-3 items-center mt-5 text-darkGray font-nova text-lg leading-7 mx-20 justify-between">
+            <div className=" w-full  grid grid-cols-3 items-center mt-5 text-darkGray font-nova text-lg leading-7 md:mx-20 justify-between">
               <div className=" flex-col justify-between  ">
-                <div className="w-[223px]  ">
+                <div className="md:w-[223px] sm:w-[150px] w-[100px]  ">
                   <Image
                     src="./onlineRegistration.svg"
                     fill
                     className="custom_img"
                   />
                 </div>
-                <div className="ml-14  ">Sign Up for Free</div>
+                <div className="md:ml-14 ml-3  ">Sign Up for Free</div>
               </div>
               <div className=" flex-col justify-between items-center">
-                <div className="w-[223px]  ">
+                <div className="md:w-[223px] sm:w-[150px] w-[100px]  ">
                   <Image
                     src="/getApplication.webp"
                     fill
                     className="custom_img"
                   />
                 </div>
-                <div className=" ml-6 ">
-                  Get Application Approval <br />{" "}
-                  <span className="ml-10">within 24 hours</span>
+                <div className=" md:ml-6 ">
+                  Get Application Approval <br />
+                  <span className="md:ml-10">within 24 hours</span>
                 </div>
 
                 {/* <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
 
               <div className="flex-col  gap-24">
-                <div className=" w-[223px] ">
+                <div className=" md:w-[223px] sm:w-[150px] w-[100px] ">
                   <Image
                     src="/RecevingPayments.webp"
                     fill
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#ff0000] font-serif font-normal   text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] w-24 rounded p-1 text-center mt-5 ml-[48%]">
+            <div className="bg-[#ff0000] font-sans text-[22px] font-normal cursor-pointer  text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] w-24 rounded p-1 text-center mt-5 md:ml-[48%] ml-[34%]">
               <span className=" ">Sign Up</span>
             </div>
           </Container>
@@ -128,14 +128,14 @@ export default function Home() {
           <Container>
             <div>
               <div className="md:flex gap-5">
-                <div className="md:w-[50%] w-full">
+                <div className="md:w-[50%] w-full md:p-0 p-2 ">
                   <span className="text-[22px] text-darkGray font-serif font-semibold">
                     Going Global?
                   </span>
                   <p className=" text-[22px] text-darkGray font-serif font-semibold">
                     We got your business covered
                   </p>
-                  <span className="w-10 text-darkGray text-base font-light text-[16px]">
+                  <span className="w-10 text-darkGray text-base font-light text-[16px] text-center">
                     With MyridePay, geography will be history. To cater to
                     online businesses with global reach, our secure and seamless
                     global payment gateway can support customers by facilitating
@@ -145,7 +145,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className=" w-[50%] md:flex  flex-col  md:w-[50%]  mt-8 md:ml-0 sm:ml-44 ml-24 text-[18px] font-sans text-darkGray">
+                <div className=" w-full md:flex  flex-col  md:w-[50%]  mt-8 md:ml-0 sm:ml-44 ml-24 text-[18px] font-sans text-darkGray">
                   <div className="md:flex md:gap-5 gap-10 justify-between ">
                     <div className="md:flex gap-2">
                       <Image
@@ -155,7 +155,7 @@ export default function Home() {
                         height={10}
                         className="relative  md:ml-0 ml-20 "
                       />
-                      Easy Monthly Installments
+                      <span className="w-full  text-center">Easy Monthly Installments</span>
                     </div>
                     <div className="md:flex gap-2">
                       <Image
@@ -165,7 +165,7 @@ export default function Home() {
                         height={10}
                         className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
                       />
-                      <span className="md:ml-0 ml-4">Payment Tokenization</span>
+                      <span className="md:ml-0 ml-5">Payment Tokenization</span>
                     </div>
                   </div>
                   <div className="md:flex justify-between md:gap-5 gap-10 md:mt-14 ">
@@ -199,12 +199,12 @@ export default function Home() {
         <div className="w-full h-auto mt-5">
           <Container>
             <div className="w-full  md:flex flex-shrink-0  md:gap-7 mt-5 text-[16px] font-sans ">
-              <div className="md:w-[50%] w-full  ">
-                <span className="text-2xl text-center   md:text-left  font-medium ">
+              <div className="md:w-[50%] w-full md:p-0 p-2  ">
+                <span className="text-[25px] leading-3 font-sans text-darkGray    font-semibold ">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
 
-                <div className="w-[456px] md:text-left text-center text-darkGray ">
+                <div className="md:w-[456px] w-full  text-darkGray ">
                   In any business platform, secure payments are the biggest
                   concern. Car rental industry in UAE has vast prospects, and
                   with that comes a concern to keep an established payment
@@ -233,9 +233,9 @@ export default function Home() {
         {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
         <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
-            <div className="  w-full md:flex md:flex-shrink-0  md:gap-7  mt-5  font-sans">
+            <div className="  w-full md:flex md:flex-shrink-0  md:gap-20  lg:mt-5  font-sans">
               <div className="w-[50%]">
-                <div className=" lg:mt-0 md:mt-44 mt-3 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
+                <div className=" lg:mt-0 mt-3 md:pr-8 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
                   <Image
                     src="/chooseUs.webp"
                     alt="tick"
@@ -244,12 +244,12 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className=" w-[50%] md:text-left text-center md:p-0 p-4 ">
-                <span className=" text-2xl font-semibold">
+              <div className=" md:w-[50%] w-full md:text-left text-center md:p-0 p-4 ">
+                <span className=" text-[25px] text-left leading-3  font-sans font-semibold text-darkGray">
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>
 
-                <div className="text-[16px]  text-darkGray w-[537px]">
+                <div className="text-[16px] items-center  text-darkGray w-full">
                   To provide car rental companies with the most secure payment
                   gateway, we have partnered with PayTabs. PayTabs is one of the
                   leading payment gateway providers for every industry. Our
@@ -318,14 +318,14 @@ export default function Home() {
                     <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq1 ? (
                         <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq1(false)}
                         >
                           -
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                           onClick={() => {
                             setFaq1(true);
                             setFaq2(false);
@@ -360,14 +360,14 @@ export default function Home() {
                       <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq2 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq2(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(true),
@@ -404,14 +404,14 @@ export default function Home() {
                       <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq3 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq3(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%]  bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%]  bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(false),
@@ -446,14 +446,14 @@ export default function Home() {
                     <div className="flex gap-3  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq4 ? (
                         <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq4(false)}
                         >
                           -
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                           onClick={() => {
                             setFaq1(false),
                               setFaq2(false),
@@ -490,14 +490,14 @@ export default function Home() {
                       <div className="flex gap-2 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq5 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq5(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq1(false),
                                 setFaq1(false),
@@ -538,14 +538,14 @@ export default function Home() {
                       <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq6 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq6(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(true),
                                 setFaq7(false),
@@ -584,14 +584,14 @@ export default function Home() {
                       <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq7 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq7(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(true),
@@ -626,14 +626,14 @@ export default function Home() {
                       <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq8 ? (
                           <div
-                            className="w-[15%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[15%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq8(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[15%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[15%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -700,14 +700,14 @@ export default function Home() {
                       <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq9 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq9(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -753,14 +753,14 @@ export default function Home() {
                       <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq10 ? (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq10(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-red-600 p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -849,7 +849,7 @@ export default function Home() {
               </div>
 
               <div className=" md:w-[50%] w-full mt-5 ">
-                <p className="md:text-center font-semibold font-raleway text-[25px]">
+                <p className="md:text-center font-semibold font-raleway md:text-[25px] text-[16px]">
                   Create Your Online Payments Account Now
                 </p>
 
@@ -869,19 +869,19 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="md:flex  justify-between gap-8 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
+                <div className="md:flex  justify-between gap-4 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
                   <input
                     type="text"
                     required
                     placeholder="Contact Number*"
-                    className="focus:outline-0 w-full   p-2"
+                    className="focus:outline-0 md:w-full w-[90%]  p-2"
                   />
 
                   <select
                     name="Number of Cars*"
                     id="cars"
                     required
-                    className=" p-2 md:w-full md:mt-0 mt-3 focus:outline-0  "
+                    className=" p-2 md:w-full w-[90%] md:mt-0 mt-3 focus:outline-0  "
                   >
                     <option value="volvo">Number of Cars*</option>
                     <option value="saab">(1-10)</option>
@@ -891,8 +891,8 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center text-[16px] font-sans rounded mt-8 md:ml-44 ml-10 cursor-pointer">
-                  REQUEST FOR A CALL BACK
+                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center text-[16px] font-sans rounded mt-8 md:ml-44 sm:ml-10 ml-4 cursor-pointer">
+                  REQUEST A CALL BACK
                 </div>
 
                 <div className="flex gap-3 md:visible  invisible mt-5 ml-14">
@@ -928,14 +928,14 @@ export default function Home() {
           <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] ">
             Our Service Provider
           </div>
-          <div className="md:flex justify-between  mt-5">
-            <div className="bg-[#e9e9e9]  p-6 md:w-[400px] h-[188px] sm:w-[60%] w-full">
-              <div className="text-center text-[24px] text-[#212529] font-raleway font-semibold">
+          <div className="md:flex lg:gap-2 md:gap-2  mt-5">
+            <div className="bg-[#e9e9e9]  p-6 md:w-[448px] h-[188px]  w-full">
+              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold">
                 Banking Service Provider
               </div>
 
-              <div className="flex w-full mt-10 gap-5">
-                <div className="relative  w-[180px] h-[42px]">
+              <div className="md:flex lg:w-full md:w-[220px] w-[160px] md:mt-10 mt-4 md:gap-5 gap-2">
+                <div className="relative md:w-[204px] w-[410px] h-[42px] md:ml-8 sm:ml-[100px] xs:ml-[60px] ml-0 ">
                   <Image
                     src="emirats.svg"
                     alt="emirat"
@@ -944,7 +944,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="relative w-[180px] h-[42px]">
+                <div className="relative md:mt-0 mt-7  md:w-[204px] w-[410px] h-[42px] md:ml-8 sm:ml-[90px] xs:ml-[60px] ml-0">
                   <Image
                     src="east.svg"
                     alt="east"
@@ -955,12 +955,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[400px] h-[188px] sm:w-[60%] w-full p-6  md:mt-0 mt-5">
+            <div className="bg-[#e9e9e9] md:w-[448px] h-[188px]  w-full p-6  md:mt-0 mt-5">
               <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold ">
                 Payment Gateway Provider
               </div>
 
-              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-8 ml-24">
+              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-5 sm:ml-[250px] xs:ml-[50px] ml-[40px]">
                 <Image
                   src="/paytab.webp"
                   alt="emirat"
@@ -970,15 +970,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[400px] sm:w-[188px] w-full p-6 md:mt-0 mt-5">
+            <div className="bg-[#e9e9e9] md:w-[448px]  w-full p-6 md:mt-0 mt-5">
               <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold">
                 Technology Provider
               </div>
 
-              <div className=" w-[200px] h-[45px] mt-10 lg:ml-24 md:ml-8 ml-24">
+              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-5 sm:ml-[250px] xs:ml-[60px] ml-[40px]">
                 <Image
                   src="/Techbay.webp"
-                  alt="emirat"
+                  alt="techbay"
                   fill
                   className="custom_img"
                 />

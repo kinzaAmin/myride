@@ -8,9 +8,9 @@ const Header = () => {
       <div>
         <div className="w-full bg-[#4F504D] px-[15px] justify-end font-raleway ">
           <Container>
-            <div className=" w-full flex justify-end text-[14px] text-[#FFFFFF] font-raleway  gap-10 py-[5px]">
-              <div className="flex justify-between w-[130px]">
-                <div className="w-[20px]">
+            <div className=" w-full flex md:justify-end gap-5 text-[14px] text-[#FFFFFF] font-raleway  md:gap-10 md:py-[5px]">
+              <div className="flex md:justify-between md:gap-0  gap-2 md:w-[130px] w-full md:ml-0 ml-20">
+                <div className="md:w-[20px] w-[10px]">
                   <Image
                     src="/Call.svg"
                     fill
@@ -18,10 +18,12 @@ const Header = () => {
                     className="custom_img"
                   />
                 </div>
-                <span>800-MYRIDE</span>
+                <span className=" mt-2 md:text-normal test:xs">
+                  800-MYRIDE
+                </span>
               </div>
 
-              <div className="flex justify-between w-[180px]">
+              <div className="flex justify-between  md:w-[180px] w-0 md:visible invisible">
                 <div className="w-[20px]">
                   <Image
                     src="/Email.svg"
@@ -30,11 +32,11 @@ const Header = () => {
                     className="custom_img"
                   />
                 </div>
-                <span>info@myridepay.com</span>
+                <span className="mt-2">info@myridepay.com</span>
               </div>
 
-              <div className="flex justify-between w-[80px]">
-                <div className="w-[20px]">
+              <div className="flex md:justify-between gap-2 md:w-[80px] w-[400px] md:mr-0 mr-20 ">
+                <div className="md:w-[20px] w-[20px]">
                   <Image
                     src="/Login.svg"
                     fill
@@ -42,7 +44,7 @@ const Header = () => {
                     className="custom_img"
                   />
                 </div>
-                <span>Login</span>
+                <span className=" mt-2">Login</span>
               </div>
             </div>
           </Container>
@@ -50,14 +52,15 @@ const Header = () => {
 
         <div className="">
           <Container>
-            <div className="flex justify-between py-6 w-[100%] text-[#707070]   ">
+            <div className=" w-full  flex md:justify-between md:gap-0 gap-10 py-6  text-[#707070]   ">
               <div className=" flex ">
-                <div className="w-[250px]">
+                <div className="md:w-[250px] w-[190px]">
                   <Image src="logo.svg" fill className="custom_img" />
                 </div>
               </div>
+              <div className="w-12 h-5 bg-black  md:invisible visible ">button</div>
 
-              <ul className="flex gap-14  items-center justify-end ">
+              <ul className="flex lg:gap-14 md:gap-6 items-center justify-end md:visible invisible ">
                 <li className="hover:border-b-[1px] border-[#FF0000]">
                   Getting Started
                 </li>
@@ -68,7 +71,7 @@ const Header = () => {
                   Get In Touch
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000]">FAQs</li>
-                <li className="flex hover:border-b-[1px] border-[#FF0000]">
+                <li className="flex hover:border-b-[1px] gap-1 border-[#FF0000]">
                   <div className="w-[30px] h-[20px]">
                     <Image
                       src="/flag.png"
@@ -77,9 +80,7 @@ const Header = () => {
                       className="custom_img"
                     />
                   </div>
-                  <span>
-                    عربى
-                  </span>
+                  <span>عربى</span>
                 </li>
               </ul>
             </div>

@@ -25,7 +25,7 @@ const Sliderr = ()=> {
         <Container>
           <Slider {...settings}>
             <div className=" text-[25px] font-sans ">
-              <div className="w-[373px] h-[290px] ">
+              <div className="w-[373px] h-[290px] cursor-pointer  ">
                 <Image
                   src="/OnlinePayment.webp"
                   fill
@@ -34,10 +34,12 @@ const Sliderr = ()=> {
                 />
               </div>
 
-              <p className="text-center">Online Payment Solutions</p>
+              <p className="text-center cursor-pointer ">
+                Online Payment Solutions
+              </p>
             </div>
             <div className="   text-[25px] font-sans">
-              <div className=" w-[373px] h-[290px] ">
+              <div className=" w-[373px] h-[290px] cursor-pointer ">
                 <Image
                   src="/PaymentLinks.webp"
                   fill
@@ -46,10 +48,10 @@ const Sliderr = ()=> {
                 />
               </div>
 
-              <p className="text-center">Payment Links</p>
+              <p className="text-center cursor-pointer ">Payment Links</p>
             </div>
-            <div className=" text-[25px] font-sans">
-              <div className=" w-[373px] h-[290px] ">
+            <div className=" text-[25px] font-sans  ">
+              <div className=" w-[373px] h-[290px] cursor-pointer ">
                 <Image
                   src="/PaymentTokenization.webp"
                   fill
@@ -57,10 +59,10 @@ const Sliderr = ()=> {
                   className="custom_img"
                 />
               </div>
-              <p className="text-center">Payment Tokenization</p>
+              <p className="text-center cursor-pointer">Payment Tokenization</p>
             </div>
             <div className="text-[25px] font-sans">
-              <div className="w-[373px] h-[290px] ">
+              <div className="w-[373px] h-[290px] cursor-pointer ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
@@ -68,10 +70,10 @@ const Sliderr = ()=> {
                   className="custom_img"
                 />
               </div>
-              <p className="text-center">Recurring Payments</p>
+              <p className="text-center cursor-pointer">Recurring Payments</p>
             </div>
             <div className="text-[25px] font-sans">
-              <div className="w-[373px] h-[290px] ">
+              <div className="w-[373px] h-[290px] cursor-pointer ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
@@ -79,10 +81,10 @@ const Sliderr = ()=> {
                   className="custom_img"
                 />
               </div>
-              <p className="text-center">Recurring Payments </p>
+              <p className="text-center cursor-pointer">Recurring Payments </p>
             </div>
             <div className=" text-[25px] font-sans  ">
-              <div className="w-[373px] h-[290px] ">
+              <div className="w-[373px] h-[290px] cursor-pointer">
                 <Image
                   src="/OnlinePayment.webp"
                   fill
@@ -90,7 +92,9 @@ const Sliderr = ()=> {
                   className="custom_img"
                 />
               </div>
-              <p className="text-center">Online Payment Solutions</p>
+              <p className="text-center cursor-pointer">
+                Online Payment Solutions
+              </p>
             </div>
           </Slider>
         </Container>
