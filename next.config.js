@@ -3,16 +3,16 @@
 const nextConfig = {
   reactStrictMode: true,
   // i18n,
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: "https",
-  //       hostname: "i0.wp.com",
-  //       // port: "",
-  //       // pathname: "/account123/**",
-  //     },
-  //   ],
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i0.wp.com",
+        // port: "",
+        // pathname: "/account123/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

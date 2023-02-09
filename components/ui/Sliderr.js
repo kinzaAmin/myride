@@ -12,20 +12,32 @@ const Sliderr = ()=> {
 
  //const [loading, setLoading] = useState(true);
     const settings = {
+      //className: "slick-prev:before",
       dots: true,
       arrows: true,
+
       infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
+   
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
      //setTimeout(() => setLoading(false), 3000);
     return (
-      <div className="">
+      <div className="md:text-2xl sm:text:lg text-xs  font-sans">
         <Container>
           <Slider {...settings}>
-            <div className=" text-[25px] font-sans ">
-              <div className="w-[373px] h-[290px] cursor-pointer  ">
+            <div className="  ">
+              <div className=" cursor-pointer  ">
                 <Image
                   src="/OnlinePayment.webp"
                   fill
@@ -34,12 +46,12 @@ const Sliderr = ()=> {
                 />
               </div>
 
-              <p className="text-center cursor-pointer ">
+              <p className="text-center cursor-pointer">
                 Online Payment Solutions
               </p>
             </div>
-            <div className="   text-[25px] font-sans">
-              <div className=" w-[373px] h-[290px] cursor-pointer ">
+            <div className="  ">
+              <div className=" cursor-pointer ">
                 <Image
                   src="/PaymentLinks.webp"
                   fill
@@ -50,8 +62,8 @@ const Sliderr = ()=> {
 
               <p className="text-center cursor-pointer ">Payment Links</p>
             </div>
-            <div className=" text-[25px] font-sans  ">
-              <div className=" w-[373px] h-[290px] cursor-pointer ">
+            <div className=" ">
+              <div className=" cursor-pointer ">
                 <Image
                   src="/PaymentTokenization.webp"
                   fill
@@ -59,10 +71,12 @@ const Sliderr = ()=> {
                   className="custom_img"
                 />
               </div>
-              <p className="text-center cursor-pointer">Payment Tokenization</p>
+              <p className="text-center  cursor-pointer">
+                Payment Tokenization
+              </p>
             </div>
-            <div className="text-[25px] font-sans">
-              <div className="w-[373px] h-[290px] cursor-pointer ">
+            <div className=" ">
+              <div className=" cursor-pointer ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
@@ -72,8 +86,8 @@ const Sliderr = ()=> {
               </div>
               <p className="text-center cursor-pointer">Recurring Payments</p>
             </div>
-            <div className="text-[25px] font-sans">
-              <div className="w-[373px] h-[290px] cursor-pointer ">
+            <div className=" ">
+              <div className=" cursor-pointer ">
                 <Image
                   src="/RecurringPayments.webp"
                   fill
@@ -83,8 +97,8 @@ const Sliderr = ()=> {
               </div>
               <p className="text-center cursor-pointer">Recurring Payments </p>
             </div>
-            <div className=" text-[25px] font-sans  ">
-              <div className="w-[373px] h-[290px] cursor-pointer">
+            <div className="   ">
+              <div className=" cursor-pointer">
                 <Image
                   src="/OnlinePayment.webp"
                   fill

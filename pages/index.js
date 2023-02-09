@@ -32,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="  w-full h-auto bg-pink-50">
+        <div className="  w-full h-auto bg-pink-50 sm:px-0 px-1  ">
           <div className=" w-full md:flex   ">
             <div className="md:w-[50%] w-full">
               <div className="w-full">
@@ -48,12 +48,12 @@ export default function Home() {
             <div className="md:w-[50%] w-full ">
               <iframe
                 src="https://www.youtube.com/embed/pxOu8gO5mTI"
-                frameborder="0"
-                allow="accelerometer; autoplay"
+                frameborder
+                autoplay
                 // clipboard-write
                 encrypted-media="true"
                 // gyroscope
-                picture-in-picture
+                //picture-in-picture
                 web-share
                 allowFullScreen
                 className="custom_img"
@@ -63,35 +63,37 @@ export default function Home() {
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className=" w-full md:h-[448px] mt-[20px]  bg-background bg-center bg-cover bg-no-repeat">
+        <div className="  mt-[20px] mx-3 p-5    bg-background bg-center bg-cover bg-no-repeat">
           <Container>
-            <div className="text-center md:ml-0 ml-2 text-3xl  font-bold leading-1 font-nova">
+            <div className="text-center md:ml-0 ml-2 sm:p-0 md:p-6 md:text-3xl text-lg  font-bold leading-1 font-nova">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className=" w-full  grid grid-cols-3 items-center mt-5 text-darkGray font-nova text-lg leading-7 md:mx-20 justify-between">
+            <div className="   grid grid-cols-3 lg:gap-44 md:gap-3 sm:gap-6 gap-12 items-center  mx-7  mt-5 text-darkGray font-nova lg:text-2xl md:text-lg sm:text-sm text-[10px] md:leading-7 justify-between">
               <div className=" flex-col justify-between  ">
-                <div className="md:w-[223px] sm:w-[150px] w-[100px]  ">
+                <div className="  ">
                   <Image
                     src="./onlineRegistration.svg"
+                    alt="onlineRegistration"
                     fill
                     className="custom_img"
                   />
                 </div>
-                <div className="md:ml-14 ml-3  ">Sign Up for Free</div>
+                <div className=" text-center">Sign Up for Free</div>
               </div>
-              <div className=" flex-col justify-between items-center">
-                <div className="md:w-[223px] sm:w-[150px] w-[100px]  ">
+              <div className=" flex-col justify-between items-center ">
+                <div className=" ">
                   <Image
                     src="/getApplication.webp"
+                    alt="getApplication"
                     fill
                     className="custom_img"
                   />
                 </div>
-                <div className=" md:ml-6 ">
-                  Get Application Approval <br />
-                  <span className="md:ml-10">within 24 hours</span>
+                <div className=" text-center  ">
+                  Get Application Approval
+                  <span className="ml-1 ">within 24 hours</span>
                 </div>
 
                 {/* <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
@@ -100,42 +102,43 @@ export default function Home() {
               </div>
 
               <div className="flex-col  gap-24">
-                <div className=" md:w-[223px] sm:w-[150px] w-[100px] ">
+                <div className="  ">
                   <Image
                     src="/RecevingPayments.webp"
+                    alt="RecevingPayments"
                     fill
                     className="custom_img"
                   />
                 </div>
-                <div className="ml-10">Start Receiving Payments</div>
+                <div className="text-center">Start Receiving Payments</div>
               </div>
             </div>
 
-            <div className="bg-[#ff0000] font-sans text-[22px] font-normal cursor-pointer  text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] w-24 rounded p-1 text-center mt-5 md:ml-[48%] ml-[34%]">
-              <span className=" ">Sign Up</span>
+            <div className="bg-[#ff0000] font-sans md:text-[22px] text-[12px] font-normal cursor-pointer  text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
+              <span className="p-1 ">Sign Up</span>
             </div>
           </Container>
         </div>
 
         {/*============================================================== SLIDER ===================================== */}
 
-        <div className="mt-5 ">
+        <div className="   mt-5 sm:mx-3 mx-6 ">
           <Slider1 />
         </div>
 
         {/*=============================================== content ===================================================*/}
-        <div className="mt-8">
+        <div className="md:mt-8 ">
           <Container>
             <div>
-              <div className="md:flex gap-5">
-                <div className="md:w-[50%] w-full md:p-0 p-2 ">
-                  <span className="text-[22px] text-darkGray font-serif font-semibold">
+              <div className="md:flex gap-5  ">
+                <div className="md:w-[50%] w-full md:p-4 sm:p-2 sm:pr-0 pl-8 pr-8">
+                  <span className="md:text-[22px] text-[16px] text-darkGray font-serif font-semibold">
                     Going Global?
                   </span>
-                  <p className=" text-[22px] text-darkGray font-serif font-semibold">
+                  <p className=" md:text-[22px] text-[16px] text-darkGray font-serif font-semibold">
                     We got your business covered
                   </p>
-                  <span className="w-10 text-darkGray text-base font-light text-[16px] text-center">
+                  <span className="w-10 text-darkGray text-base font-light  text-[16px] text-center">
                     With MyridePay, geography will be history. To cater to
                     online businesses with global reach, our secure and seamless
                     global payment gateway can support customers by facilitating
@@ -145,49 +148,49 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className=" w-full md:flex  flex-col  md:w-[50%]  mt-8 md:ml-0 sm:ml-44 ml-24 text-[18px] font-sans text-darkGray">
-                  <div className="md:flex md:gap-5 gap-10 justify-between ">
-                    <div className="md:flex gap-2">
+                <div className=" w-full md:flex md:p-3  flex-col  md:w-[50%] sm:px-30 px-12 mt-8    text-[13px] font-sans text-darkGray">
+                  <div className=" grid md:grid-cols-2 grid-cols-1 lg:gap-24 md:gap-14 gap-2 justify-between    ">
+                    <div className="md:flex  flex gap-4 ">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative  md:ml-0 ml-20 "
+                        className="relative  "
                       />
-                      <span className="w-full  text-center">Easy Monthly Installments</span>
+                      <span className="w-full ">Easy Monthly Installments</span>
                     </div>
-                    <div className="md:flex gap-2">
+                    <div className="md:flex  flex gap-4 md:mt-0 mt-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
+                        className="relative   md:mt-0 mt-2"
                       />
-                      <span className="md:ml-0 ml-5">Payment Tokenization</span>
+                      <span className="mt-2">Payment Tokenization</span>
                     </div>
                   </div>
-                  <div className="md:flex justify-between md:gap-5 gap-10 md:mt-14 ">
-                    <div className="md:flex gap-2">
+                  <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-2 justify-between ">
+                    <div className="md:flex  flex gap-4 mt-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
+                        className="relative  md:mt-0 mt-4"
                       />
-                      <span className="md:ml-0 ml-11">Subscriptions</span>
+                      <span className=" md:mt-0  mt-4">Subscriptions</span>
                     </div>
-                    <div className="md:flex gap-2">
+                    <div className="md:flex  flex gap-4 mt-2">
                       <Image
                         src="./Tick.svg"
                         alt="tick"
                         width={20}
                         height={10}
-                        className="relative  md:ml-0 ml-20 md:mt-0 mt-4"
+                        className="relative  md:mt-0 "
                       />
-                      <span className="md:ml-0 ml-7">Recurring Payments</span>
+                      <span className="">Recurring Payments</span>
                     </div>
                   </div>
                 </div>
@@ -196,11 +199,11 @@ export default function Home() {
           </Container>
         </div>
         {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
-        <div className="w-full h-auto mt-5">
+        <div className="   w-full h-auto mt-5">
           <Container>
-            <div className="w-full  md:flex flex-shrink-0  md:gap-7 mt-5 text-[16px] font-sans ">
-              <div className="md:w-[50%] w-full md:p-0 p-2  ">
-                <span className="text-[25px] leading-3 font-sans text-darkGray    font-semibold ">
+            <div className="w-full  md:flex flex-shrink-0 md:p-4 md:gap-7 mt-5 text-[16px] font-sans ">
+              <div className="md:w-[50%] w-full md:p-0 sm:p-2 p-8 ">
+                <span className="md:text-[25px] text-[16px] leading-3 font-sans text-darkGray    font-semibold ">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
 
@@ -217,8 +220,8 @@ export default function Home() {
                   the payments.
                 </div>
               </div>
-              <div className="w-[50%] pl-[13%]">
-                <div className=" w-[288px] h-[310px]  ">
+              <div className="w-[50%] mx-auto md:pl-[13%]">
+                <div className="  w-[200px] xs:w-[288px] md:w-[240px] h-[200px] xs:h-[310px] md:h-[280px]  ">
                   <Image
                     src="/carCollction.webp"
                     alt="car"
@@ -234,18 +237,18 @@ export default function Home() {
         <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
             <div className="  w-full md:flex md:flex-shrink-0  md:gap-20  lg:mt-5  font-sans">
-              <div className="w-[50%]">
-                <div className=" lg:mt-0 mt-3 md:pr-8 md:ml-0 ml-4 flex-shrink-0  md:w-[511px] w-[350px] md:h-[507px] h-[380px]">
+              <div className="w-[50%] mx-auto md:pr-0 pr-5 ">
+                <div className=" lg:mt-0 mt-3 md:pr-8  flex-shrink-0  md:w-[511px] sm:w-[350px] w-[240px] md:h-[507px] xs:h-[380px] h-[230px]">
                   <Image
                     src="/chooseUs.webp"
-                    alt="tick"
+                    alt="choose us"
                     fill
                     className="custom_img"
                   />
                 </div>
               </div>
-              <div className=" md:w-[50%] w-full md:text-left text-center md:p-0 p-4 ">
-                <span className=" text-[25px] text-left leading-3  font-sans font-semibold text-darkGray">
+              <div className=" md:w-[50%] w-full text-left  md:p-4 sm:p-4 p-8">
+                <span className=" md:text-[25px] text-[16px] text-left leading-3  font-sans font-semibold text-darkGray">
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>
 
@@ -286,7 +289,7 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
-                  <div className=" md:pb-5 text-[16px] font-serif px-[5px] py-[15px]  bg-[#bf0000] text-white md:text-base text-sm font-bold text-center md:w-[56%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
+                  <div className="  text-[13px] font-serif px-[3px] py-[15px]  bg-[#bf0000] text-white text-xs  font-bold text-center lg:w-[60%] md:w-[80%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
                     Checkout Our Awesome Packages
                   </div>
                 </div>
@@ -296,11 +299,11 @@ export default function Home() {
         </div>
         {/*================================================== Services Slider ============================================ */}
 
-        <div className="mt-8 w-full  ">
+        <div className="  ">
           <p className="text-center text-4xl text-[2rem] font-normal ">
             Services
           </p>
-          <div className="mt-8  ">
+          <div className=" mx-5 ">
             <Sliderr />
           </div>
         </div>
@@ -308,13 +311,13 @@ export default function Home() {
         {/*================================================== FAQs =================================================== */}
         <div className=" mt-8 ">
           <Container>
-            <div className="w-full justify-between  ">
+            <div className="w-full justify-between md:p-4 sm:p-0 p-8   ">
               <span className="text-4xl text-[#212529] text-[24px] indent-[22px] font-raleway px-6 ">
                 FAQs
               </span>
               <div className="md:flex justify-between w-full mt-5">
                 <div className="md:w-[50%] w-full bg-gray-100">
-                  <div className="bg-white ">
+                  <div className="bg-white w-full">
                     <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq1 ? (
                         <div
@@ -510,7 +513,7 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="text-center">
+                        <div className="">
                           What Kind of Credit/Debit Cards are Accepted?
                         </div>
                       </div>
@@ -796,12 +799,12 @@ export default function Home() {
           </Container>
         </div>
         {/*======================================================== Create Your Online Payments Account Now======================================== */}
-        <div className="from-[#25252517] bg-background1 bg-center bg-cover bg-no-repeat mt-8 pl-4">
+        <div className="from-[#25252517]   bg-background1 bg-center bg-cover bg-no-repeat mt-8 ">
           <Container className="">
-            <div className="md:flex justify-between text-white ">
+            <div className="md:flex justify-between text-white  xs:p-11 p-7">
               <div className="md:w-[50%] w-full mt-5 mb-2">
                 <div>
-                  <span className="text-[25px] font-bold text-[#FFFFFF] ">
+                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF] ">
                     Ready to get started?
                   </span>
 
@@ -822,7 +825,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <span className="text-[25px] font-bold text-[#FFFFFF]">
+                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF]">
                     Onboarding
                   </span>
 
@@ -836,7 +839,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <span className="text-[25px] font-bold text-[#FFFFFF]">
+                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF]">
                     Integration
                   </span>
 
@@ -849,39 +852,39 @@ export default function Home() {
               </div>
 
               <div className=" md:w-[50%] w-full mt-5 ">
-                <p className="md:text-center font-semibold font-raleway md:text-[25px] text-[16px]">
+                <p className="md:text-center font-semibold font-raleway  text-[20px]">
                   Create Your Online Payments Account Now
                 </p>
 
-                <div className="md:flex gap-4 md:ml-4 mt-5 text-[#7A8489]">
+                <div className="  grid  md:grid-cols-2 grid-cols-1 justify-between gap-4 md:ml-4 mt-5 text-[#7A8489]">
                   <input
                     type="text"
                     required
                     placeholder="Company Name*"
-                    className="focus:outline-0 focus:border:none md:w-full w-[90%] p-2"
+                    className="focus:outline-0 focus:border:none w-full  p-2"
                   />
 
                   <input
                     type="text"
                     required
                     placeholder="Contact Person*"
-                    className="focus:outline-0  md:w-full w-[90%] p-2 md:mt-0 mt-3"
+                    className="focus:outline-0  w-full p-2 md:mt-0 mt-3"
                   />
                 </div>
 
-                <div className="md:flex  justify-between gap-4 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
+                <div className="  grid  md:grid-cols-2 grid-cols-1 justify-between  gap-1 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
                   <input
                     type="text"
                     required
                     placeholder="Contact Number*"
-                    className="focus:outline-0 md:w-full w-[90%]  p-2"
+                    className="focus:outline-0 md:w-[96%] md:mt-0 mt-3  p-2"
                   />
 
                   <select
                     name="Number of Cars*"
                     id="cars"
                     required
-                    className=" p-2 md:w-full w-[90%] md:mt-0 mt-3 focus:outline-0  "
+                    className=" p-2 md:w-[95%] w-full md:mt-0 mt-4 focus:outline-0  "
                   >
                     <option value="volvo">Number of Cars*</option>
                     <option value="saab">(1-10)</option>
@@ -891,7 +894,7 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center text-[16px] font-sans rounded mt-8 md:ml-44 sm:ml-10 ml-4 cursor-pointer">
+                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center sm:text-[16px] text-[12px] font-sans rounded mt-8 md:ml-32 sm:ml-10 ml-4 cursor-pointer">
                   REQUEST A CALL BACK
                 </div>
 
@@ -924,18 +927,18 @@ export default function Home() {
           </Container>
         </div>
         {/*===================================================== Our Service Provider======================================= */}
-        <div className="w-full mt-8  ">
-          <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] ">
+        <div className="w-full mt-8    ">
+          <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] p-4 ">
             Our Service Provider
           </div>
-          <div className="md:flex lg:gap-2 md:gap-2  mt-5">
-            <div className="bg-[#e9e9e9]  p-6 md:w-[448px] h-[188px]  w-full">
-              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold">
+          {/* <div className="md:flex lg:gap-2 md:gap-2  mt-5">
+            <div className="bg-[#e9e9e9]   md:w-[448px] h-[188px]  w-full  p-3">
+              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text:sm text-[#212529] font-raleway font-semibold">
                 Banking Service Provider
               </div>
 
-              <div className="md:flex lg:w-full md:w-[220px] w-[160px] md:mt-10 mt-4 md:gap-5 gap-2">
-                <div className="relative md:w-[204px] w-[410px] h-[42px] md:ml-8 sm:ml-[100px] xs:ml-[60px] ml-0 ">
+              <div className="md:flex lg:w-full md:w-[220px] w-[160px] md:mt-10 mt-4 md:gap-5 xs:gap-2 gap-0">
+                <div className="relative md:w-[204px] xs:w-[350px] w-[120px] h-[42px] md:ml-8 sm:ml-[100px] xs:ml-[60px] ml-[100px]  ">
                   <Image
                     src="emirats.svg"
                     alt="emirat"
@@ -944,7 +947,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="relative md:mt-0 mt-7  md:w-[204px] w-[410px] h-[42px] md:ml-8 sm:ml-[90px] xs:ml-[60px] ml-0">
+                <div className="relative md:mt-0 mt-7  md:w-[204px] xs:w-[350px] w-[120px] pb-1 h-[42px] md:ml-8 sm:ml-[90px] xs:ml-[60px] ml-[100px]">
                   <Image
                     src="east.svg"
                     alt="east"
@@ -955,12 +958,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[448px] h-[188px]  w-full p-6  md:mt-0 mt-5">
-              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold ">
+            <div className="bg-[#e9e9e9] md:w-[448px] h-[188px]  w-full p-6  md:p-3  md:mt-0 mt-5">
+              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text-sm text-[#212529] font-raleway font-semibold ">
                 Payment Gateway Provider
               </div>
 
-              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-5 sm:ml-[250px] xs:ml-[50px] ml-[40px]">
+              <div className=" sm:w-[160px] xs:w-[170px] w-[120px] xs:h-[45px] h-[35px] mt-10 lg:ml-24 md:ml-5 sm:ml-[250px]  ml-[80px]">
                 <Image
                   src="/paytab.webp"
                   alt="emirat"
@@ -970,12 +973,67 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#e9e9e9] md:w-[448px]  w-full p-6 md:mt-0 mt-5">
-              <div className="text-center mt-1 text-2xl text-[24px] text-[#212529] font-raleway font-semibold">
+            <div className="bg-[#e9e9e9] md:w-[448px]  w-full p-6 md:mt-0 mt-5  md:p-3">
+              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text:sm text-[#212529] font-raleway font-semibold">
                 Technology Provider
               </div>
 
-              <div className=" w-[200px] h-[45px] mt-10 lg:ml-20 md:ml-5 sm:ml-[250px] xs:ml-[60px] ml-[40px]">
+              <div className=" md:w-[160px] xs:w-[170px] w-[120px] md:h-[40px] h-[25px] mt-10 lg:ml-24 md:ml-6  ml-[100px]">
+                <Image
+                  src="/Techbay.webp"
+                  alt="techbay"
+                  fill
+                  className="custom_img"
+                />
+              </div>
+            </div>
+                </div> */}
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:flex-row flex-col">
+            <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
+              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+                Banking Service Provider
+              </div>
+
+              <div className=" grid md:grid-cols-2 grid-cols-1 gap-5">
+                <div className="">
+                  <Image
+                    src="emirats.svg"
+                    alt="emirat"
+                    fill
+                    className="custom_img"
+                  />
+                </div>
+
+                <div className="">
+                  <Image
+                    src="east.svg"
+                    alt="east"
+                    fill
+                    className="custom_img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
+              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+                Payment Gateway Provider
+              </div>
+              <div>
+                <Image
+                  src="/paytab.webp"
+                  alt="paytab"
+                  fill
+                  className="custom_img"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-between gap-5 p-10 bg-[#e9e9e9]">
+              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+                Technology Provider
+              </div>
+              <div>
                 <Image
                   src="/Techbay.webp"
                   alt="techbay"

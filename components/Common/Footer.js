@@ -7,9 +7,9 @@ const Footer = () => {
     <>
       <div className="w-full h-[40%]  bg-darkGray text-[#e4e4e4] font-raleway  flex-col pt-3 justify-between md:p-0 p-7">
         <Container>
-          <div className="grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-2 ">
+          <div className="grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-2  md:p-3">
             <div className="flex-col justify-between md:w-[30%] w-full h-[10%]">
-              <div className=" footer_logo mt-5 lg:w-[250px] w-[180px] ">
+              <div className=" footer_logo mt-5 lg:w-[250px] w-[180px] cursor-pointer ">
                 <Image
                   src="./footerLogo.svg"
                   fill
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
 
             <div className=" w-[255px]h-[359px]  md:mt-0 mt-6 font-light">
-              <div className="text-2xl mt-5 gap-9  font-bold ">
+              <div className="lg:text-2xl text-[16px] mt-5 gap-9  font-bold ">
                 USEFUL LINKS
               </div>
               <div className=" flex w-full mt-2">
@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="w-[70%] h-[1px] bg-black"></div>
               </div>
               <div className=" gap-72 mt-3 text-[#e4e4e4] font-sans  md:text-sm text:xs gap text-[16px] font-light ">
-                <div className="flex gap-2">
+                <div className="flex gap-2 ">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000] cursor-pointer">
                     Getting started
@@ -118,49 +118,64 @@ const Footer = () => {
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
-                    <Link href="/ReturnPopcy ">Return Policy</Link>
+                    <Link href="/ReturnPolicy ">Return Policy</Link>
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
-                    <Link href="/Depvery "> Depvery and Collection</Link>
+                    <Link href="/Delivery "> Delivery and Collection</Link>
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-1"></div>
                   <p className="hover:text-[#ff0000]  cursor-pointer">
-                    <Link href="/PrivacyPopcy"> Privacy Policy </Link>
+                    <Link href="/PrivacyPolicy"> Privacy Policy </Link>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex-col justify-between md:mt-0 mt-6 ">
-              <div className="text-2xl font-bold  mt-5">Download App</div>
+              <div className="lg:text-2xl text-[16px] font-bold  mt-5">Download App</div>
               <div className=" flex w-full mt-2">
                 <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>
                 <div className="w-[70%] h-[1px] bg-black"></div>
               </div>
-              <div className="flex justify-between mt-3">
+              <div className="flex justify-between sm:mt-3 mt-6">
                 <div>
-                  {/* <div >
-                    <Image src="https://i0.wp.com/myridepay.com/wp-content/uploads/2022/01/QR-Design.png" fill alt="QR_CODE" />
-                  </div> */}
-                  <div className=" md:text-sm text:xs">
-                    <p className="text-[#ff0000]  mb-2">SCAN THE QR CODE</p>
-                    TO DOWNLOAD <br />
-                    THE APP
+                  <div className="absolute lg:ml-8 ml-2 sm:w-[17%] w-[30%]">
+                    <Image
+                      src="https://i0.wp.com/myridepay.com/wp-content/uploads/2022/01/QR-Design.png"
+                      fill
+                      alt="QR_CODE"
+                      className="custom_img"
+                    />
                   </div>
-                  <div className="mt-7">
-                    <div className="relative h-20  w-20">
-                      <Image src="./Playstore.svg" alt="play store" fill />
+                  {/* <div className=" md:text-sm text:xs">
+                  <p className="text-[#ff0000]  mb-2">SCAN THE QR CODE</p>
+                  TO DOWNLOAD <br />
+                  THE APP
+                 </div> */}
+                  <div className="lg:mt-[55%] md:mt-[70%] mt-[100%]  ">
+                    <div className=" lg:h-10 h-6 lg:w-24 w-14 cursor-pointer  ">
+                      <Image
+                        src="./Playstore.svg"
+                        alt="play store"
+                        fill
+                        className="custom_img"
+                      />
                     </div>
 
-                    <div className=" relative  w-20 h-20">
-                      <Image src="./Appstore.svg" alt="play store" fill />
+                    <div className=" lg:w-24 w-14 h-10 lg:mt-2 cursor-pointer">
+                      <Image
+                        src="./Appstore.svg"
+                        alt="play store"
+                        fill
+                        className="custom_img"
+                      />
                     </div>
                   </div>
                 </div>
@@ -178,14 +193,14 @@ const Footer = () => {
 
             <div>
               <div className="md:mt-0 mt-6 ">
-                <div className="text-2xl  mt-5  font-bold">Address</div>
+                <div className="lg:text-2xl  md:text-[16px]  mt-5  font-bold">Address</div>
                 <div className=" flex w-full mt-2">
                   <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>
                   <div className="w-[70%] h-[1px] bg-black"></div>
                 </div>
                 <div className="mt-3 md:pl-1 md:text-sm pl-0 text-[#e4e4e4]">
                   <div>
-                    <div className="flex lg:gap-2 gap-1 text:sm">
+                    <div className="flex lg:gap-2 gap-1 text:sm hover:text-[#ff0000] cursor-pointer">
                       <div className="w-5 ">
                         <Image
                           src="/email1.svg"
@@ -197,7 +212,7 @@ const Footer = () => {
                       <div>info@myridepay.com</div>
                     </div>
 
-                    <div className="flex gap-2 mt-3">
+                    <div className="flex gap-2 mt-3 hover:text-[#ff0000] cursor-pointer">
                       <div className="w-5">
                         <Image
                           src="/telephone.svg"
@@ -208,7 +223,7 @@ const Footer = () => {
                       </div>
                       <div>+971 4 566 7048</div>
                     </div>
-                    <div className="flex gap-2 mt-3">
+                    <div className="flex gap-2 mt-3 hover:text-[#ff0000] cursor-pointer">
                       <div className="w-5">
                         <Image
                           src="/phone-call.svg"
@@ -220,7 +235,7 @@ const Footer = () => {
                       <div>+971 56 204 3727</div>
                     </div>
 
-                    <div className=" md:w-[150px] w-full flex gap-2 md:mt-0 mt-4">
+                    <div className=" md:w-[150px] w-full flex gap-2 md:mt-0 mt-4 hover:text-[#ff0000] cursor-pointer">
                       <div className="md:w-5 w-4">
                         <Image
                           src="/Map.svg"
@@ -235,7 +250,7 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="md:mt-1 mt-6 ">
+                  <div className="md:mt-0 mt-4">
                     <div className="text-2xl  mt-5 font-bold">MAP</div>
                     <div className=" flex w-full mt-2">
                       <div className="md:w-[30%] w-14 h-[1px] bg-[#ff0000]"></div>
