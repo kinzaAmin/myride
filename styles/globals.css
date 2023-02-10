@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
 
  @tailwind base;
 @tailwind components;
@@ -17,6 +17,11 @@
     src: url("/fonts/Helvetica Neue LT Pro 83 Heavy Extended Oblique.woff2")
       format("woff2");
   }
+  /* @font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-Regular.woff2");
+    src: url("//db.onlinewebfonts.com/t/04046ba20e9bd71b6a1a4b4f481a99be.eot");
+  } */
   
 }
 

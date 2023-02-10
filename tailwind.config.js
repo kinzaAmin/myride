@@ -22,6 +22,7 @@ module.exports = {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
         raleway: "Raleway",
         nova: "Proxima Nova",
+        //roboto: "Roboto-thin"
       },
       colors: {
         primary: "#ff0000",

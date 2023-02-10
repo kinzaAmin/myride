@@ -65,12 +65,12 @@ export default function Home() {
 
         <div className="  mt-[20px] mx-3 p-5    bg-background bg-center bg-cover bg-no-repeat">
           <Container>
-            <div className="text-center md:ml-0 ml-2 sm:p-0 md:p-6 md:text-3xl text-lg  font-bold leading-1 font-nova">
+            <div className="text-center leading-[30px] md:ml-0 ml-2 sm:p-0 md:p-6 md:text-3xl text-lg  font-bold leading-1 font-sans">
               Smartest Payment Gateway for
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
-            <div className="   grid grid-cols-3 lg:gap-44 md:gap-3 sm:gap-6 gap-12 items-center  mx-7  mt-5 text-darkGray font-nova lg:text-2xl md:text-lg sm:text-sm text-[10px] md:leading-7 justify-between">
+            <div className="   grid grid-cols-3 lg:gap-44 md:gap-3 sm:gap-6 gap-12 items-center  mx-7  mt-5 text-darkGray font-sans  text-[16px] leading-[24px] justify-between">
               <div className=" flex-col justify-between  ">
                 <div className="  ">
                   <Image
@@ -95,10 +95,6 @@ export default function Home() {
                   Get Application Approval
                   <span className="ml-1 ">within 24 hours</span>
                 </div>
-
-                {/* <div className="bg-[#ff0000] items-center  my-3  text-white hover:text-[#ff0000] hover:bg-white hover:border border-2  border-[#ff0000] w-20 rounded p-2 text-center mt-5 ml-[26%]">
-                  <span className=" ">Sign Up</span>
-                </div> */}
               </div>
 
               <div className="flex-col  gap-24">
@@ -114,7 +110,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#ff0000] font-sans md:text-[22px] text-[12px] font-normal cursor-pointer  text-white hover:text-[#ff0000] text-xl hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
+            <div className="bg-[#ff0000] font-sans md:text-[22px] text-[12px] font-normal cursor-pointer  text-white hover:text-[#ff0000]  hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
               <span className="p-1 ">Sign Up</span>
             </div>
           </Container>
@@ -135,10 +131,10 @@ export default function Home() {
                   <span className="md:text-[22px] text-[16px] text-darkGray font-serif font-semibold">
                     Going Global?
                   </span>
-                  <p className=" md:text-[22px] text-[16px] text-darkGray font-serif font-semibold">
+                  <p className=" md:text-[22px] text-[16px] text-darkGray leading-[26px] font-nova font-semibold">
                     We got your business covered
                   </p>
-                  <span className="w-10 text-darkGray text-base font-light  text-[16px] text-center">
+                  <span className="w-10 text-darkGray text-base font-light font-sans leading-[27px] text-[16px] text-center">
                     With MyridePay, geography will be history. To cater to
                     online businesses with global reach, our secure and seamless
                     global payment gateway can support customers by facilitating
@@ -238,7 +234,7 @@ export default function Home() {
           <Container>
             <div className="  w-full md:flex md:flex-shrink-0  md:gap-20  lg:mt-5  font-sans">
               <div className="w-[50%] mx-auto md:pr-0 pr-5 ">
-                <div className=" lg:mt-0 mt-3 md:pr-8  flex-shrink-0  md:w-[511px] sm:w-[350px] w-[240px] md:h-[507px] xs:h-[380px] h-[230px]">
+                <div className=" lg:mt-0 mt-3 md:pr-8  flex-shrink-0  md:w-[511px] sm:w-[350px] w-[240px] md:h-[550px]  h-[230px]">
                   <Image
                     src="/chooseUs.webp"
                     alt="choose us"
@@ -289,7 +285,7 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
-                  <div className="  text-[13px] font-serif px-[3px] py-[15px]  bg-[#bf0000] text-white text-xs  font-bold text-center lg:w-[60%] md:w-[80%] w-[90%] md:ml-0 ml-3 p-2 rounded mt-6 ">
+                  <div className="  text-[10px] font-serif px-[3px] md:py-[10px] py-[15px] bg-gradient-to-r from- bg-[#ff0000] to bg-[#bf0000]    text-white sm:text-xs   font-bold text-center lg:w-[60%] md:w-[80%] sm:w-[50%] w-[60%]  md:ml-0 ml-3 p-2 rounded mt-6 ">
                     Checkout Our Awesome Packages
                   </div>
                 </div>
@@ -303,7 +299,7 @@ export default function Home() {
           <p className="text-center text-4xl text-[2rem] font-normal ">
             Services
           </p>
-          <div className=" mx-5 ">
+          <div className=" mx-5  min-w-md ">
             <Sliderr />
           </div>
         </div>
@@ -317,18 +313,18 @@ export default function Home() {
               </span>
               <div className="md:flex justify-between w-full mt-5">
                 <div className="md:w-[50%] w-full bg-gray-100">
-                  <div className="bg-white w-full">
-                    <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                  <div className="bg-white w-full ">
+                    <div className="flex h-12 text-[#0e314c] font-medium font-raleway text-[16px] ">
                       {Faq1 ? (
                         <div
-                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq1(false)}
                         >
                           -
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] h-full bg-[#ff0000] p-2   text-center text-white font-bold cursor-pointer"
                           onClick={() => {
                             setFaq1(true);
                             setFaq2(false);
@@ -341,14 +337,14 @@ export default function Home() {
                         </div>
                       )}
 
-                      <div className="w-[100%]">
+                      <div className=" p-3 leading-[16px]">
                         When Can You Integrate with MyridePay Payment Gateway?
                       </div>
                     </div>
 
                     {Faq1 ? (
                       <div className="flex border-t-2 pt-3">
-                        <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                        <div className="px-8 font-normal text-[16px] font-raleway text-[#212529]">
                           MyridePay offers a test before you go live. You can
                           register online and test our services. Once you are
                           satisfied, you can integrate the gateway and go live.
@@ -360,17 +356,17 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="bg-white ">
-                      <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq2 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq2(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(true),
@@ -382,12 +378,14 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">What is a Payment Gateway?</div>
+                        <div className="p-3 leading-[16px]">
+                          What is a Payment Gateway?
+                        </div>
                       </div>
 
                       {Faq2 ? (
                         <div className="flex border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px] leading-[24px] font-sans text-[#212529]">
                             Whenever someone makes a payment through their
                             credit card, the information is sent to the
                             cardholder’s account to check if the transaction is
@@ -404,17 +402,17 @@ export default function Home() {
                       )}
                     </div>
                     <div className="bg-white">
-                      <div className="flex  gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-16 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq3 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq3(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%]  bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full  bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(false),
@@ -426,7 +424,7 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">
+                        <div className="p-3 leading-[16px] ">
                           How Long Does It Take To Integrate MyridePay Payment
                           Gateway?
                         </div>
@@ -434,7 +432,7 @@ export default function Home() {
 
                       {Faq3 ? (
                         <div className="flex border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             The integration process of MyridePay Payment Gateway
                             can take anywhere between 24 to 48 hours.
                           </div>
@@ -446,17 +444,17 @@ export default function Home() {
                   </div>
 
                   <div className="bg-white">
-                    <div className="flex gap-3  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                    <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq4 ? (
                         <div
-                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                          className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq4(false)}
                         >
                           -
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                          className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
                           onClick={() => {
                             setFaq1(false),
                               setFaq2(false),
@@ -469,14 +467,14 @@ export default function Home() {
                           +
                         </div>
                       )}
-                      <div className="">
+                      <div className="p-3 leading-[16px]">
                         What Do I Need to Start Accepting Credit Cards?
                       </div>
                     </div>
 
                     {Faq4 ? (
                       <div className="flex  border-t-2 pt-3">
-                        <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                        <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                           You need a working online website for renting cars.
                           Once we have verified your credentials, you will be
                           provided with a login and password bank account with
@@ -490,17 +488,17 @@ export default function Home() {
 
                   <div className="">
                     <div className="bg-white">
-                      <div className="flex gap-2 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq5 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%]  bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq5(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq1(false),
                                 setFaq1(false),
@@ -513,14 +511,14 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">
+                        <div className="p-3 leading-[16px]">
                           What Kind of Credit/Debit Cards are Accepted?
                         </div>
                       </div>
 
                       {Faq5 ? (
                         <div className="flex justify-between border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px] font-sans  leading-[24px] text-[#212529]">
                             You will be able to accept major credit/debit cards
                             from MasterCard, Visa, American Express* at this
                             moment. We will be adding more card processors
@@ -538,17 +536,17 @@ export default function Home() {
                 <div className="md:w-[50%] bg-gray-100 w-full md:mt-0 mt-5">
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12  text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq6 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq6(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(true),
                                 setFaq7(false),
@@ -561,14 +559,14 @@ export default function Home() {
                           </div>
                         )}
 
-                        <div className="">
+                        <div className="p-3 leading-[16px]">
                           Do I Need Another Software for Credit Card Payments?
                         </div>
                       </div>
 
                       {Faq6 ? (
                         <div className="flex border-t-2 pt-3 ">
-                          <div className=" px-7 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className=" px-7 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             Our system works with all the operating systems and
                             mobile operating systems, so you don’t have to plug
                             in any other software.Once you have created an
@@ -584,17 +582,17 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq7 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq7(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(true),
@@ -606,14 +604,14 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">
+                        <div className="p-3 leading-[16px]">
                           Can I Get Details of the Payments?
                         </div>
                       </div>
 
                       {Faq7 ? (
                         <div className="flex border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             Details of transactions are available 24/7 in your
                             account. You can check them anytime.
                           </div>
@@ -626,17 +624,17 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-16 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq8 ? (
                           <div
-                            className="w-[15%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[15%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq8(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[15%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[15%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -648,7 +646,7 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">
+                        <div className="p-3 leading-[16px]">
                           What Documents do I require to get a Payment
                           Gateway?an I have multiple activities in a single
                           feature?
@@ -657,7 +655,7 @@ export default function Home() {
 
                       {Faq8 ? (
                         <div className="flex  border-t-2 pt-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center ">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             To activate your application, MyridePay requires
                             clear scanned copy the following documents:
                             <li>
@@ -700,17 +698,17 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq9 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq9(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -722,14 +720,14 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">
+                        <div className="p-3 leading-[16px]">
                           Why is My Payment Gateway Taking Long to be Live?
                         </div>
                       </div>
 
                       {Faq9 ? (
                         <div className="flex   border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             Here are some reasons for delays in your Account.
                             <li>
                               There is an issue with the validity of the
@@ -753,17 +751,17 @@ export default function Home() {
 
                   <div>
                     <div className="bg-white">
-                      <div className="flex gap-3 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq10 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer"
+                            className="w-[10%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq10(false)}
                           >
                             -
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-[20%] text-center text-white font-bold cursor-pointer "
+                            className="w-[10%] bg-[#ff0000] p-2 h-full items-center text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -775,12 +773,14 @@ export default function Home() {
                             +
                           </div>
                         )}
-                        <div className="">What is a Pay-Out Schedule?</div>
+                        <div className="p-3 leading-[16px]">
+                          What is a Pay-Out Schedule?
+                        </div>
                       </div>
 
                       {Faq10 ? (
                         <div className="flex  border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px] font-sans text-[#212529]">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
                             Car rentals will be paid within 10-20 days. However,
                             MyridePay may hold the amount for a longer period,
                             including but not limited to a proprietary set of
@@ -804,11 +804,11 @@ export default function Home() {
             <div className="md:flex justify-between text-white  xs:p-11 p-7">
               <div className="md:w-[50%] w-full mt-5 mb-2">
                 <div>
-                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF] ">
+                  <span className="md:text-[25px] leading-[25px] text-[20px] font-bold text-[#FFFFFF] ">
                     Ready to get started?
                   </span>
 
-                  <span className="text-[16px] text-[#FFFFFF] font-sans font-light">
+                  <span className="text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light">
                     <p className="w-[90%]">
                       Apply for the MyRidePay Online Payment Gateway Program
                       online by submitting your details.
@@ -825,11 +825,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF]">
+                  <span className="md:text-[25px] leading-[30px] text-[20px] font-bold text-[#FFFFFF]">
                     Onboarding
                   </span>
 
-                  <p className="mt-3 text-[16px] text-[#FFFFFF] font-sans font-light ">
+                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light ">
                     We will assess your credentials and request for relevant
                     documentation, to assess the eligibility. Within 24 to 48
                     hours we will confirm your account, and you can take the
@@ -839,11 +839,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <span className="md:text-[25px] text-[20px] font-bold text-[#FFFFFF]">
+                  <span className="md:text-[25px] font-raleway leading-[43px] font-normal text-[20px]  text-[#FFFFFF]">
                     Integration
                   </span>
 
-                  <p className="mt-3 text-[16px] text-[#FFFFFF] font-sans font-light">
+                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light">
                     It is time to integrate our payment solutions on your car
                     rental website and start receiving your payments through a
                     secure, easier and faster method.
@@ -852,7 +852,7 @@ export default function Home() {
               </div>
 
               <div className=" md:w-[50%] w-full mt-5 ">
-                <p className="md:text-center font-semibold font-raleway  text-[20px]">
+                <p className="md:text-center font-medium font-sans leading-[24px]  text-[24px]">
                   Create Your Online Payments Account Now
                 </p>
 
@@ -931,70 +931,14 @@ export default function Home() {
           <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] p-4 ">
             Our Service Provider
           </div>
-          {/* <div className="md:flex lg:gap-2 md:gap-2  mt-5">
-            <div className="bg-[#e9e9e9]   md:w-[448px] h-[188px]  w-full  p-3">
-              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text:sm text-[#212529] font-raleway font-semibold">
-                Banking Service Provider
-              </div>
 
-              <div className="md:flex lg:w-full md:w-[220px] w-[160px] md:mt-10 mt-4 md:gap-5 xs:gap-2 gap-0">
-                <div className="relative md:w-[204px] xs:w-[350px] w-[120px] h-[42px] md:ml-8 sm:ml-[100px] xs:ml-[60px] ml-[100px]  ">
-                  <Image
-                    src="emirats.svg"
-                    alt="emirat"
-                    fill
-                    className="custom_img"
-                  />
-                </div>
-
-                <div className="relative md:mt-0 mt-7  md:w-[204px] xs:w-[350px] w-[120px] pb-1 h-[42px] md:ml-8 sm:ml-[90px] xs:ml-[60px] ml-[100px]">
-                  <Image
-                    src="east.svg"
-                    alt="east"
-                    fill
-                    className="custom_img"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#e9e9e9] md:w-[448px] h-[188px]  w-full p-6  md:p-3  md:mt-0 mt-5">
-              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text-sm text-[#212529] font-raleway font-semibold ">
-                Payment Gateway Provider
-              </div>
-
-              <div className=" sm:w-[160px] xs:w-[170px] w-[120px] xs:h-[45px] h-[35px] mt-10 lg:ml-24 md:ml-5 sm:ml-[250px]  ml-[80px]">
-                <Image
-                  src="/paytab.webp"
-                  alt="emirat"
-                  fill
-                  className="custom_img"
-                />
-              </div>
-            </div>
-
-            <div className="bg-[#e9e9e9] md:w-[448px]  w-full p-6 md:mt-0 mt-5  md:p-3">
-              <div className="text-center mt-1 md:text-2xl xs:text-[24px] text:sm text-[#212529] font-raleway font-semibold">
-                Technology Provider
-              </div>
-
-              <div className=" md:w-[160px] xs:w-[170px] w-[120px] md:h-[40px] h-[25px] mt-10 lg:ml-24 md:ml-6  ml-[100px]">
-                <Image
-                  src="/Techbay.webp"
-                  alt="techbay"
-                  fill
-                  className="custom_img"
-                />
-              </div>
-            </div>
-                </div> */}
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:flex-row flex-col">
             <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
-              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-normal">
                 Banking Service Provider
               </div>
 
-              <div className=" grid md:grid-cols-2 grid-cols-1 gap-5">
+              <div className=" grid md:grid-cols-2  grid-cols-1 gap-5">
                 <div className="">
                   <Image
                     src="emirats.svg"
@@ -1016,10 +960,10 @@ export default function Home() {
             </div>
 
             <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
-              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+              <div className=" text-[24px] leading-[29px]  text-[#212529] font-raleway font-normal">
                 Payment Gateway Provider
               </div>
-              <div>
+              <div className=" w-[40%]">
                 <Image
                   src="/paytab.webp"
                   alt="paytab"
@@ -1030,10 +974,10 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center justify-between gap-5 p-10 bg-[#e9e9e9]">
-              <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-semibold">
+              <div className=" text-[24px] leading-[29px]  text-[#212529] font-raleway font-normal">
                 Technology Provider
               </div>
-              <div>
+              <div className=" w-[40%]">
                 <Image
                   src="/Techbay.webp"
                   alt="techbay"
