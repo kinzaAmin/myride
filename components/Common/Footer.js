@@ -131,7 +131,7 @@ const Footer = () => {
                   </p>
                 </div>
 
-                <div className="flex gap-2 mt-4 mt-2">
+                <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 "></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
                     <Link href="/PrivacyPolicy "> Privacy Policy </Link>
@@ -145,7 +145,7 @@ const Footer = () => {
                 Download App
               </div>
               <div className=" flex w-full mt-2">
-                <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000] mt-2"></div>
+                <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000] "></div>
                 <div className="w-[70%] h-[1px] bg-black"></div>
               </div>
               <div className="grid grid-cols-2 justify-between  gap-20 sm:mt-3 mt-6">
@@ -163,8 +163,8 @@ const Footer = () => {
                   TO DOWNLOAD <br />
                   THE APP
                  </div> */}
-                  <div className="xl:lg:mt-32 lg:mt-24 md:mt-14 sm:mt-8 mt-6 ">
-                    <div className="xl:w-24 lg:h-10 h-6 lg:w-20 sm:w-12 w-8 cursor-pointer  ">
+                  <div className="xl:mt-16 lg:mt-24 md:mt-14 sm:mt-8 mt-6 ">
+                    <div className="xl:w-20 lg:h-10 h-6 lg:w-20 sm:w-12 w-8 cursor-pointer  ">
                       <Image
                         src="./Playstore.svg"
                         alt="play store"
@@ -173,7 +173,7 @@ const Footer = () => {
                       />
                     </div>
 
-                    <div className="xl:w-24 lg:w-20  sm:w-12 w-8 h-10 lg:mt-2 cursor-pointer">
+                    <div className="xl:w-20 lg:w-20  sm:w-12 w-8 h-10 lg:mt-2 cursor-pointer">
                       <Image
                         src="./Appstore.svg"
                         alt="play store"

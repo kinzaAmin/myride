@@ -1,16 +1,16 @@
 import Head from "next/head";
-import Image from 'next/image'
+import Image from "next/image";
 import { Inter } from "@next/font/google";
 //import styles from '@/styles/Home.module.css'
 import Container from "@/components/ui/Container";
 import { useState } from "react";
 import Sliderr from "@/components/ui/Sliderr";
 import Slider1 from "@/components/ui/Slider1";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import YouTube from "react-youtube";
+import { SlideDown } from "react-slidedown";
+import "react-slidedown/lib/slidedown.css";
 const inter = Inter({ subsets: ["latin"] });
-
-
-
 
 export default function Home() {
   const [Faq1, setFaq1] = useState(false);
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#ff0000] font-sans md:text-[22px] text-[12px] font-normal cursor-pointer  text-white hover:text-[#ff0000]  hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
+            <div className="bg-[#ff0000]  md:text-[22px] text-[12px] font-normal font-Roboto cursor-pointer  text-white hover:text-[#ff0000]  hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
               <span className="p-1 ">Sign Up</span>
             </div>
           </Container>
@@ -197,13 +197,13 @@ export default function Home() {
         {/*=================================== Platform to Align Your Car Rental Collections Once and For All============================ */}
         <div className="   w-full h-auto mt-5">
           <Container>
-            <div className="w-full  md:flex flex-shrink-0 md:p-4 md:gap-7 mt-5 text-[16px] font-sans ">
+            <div className="w-full  md:flex flex-shrink-0 md:p-4 md:gap-7 mt-5 text-[16px]  ">
               <div className="md:w-[50%] w-full md:p-0 sm:p-2 p-8 ">
                 <span className="md:text-[25px] text-[16px] leading-3 font-sans text-darkGray    font-semibold ">
                   Platform to Align Your Car Rental Collections Once and For All
                 </span>
 
-                <div className="md:w-[456px] w-full  text-darkGray ">
+                <div className="md:w-[456px] font-Roboto w-full  text-darkGray ">
                   In any business platform, secure payments are the biggest
                   concern. Car rental industry in UAE has vast prospects, and
                   with that comes a concern to keep an established payment
@@ -232,9 +232,9 @@ export default function Home() {
         {/*============================== Why Choose MyRidePay for a Car Rental Gateway? =================================*/}
         <div className="md:flex  w-full h-auto mt-5 pb-4">
           <Container>
-            <div className="  w-full md:flex md:flex-shrink-0  md:gap-20  lg:mt-5  font-sans">
+            <div className="  w-full md:flex md:flex-shrink-0  md:gap-20  lg:mt-5  ">
               <div className="w-[50%] mx-auto md:pr-0 pr-5 ">
-                <div className=" lg:mt-0 mt-3 md:pr-8  flex-shrink-0  md:w-[511px] sm:w-[350px] w-[240px] md:h-[550px]  h-[230px]">
+                <div className=" lg:mt-0 mt-3 md:pr-8  flex-shrink-0  md:w-[511px] sm:w-[350px] w-[240px] md:h-[550px]  h-[200px]">
                   <Image
                     src="/chooseUs.webp"
                     alt="choose us"
@@ -248,7 +248,7 @@ export default function Home() {
                   Why Choose MyRidePay for a Car Rental Gateway?
                 </span>
 
-                <div className="text-[16px] items-center  text-darkGray w-full">
+                <div className="text-[16px] items-center font-Roboto  text-darkGray w-full">
                   To provide car rental companies with the most secure payment
                   gateway, we have partnered with PayTabs. PayTabs is one of the
                   leading payment gateway providers for every industry. Our
@@ -285,7 +285,7 @@ export default function Home() {
                     Mastercard and we will settle your sales automatically to
                     your bank account.
                   </li>
-                  <div className="  text-[10px] font-serif px-[3px] md:py-[10px] py-[15px] bg-gradient-to-r from- bg-[#ff0000] to bg-[#bf0000]    text-white sm:text-xs   font-bold text-center lg:w-[60%] md:w-[80%] sm:w-[50%] w-[60%]  md:ml-0 ml-3 p-2 rounded mt-6 ">
+                  <div className="  text-[10px]  px-[3px] md:py-[10px] py-[15px] font-Roboto bg-gradient-to-rfrom- bg-[#ff0000] to bg-[#bf0000] cursor-pointer   text-white sm:text-xs   font-bold text-center lg:w-[60%] md:w-[80%] sm:w-[50%] w-[60%]  md:ml-0 ml-3 p-2 rounded mt-6 ">
                     Checkout Our Awesome Packages
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default function Home() {
         </div>
         {/*================================================== Services Slider ============================================ */}
 
-        <div className="  ">
+        <div className=" md:px-0 px-10  ">
           <p className="text-center text-4xl text-[2rem] font-normal ">
             Services
           </p>
@@ -317,14 +317,21 @@ export default function Home() {
                     <div className="flex h-12 text-[#0e314c] font-medium font-raleway text-[16px] ">
                       {Faq1 ? (
                         <div
-                          className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq1(false)}
                         >
-                          -
+                          <div className="w-5">
+                            <Image
+                              src="/SubtractWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-3 md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] h-full bg-[#ff0000] p-2   text-center text-white font-bold cursor-pointer"
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000]  p-2  text-center text-white font-bold cursor-pointer"
                           onClick={() => {
                             setFaq1(true);
                             setFaq2(false);
@@ -333,7 +340,15 @@ export default function Home() {
                             setFaq5(false);
                           }}
                         >
-                          +
+                          {/* <FontAwesomeIcon icon="fa-solid fa-plus" style={{color:"white"}} /> */}
+                          <div className="w-5">
+                            <Image
+                              src="/AddWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
                         </div>
                       )}
 
@@ -343,13 +358,16 @@ export default function Home() {
                     </div>
 
                     {Faq1 ? (
-                      <div className="flex border-t-2 pt-3">
-                        <div className="px-8 font-normal text-[16px] font-raleway text-[#212529]">
-                          MyridePay offers a test before you go live. You can
-                          register online and test our services. Once you are
-                          satisfied, you can integrate the gateway and go live.
+                      <SlideDown>
+                        <div className="flex border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px] font-raleway  text-[#212529] shadow-sm  ">
+                            MyridePay offers a test before you go live. You can
+                            register online and test our services. Once you are
+                            satisfied, you can integrate the gateway and go
+                            live.
+                          </div>
                         </div>
-                      </div>
+                      </SlideDown>
                     ) : (
                       " "
                     )}
@@ -359,14 +377,21 @@ export default function Home() {
                       <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq2 ? (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq2(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(true),
@@ -375,7 +400,14 @@ export default function Home() {
                                 setFaq5(false);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -384,19 +416,21 @@ export default function Home() {
                       </div>
 
                       {Faq2 ? (
-                        <div className="flex border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px] leading-[24px] font-sans text-[#212529]">
-                            Whenever someone makes a payment through their
-                            credit card, the information is sent to the
-                            cardholder’s account to check if the transaction is
-                            allowed or not. In an E-commerce setting, this
-                            process is done via Payment Gateway. Every company
-                            who wishes to accept credit cards require a safe
-                            portal through which the transactions can pass.
-                            MyridePay offers a secure portal for online payments
-                            for car rental companies.
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3">
+                            <div className="px-8 font-[300] text-[16px] leading-[27px] font-raleway text-[#57647c] shadow-sm">
+                              Whenever someone makes a payment through their
+                              credit card, the information is sent to the
+                              cardholder’s account to check if the transaction
+                              is allowed or not. In an E-commerce setting, this
+                              process is done via Payment Gateway. Every company
+                              who wishes to accept credit cards require a safe
+                              portal through which the transactions can pass.
+                              MyridePay offers a secure portal for online
+                              payments for car rental companies.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -405,14 +439,21 @@ export default function Home() {
                       <div className="flex h-16 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq3 ? (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq3(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-3 "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] h-full  bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full  bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => {
                               setFaq1(false),
                                 setFaq2(false),
@@ -421,7 +462,14 @@ export default function Home() {
                                 setFaq5(false);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-2 md:ml-[2px] mt-3 "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px] ">
@@ -431,12 +479,14 @@ export default function Home() {
                       </div>
 
                       {Faq3 ? (
-                        <div className="flex border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            The integration process of MyridePay Payment Gateway
-                            can take anywhere between 24 to 48 hours.
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 transition duration-500 ease-in-out">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              The integration process of MyridePay Payment
+                              Gateway can take anywhere between 24 to 48 hours.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -447,14 +497,21 @@ export default function Home() {
                     <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq4 ? (
                         <div
-                          className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq4(false)}
                         >
-                          -
+                          <div className="w-5">
+                            <Image
+                              src="/SubtractWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
                         </div>
                       ) : (
                         <div
-                          className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
                           onClick={() => {
                             setFaq1(false),
                               setFaq2(false),
@@ -464,7 +521,14 @@ export default function Home() {
                               setFaq5(false);
                           }}
                         >
-                          +
+                          <div className="w-5">
+                            <Image
+                              src="/AddWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
                         </div>
                       )}
                       <div className="p-3 leading-[16px]">
@@ -473,14 +537,16 @@ export default function Home() {
                     </div>
 
                     {Faq4 ? (
-                      <div className="flex  border-t-2 pt-3">
-                        <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                          You need a working online website for renting cars.
-                          Once we have verified your credentials, you will be
-                          provided with a login and password bank account with
-                          our affiliated bank.
+                      <SlideDown>
+                        <div className="flex  border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                            You need a working online website for renting cars.
+                            Once we have verified your credentials, you will be
+                            provided with a login and password bank account with
+                            our affiliated bank.
+                          </div>
                         </div>
-                      </div>
+                      </SlideDown>
                     ) : (
                       " "
                     )}
@@ -491,14 +557,21 @@ export default function Home() {
                       <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq5 ? (
                           <div
-                            className="w-[10%]  bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%]  bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq5(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq1(false),
                                 setFaq1(false),
@@ -508,7 +581,14 @@ export default function Home() {
                                 setFaq5(true);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px]  "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -517,13 +597,16 @@ export default function Home() {
                       </div>
 
                       {Faq5 ? (
-                        <div className="flex justify-between border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px] font-sans  leading-[24px] text-[#212529]">
-                            You will be able to accept major credit/debit cards
-                            from MasterCard, Visa, American Express* at this
-                            moment. We will be adding more card processors
+                        <SlideDown>
+                          <div className="flex justify-between border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px] font-raleway shadow-sm leading-[24px] text-[#212529]">
+                              You will be able to accept major credit/debit
+                              cards from MasterCard, Visa, American Express* at
+                              this moment. We will be adding more card
+                              processors
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -539,14 +622,21 @@ export default function Home() {
                       <div className="flex h-12  text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq6 ? (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq6(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(true),
                                 setFaq7(false),
@@ -555,7 +645,14 @@ export default function Home() {
                                 setFaq10(true);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         )}
 
@@ -565,15 +662,17 @@ export default function Home() {
                       </div>
 
                       {Faq6 ? (
-                        <div className="flex border-t-2 pt-3 ">
-                          <div className=" px-7 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            Our system works with all the operating systems and
-                            mobile operating systems, so you don’t have to plug
-                            in any other software.Once you have created an
-                            account with us, we will provide you with simple
-                            coding and you’re done.
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 ">
+                            <div className=" px-7 font-[300] text-[16px]  leading-[27px] font-raleway text-[#57647c] shadow-sm">
+                              Our system works with all the operating systems
+                              and mobile operating systems, so you don’t have to
+                              plug in any other software.Once you have created
+                              an account with us, we will provide you with
+                              simple coding and you’re done.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -585,14 +684,21 @@ export default function Home() {
                       <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq7 ? (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq7(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(true),
@@ -601,7 +707,14 @@ export default function Home() {
                                 setFaq10(false);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -610,12 +723,14 @@ export default function Home() {
                       </div>
 
                       {Faq7 ? (
-                        <div className="flex border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            Details of transactions are available 24/7 in your
-                            account. You can check them anytime.
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              Details of transactions are available 24/7 in your
+                              account. You can check them anytime.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -630,7 +745,14 @@ export default function Home() {
                             className="w-[15%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq8(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-3 "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
@@ -643,7 +765,14 @@ export default function Home() {
                                 setFaq10(false);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-3 "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -654,42 +783,45 @@ export default function Home() {
                       </div>
 
                       {Faq8 ? (
-                        <div className="flex  border-t-2 pt-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center ">
-                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            To activate your application, MyridePay requires
-                            clear scanned copy the following documents:
-                            <li>
-                              Personal IDs issued by the Government of Your Car
-                              Rental Business owner and partner(s) if any.
-                            </li>
-                            <li>
-                              Government Issued Business License/Commercial
-                              Registration (CR).
-                            </li>
-                            <li>
-                              Company’s Bank Statement (3 months) on the Bank’s
-                              official letterhead, containing complete account
-                              information IBAN, account number, beneficiary name
-                              etc.
-                            </li>
-                            <li>
-                              Your logo will be required after signing up when
-                              you have started using the payment gateway.
-                            </li>
-                            <li>
-                              Proof of Address (eg: Rental lease, Electricity
-                              Bill)
-                            </li>
-                            <li>Rental Company’s Terms and Conditions.</li>
-                            <li>MOA / if Applicable.</li>
-                            Further documentation can be demanded to help
-                            demonstrate the financial stability and continuity
-                            of the business. Note: Upload clear copies of the
-                            requested documents. State required details as
-                            accurately as possible to avoid delays in the
-                            approval process. Contact us for further assistance.
+                        <SlideDown>
+                          <div className="flex  border-t-2 pt-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              To activate your application, MyridePay requires
+                              clear scanned copy the following documents:
+                              <li>
+                                Personal IDs issued by the Government of Your
+                                Car Rental Business owner and partner(s) if any.
+                              </li>
+                              <li>
+                                Government Issued Business License/Commercial
+                                Registration (CR).
+                              </li>
+                              <li>
+                                Company’s Bank Statement (3 months) on the
+                                Bank’s official letterhead, containing complete
+                                account information IBAN, account number,
+                                beneficiary name etc.
+                              </li>
+                              <li>
+                                Your logo will be required after signing up when
+                                you have started using the payment gateway.
+                              </li>
+                              <li>
+                                Proof of Address (eg: Rental lease, Electricity
+                                Bill)
+                              </li>
+                              <li>Rental Company’s Terms and Conditions.</li>
+                              <li>MOA / if Applicable.</li>
+                              Further documentation can be demanded to help
+                              demonstrate the financial stability and continuity
+                              of the business. Note: Upload clear copies of the
+                              requested documents. State required details as
+                              accurately as possible to avoid delays in the
+                              approval process. Contact us for further
+                              assistance.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -701,14 +833,21 @@ export default function Home() {
                       <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq9 ? (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq9(false)}
                           >
-                            -
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -717,7 +856,14 @@ export default function Home() {
                                 setFaq10(false);
                             }}
                           >
-                            +
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -726,23 +872,27 @@ export default function Home() {
                       </div>
 
                       {Faq9 ? (
-                        <div className="flex   border-t-2 pt-3 ">
-                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            Here are some reasons for delays in your Account.
-                            <li>
-                              There is an issue with the validity of the
-                              documents.
-                            </li>
-                            <li>
-                              We require additional documentation regarding your
-                              establishment.
-                            </li>
-                            <li>
-                              There might be a delay in the bank’s process.
-                            </li>
-                            <li>The application requires special approval.</li>
+                        <SlideDown>
+                          <div className="flex   border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px] shadow-sm leading-[24px] font-raleway text-[#212529] ">
+                              Here are some reasons for delays in your Account.
+                              <li>
+                                There is an issue with the validity of the
+                                documents.
+                              </li>
+                              <li>
+                                We require additional documentation regarding
+                                your establishment.
+                              </li>
+                              <li>
+                                There might be a delay in the bank’s process.
+                              </li>
+                              <li>
+                                The application requires special approval.
+                              </li>
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -754,14 +904,21 @@ export default function Home() {
                       <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                         {Faq10 ? (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
                             onClick={() => setFaq10(false)}
                           >
-                            -
+                            <div className="w-5 ">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         ) : (
                           <div
-                            className="w-[10%] bg-[#ff0000] p-2 h-full items-center text-center text-white font-bold cursor-pointer "
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full items-center text-center text-white font-bold cursor-pointer "
                             onClick={() => {
                               setFaq6(false),
                                 setFaq7(false),
@@ -770,7 +927,14 @@ export default function Home() {
                                 setFaq10(true);
                             }}
                           >
-                            +
+                            <div className="w-5  ">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
                           </div>
                         )}
                         <div className="p-3 leading-[16px]">
@@ -779,15 +943,18 @@ export default function Home() {
                       </div>
 
                       {Faq10 ? (
-                        <div className="flex  border-t-2 pt-3">
-                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-sans text-[#212529]">
-                            Car rentals will be paid within 10-20 days. However,
-                            MyridePay may hold the amount for a longer period,
-                            including but not limited to a proprietary set of
-                            rules, chargeback rates, transaction behaviour, and
-                            other supplemental data about your business.
+                        <SlideDown>
+                          <div className="flex  border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              Car rentals will be paid within 10-20 days.
+                              However, MyridePay may hold the amount for a
+                              longer period, including but not limited to a
+                              proprietary set of rules, chargeback rates,
+                              transaction behaviour, and other supplemental data
+                              about your business.
+                            </div>
                           </div>
-                        </div>
+                        </SlideDown>
                       ) : (
                         " "
                       )}
@@ -808,7 +975,7 @@ export default function Home() {
                     Ready to get started?
                   </span>
 
-                  <span className="text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light">
+                  <span className="text-[16px] leading-[27px] text-[#FFFFFF] font-Roboto font-light">
                     <p className="w-[90%]">
                       Apply for the MyRidePay Online Payment Gateway Program
                       online by submitting your details.
@@ -824,12 +991,12 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="mt-8">
+                <div className="md:mt-2  mt-8">
                   <span className="md:text-[25px] leading-[30px] text-[20px] font-bold text-[#FFFFFF]">
                     Onboarding
                   </span>
 
-                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light ">
+                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-Roboto font-light ">
                     We will assess your credentials and request for relevant
                     documentation, to assess the eligibility. Within 24 to 48
                     hours we will confirm your account, and you can take the
@@ -838,12 +1005,12 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="mt-8">
+                <div className="md:mt-2 mt-8">
                   <span className="md:text-[25px] font-raleway leading-[43px] font-normal text-[20px]  text-[#FFFFFF]">
                     Integration
                   </span>
 
-                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-sans font-light">
+                  <p className="mt-3 text-[16px] leading-[27px] font-Roboto text-[#FFFFFF] font-light">
                     It is time to integrate our payment solutions on your car
                     rental website and start receiving your payments through a
                     secure, easier and faster method.
@@ -852,7 +1019,7 @@ export default function Home() {
               </div>
 
               <div className=" md:w-[50%] w-full mt-5 ">
-                <p className="md:text-center font-medium font-sans leading-[24px]  text-[24px]">
+                <p className="md:text-center font-medium font-Roboto leading-[24px]  text-[24px]">
                   Create Your Online Payments Account Now
                 </p>
 
@@ -894,11 +1061,11 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center sm:text-[16px] text-[12px] font-sans rounded mt-8 md:ml-32 sm:ml-10 ml-4 cursor-pointer">
+                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center sm:text-[16px] text-[12px] font-Roboto font-medium rounded mt-8 md:ml-32 sm:ml-10 ml-4 cursor-pointer">
                   REQUEST A CALL BACK
                 </div>
 
-                <div className="flex gap-3 md:visible  invisible mt-5 ml-14">
+                <div className="flex gap-3 md:visible  invisible mt-14 ml-14">
                   <div className="w-[163px]">
                     <Image
                       src="./onlineRegistration.svg"
