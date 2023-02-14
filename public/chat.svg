@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="230" viewBox="0 0 230 230">
+  <g id="Group_513" data-name="Group 513" transform="translate(10994 22006)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="115" cy="115" r="115" transform="translate(-10994 -22006)" fill="red"/>
+    <g id="chat" transform="translate(-10925 -21937.006)">
+      <g id="Group_510" data-name="Group 510" transform="translate(0 27.734)">
+        <g id="Group_509" data-name="Group 509" transform="translate(0)">
+          <path id="Path_6358" data-name="Path 6358" d="M37.747,155C17.032,155,0,169.243,0,186.754A29.573,29.573,0,0,0,7.694,206.38L.663,214.415a2.685,2.685,0,0,0,2.02,4.45H40.43c15.295,0,35.063-13.171,35.063-32.111C75.494,169.243,58.462,155,37.747,155ZM21.467,191.672a5.367,5.367,0,1,1,5.367-5.367A5.374,5.374,0,0,1,21.467,191.672Zm16.279,0a5.367,5.367,0,1,1,5.367-5.367A5.374,5.374,0,0,1,37.747,191.672Zm16.279,0a5.367,5.367,0,1,1,5.367-5.367A5.374,5.374,0,0,1,54.026,191.672Z" transform="translate(0 -154.998)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_512" data-name="Group 512" transform="translate(21.93 0.006)">
+        <g id="Group_511" data-name="Group 511" transform="translate(0 0)">
+          <path id="Path_6359" data-name="Path 6359" d="M191.6,54.61l-6.318-7.372a26.656,26.656,0,0,0,6.965-17.715c0-16.276-15.65-29.518-34.885-29.518-17.393,0-32.171,10.839-34.78,24.947A49.651,49.651,0,0,1,138.4,22.367c23.5,0,42.805,16.413,43.087,36.674h8.076A2.686,2.686,0,0,0,191.6,54.61Z" transform="translate(-122.583 -0.006)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -9,14 +9,16 @@ const Footer = () => {
         <Container>
           <div className="grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-2  md:p-3">
             <div className="flex-col justify-between md:w-[30%] w-full h-[10%]">
-              <div className=" footer_logo mt-5 lg:w-[250px] w-[180px] cursor-pointer ">
-                <Image
-                  src="./footerLogo.svg"
-                  fill
-                  alt="logo"
-                  className="custom_img"
-                />
-              </div>
+              <Link href="/">
+                <div className=" footer_logo mt-5 lg:w-[250px] w-[180px] cursor-pointer ">
+                  <Image
+                    src="./footerLogo.svg"
+                    fill
+                    alt="logo"
+                    className="custom_img"
+                  />
+                </div>
+              </Link>
 
               <div className=" lg:w-60 md:w-40 w-full fex-col justify-between mt-3 md:text-sm text:xs font-raleway leading-7">
                 <div className="text-[#e4e4e4] text-[16px] font-light font-sans leading-7 lg:w-[255px] md:w-[180px] w-full ">
@@ -113,7 +115,7 @@ const Footer = () => {
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <pnk href="/Refusal"> Refusal</pnk>
+                    <Link href="/Refusal"> Refusal</Link>
                   </p>
                 </div>
 
@@ -127,14 +129,15 @@ const Footer = () => {
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px]   leading-[29px] cursor-pointer">
-                    <Link href="/Delivery "> Delivery and Collection</Link>
+                    <Link href="/ Delivery "> Delivery and Collection</Link>
                   </p>
                 </div>
 
+
                 <div className="flex gap-2 mt-4">
-                  <div className="bg-[#ff0000] w-2 h-2 "></div>
+                  <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
-                    <Link href="/PrivacyPolicy "> Privacy Policy </Link>
+                    <Link href="/PrivacyPolicy mt-[-2%]"> Privacy Policy </Link>
                   </p>
                 </div>
               </div>
@@ -277,6 +280,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className=" w-14 fixed" >
+            <Image src="/chat.svg" alt="chat" fill className="custom_img"/>
           </div>
           <div className="text-center mt-8 md:text-base sm:text-xsw xs:text-[5px]">
             © Copyright 2022 Myride Pay. All Rights Reserved.

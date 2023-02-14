@@ -32,10 +32,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="  w-full h-auto bg-pink-50 sm:px-0 px-1  ">
+        <div className="  w-full h-auto bg-pink-50 sm:px-0 px-1 mt-5 pt-6">
           <div className=" w-full md:flex   ">
-            <div className="md:w-[50%] w-full">
-              <div className="w-full">
+            <div className="md:w-[50%] w-full ">
+              <div className="w-full xl:pt-0 lg:mt-14   md:mt-20 mt-7">
                 <Image
                   src="/poster1.png"
                   fill
@@ -45,25 +45,35 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="md:w-[50%] w-full ">
+            <div className="md:w-[50%]  w-full  xl:mt-0 md:mt-0 md:pt-14 ">
               <iframe
-                src="https://www.youtube.com/embed/pxOu8gO5mTI"
-                frameborder
-                autoplay
-                // clipboard-write
-                encrypted-media="true"
-                // gyroscope
-                //picture-in-picture
-                web-share
-                allowFullScreen
+                src="https://www.youtube.com/embed/pxOu8gO5mTI?&autoplay=1&mute=1&enablejsapi=1"
+                frameborder="0"
+                data-gtm-yt-inspected-4="true"
+                allowfullscreen="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                title="How To Pay For Luxury Car Rentals | Solution For The Payments | MyRidePay"
                 className="custom_img"
               />
+
+              {/* <iframe
+                class="elementor-video"
+                frameborder="0"
+                allowfullscreen="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                title="How To Pay For Luxury Car Rentals | Solution For The Payments | MyRidePay"
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/pxOu8gO5mTI?controls=1&amp;rel=0&amp;playsinline=1&amp;modestbranding=1&amp;autoplay=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmyridepay.com&amp;widgetid=1"
+                id="widget2"
+                data-gtm-yt-inspected-4="true"
+              ></iframe> */}
             </div>
           </div>
         </div>
         {/*==========================================Smartest Payment Gateway for Car Rentals ==================================== */}
 
-        <div className="  mt-[20px] mx-3 p-5    bg-background bg-center bg-cover bg-no-repeat">
+        <div className="  mt-[20px] mx-3 p-5  z-0  bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center leading-[30px] md:ml-0 ml-2 sm:p-0 md:p-6 md:text-3xl text-lg  font-bold leading-1 font-sans">
               Smartest Payment Gateway for
