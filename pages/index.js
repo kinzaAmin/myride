@@ -32,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
       <main>
-        <div className="  w-full h-auto bg-pink-50 sm:px-0 px-1 mt-5 pt-6">
+        <div className="  w-full h-auto bg-pink-50 sm:px-0 px-1 mt-0 pt-0">
           <div className=" w-full md:flex   ">
             <div className="md:w-[50%] w-full ">
               <div className="w-full xl:pt-0 lg:mt-14   md:mt-20 mt-7">
@@ -45,7 +45,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="md:w-[50%]  w-full  xl:mt-0 md:mt-0 md:pt-14 ">
+            <div className="md:w-[50%]   w-full  ">
               <iframe
                 src="https://www.youtube.com/embed/pxOu8gO5mTI?&autoplay=1&mute=1&enablejsapi=1"
                 frameborder="0"
@@ -507,7 +507,7 @@ export default function Home() {
                     <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
                       {Faq4 ? (
                         <div
-                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                          className="md:w-[10%] sm:w-[8%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
                           onClick={() => setFaq4(false)}
                         >
                           <div className="w-5">
@@ -521,7 +521,7 @@ export default function Home() {
                         </div>
                       ) : (
                         <div
-                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
+                          className="md:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
                           onClick={() => {
                             setFaq1(false),
                               setFaq2(false),
@@ -1165,6 +1165,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+       
       </main>
     </>
   );

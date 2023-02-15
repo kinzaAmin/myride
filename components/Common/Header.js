@@ -1,16 +1,50 @@
-import React, { useState } from "react";
-import { SlideDown } from "react-slidedown";
+import React, { useState, useEffect } from "react";
+//import { SlideDown } from "react-slidedown";
 import Image from "next/image";
 import Container from "../ui/Container";
+//import Chat from "../ui/chat";
+import Arrow from "../ui/Arrow";
 const Header = () => {
-
-  const[isMenu , setMenu]=useState(false)
+ 
+  const [scrollTop, setScrollTop] = useState("");
+  const [showHeader, setShowHeader] = useState(false);
 
   
+//  const [chat, setChat] = useState(false);
+//  const handleChat=()=>{
+//   setChat(true)
+//  }
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    setScrollTop(window.scrollY);
+  };
+
+  useEffect(() => {
+    //console.log("scroll top change ==> ", scrollTop);
+    if (window.scrollY > 250) {
+      setShowHeader(true);
+    } else {
+      setShowHeader(false);
+    }
+  }, [scrollTop]);
+
+  
+
+  const [isMenu, setMenu] = useState(false);
+
   return (
     <>
-      <div className=" w-full h-[50%] fixed mt-[-2%]  z-40">
-        <div className="w-full  bg-[#4F504D]   justify-end items-end   ">
+      <div className=" w-full h-[50%]   relative z-40">
+        <div className="w-full  bg-[#4F504D] p-1  justify-end items-end   ">
           <Container>
             <div className=" md:w-[53%]  z-10   w-[90%] flex md:justify-end justify-between sm:gap-10  text-[#FFFFFF]  font-Roboto md:ml-[44%] ml-3 md:pl-0 pl-3 md:gap-10 gap-6 md:py-[5px]">
               <div className="flex md:justify-end   gap-1 md:w-[120px] w-full ">
@@ -58,9 +92,15 @@ const Header = () => {
           </Container>
         </div>
 
-        <div className="md:py-0 is-sticky  py-6  bg-background bg-cover w-full bg-no-repeat z-30  shadow-sm  ">
+        <div
+          className={`md:py-0 ${
+            showHeader
+              ? "fixed transition-all duration-[0.3s] ease-in-out "
+              : "relative"
+          } top-0 left-0  w-full  py-6  bg-background bg-cover bg-no-repeat z-30  shadow-sm `}
+         >
           <Container>
-            <div className=" w-full  flex xl:ml-0 xl:gap-24  lg:gap-12 md:gap-0 gap-72 sm:p-0   text-[#707070]   ">
+            <div className="  w-full  flex xl:ml-0 xl:gap-24  lg:gap-12 md:gap-0 sm:gap-64 gap-32 sm:p-0   text-[#707070]">
               <div className=" flex lg:pl-2 md:pt-2 md:pb-2 ">
                 <div className="lg:w-[250px] md:w-[200x] sm:w-[190px] w-[140px] lg:ml-4 md:ml-0 ml-3 p-4 lg:pl-14 md:pl-2">
                   <Image src="logo.svg" fill className="custom_img" />
@@ -88,21 +128,29 @@ const Header = () => {
                 </div>
               )}
 
-              {isMenu ? (
-                <ul className="  md:invisible visible w-[70%]  h-[42%] pb-8 fixed ml-2 mt-[55px] shadow bg-white lg:gap-7 pr-2  md:gap-4 grid grid-row-6 items-center justify-between font-raleway leading-[26px] ">
-                  <li className=" cursor-pointer pl-14 mt-2">
+              {isMenu && (
+                <ul className="  md:invisible visible w-[70%]   pb-8 fixed mt-[55px] shadow bg-white    items-center justify-between font-raleway leading-[26px]  ">
+                  <li className=" cursor-pointer pl-14 border-b  py-3">
                     Getting Started
                   </li>
-                  <hr className="w-[482px] " />
-                  <li className=" pl-14 mt-2 cursor-pointer">Services</li>
-                  <hr className="w-[482px] " />
-                  <li className="pl-14 mt-2 cursor-pointer">Get In Touch</li>
-                  <hr className="w-[482px] " />
-                  <li className=" pl-14 mt-2 cursor-pointer">Packages</li>
-                  <hr className="w-[482px] " />
-                  <li className=" pl-14 mt-2 cursor-pointer ">FAQs</li>
-                  <hr className="w-[482px] " />
-                  <li className="flex  gap-1 cursor-pointer pl-14 mt-2">
+
+                  <li className=" pl-14 border-b  py-3 cursor-pointer">
+                    Services
+                  </li>
+
+                  <li className="pl-14 border-b  py-3 cursor-pointer">
+                    Get In Touch
+                  </li>
+
+                  <li className=" pl-14 border-b  py-3 cursor-pointer">
+                    Packages
+                  </li>
+
+                  <li className=" pl-14 border-b  py-3 cursor-pointer ">
+                    FAQs
+                  </li>
+
+                  <li className="flex  gap-1 cursor-pointer pl-14 border-b  py-3">
                     <div className="w-[30px] h-[20px] ">
                       <Image
                         src="/flag.png"
@@ -114,39 +162,48 @@ const Header = () => {
                     <span>عربى</span>
                   </li>
                 </ul>
-              ) : (
-                <ul className="md:flex hidden  lg:gap-7 pr-2  md:gap-4  items-center justify-between font-raleway leading-[26px] ">
-                  <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                    Getting Started
-                  </li>
-                  <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                    Services
-                  </li>
-                  <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                    Get In Touch
-                  </li>
-                  <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                    Packages
-                  </li>
-                  <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer ">
-                    FAQs
-                  </li>
-                  <li className="flex hover:border-b-[1px] gap-1 border-[#FF0000] cursor-pointer">
-                    <div className="w-[30px] h-[20px]">
-                      <Image
-                        src="/flag.png"
-                        fill
-                        alt="flag"
-                        className="custom_img"
-                      />
-                    </div>
-                    <span>عربى</span>
-                  </li>
-                </ul>
               )}
+              <ul className="md:flex hidden  lg:gap-7 pr-2  md:gap-4  items-center justify-between font-raleway leading-[26px] ">
+                <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
+                  Getting Started
+                </li>
+                <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
+                  Services
+                </li>
+                <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
+                  Get In Touch
+                </li>
+                <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
+                  Packages
+                </li>
+                <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer ">
+                  FAQs
+                </li>
+                <li className="flex hover:border-b-[1px] gap-1 border-[#FF0000] cursor-pointer">
+                  <div className="w-[30px] h-[20px]">
+                    <Image
+                      src="/flag.png"
+                      fill
+                      alt="flag"
+                      className="custom_img"
+                    />
+                  </div>
+                  <span>عربى</span>
+                </li>
+              </ul>
             </div>
           </Container>
         </div>
+
+<div>
+  <Arrow/>
+</div>
+
+{/* <div className=" fixed  w-14 ml-[90%] mt-[40%] cursor-pointer "  onClick={handleChat}>
+  <Image src="/chat.svg" alt="chat" fill className="custom_img"/>
+</div>
+{chat&&<Chat/>} */}
+
       </div>
     </>
   );

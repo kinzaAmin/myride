@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[40%]  bg-darkGray text-[#e4e4e4] font-raleway  flex-col pt-3 justify-between md:p-0 p-7">
+      <div className="  w-full h-[40%]  bg-darkGray text-[#e4e4e4] font-raleway  flex-col pt-3 justify-between md:p-0 p-7">
         <Container>
           <div className="grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-2  md:p-3">
             <div className="flex-col justify-between md:w-[30%] w-full h-[10%]">
@@ -161,11 +161,7 @@ const Footer = () => {
                       className="custom_img"
                     />
                   </div>
-                  {/* <div className=" md:text-sm text:xs">
-                  <p className="text-[#ff0000]  mb-2">SCAN THE QR CODE</p>
-                  TO DOWNLOAD <br />
-                  THE APP
-                 </div> */}
+                 
                   <div className="xl:mt-16 lg:mt-24 md:mt-14 sm:mt-8 mt-6 ">
                     <div className="xl:w-20 lg:h-10 h-6 lg:w-20 sm:w-12 w-8 cursor-pointer  ">
                       <Image
@@ -187,14 +183,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                {/* <div className=" md:w-full  w-[30%]  md:ml-2 ">
-                  <Image src="/QR-Design.png"  fill/>
-
-                  
-                  <div className="bg-white text-[#ff0000] p-1 "> Scan Me</div>
-
-                   
-                </div>  */}
+               
               </div>
             </div>
 
@@ -282,9 +271,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" w-14 fixed" >
-            <Image src="/chat.svg" alt="chat" fill className="custom_img"/>
-          </div>
+        
           <div className="text-center mt-8 md:text-base sm:text-xsw xs:text-[5px]">
             © Copyright 2022 Myride Pay. All Rights Reserved.
           </div>
