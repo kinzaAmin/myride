@@ -1,0 +1,140 @@
+{
+  "home": {
+    "Home title": "Home title",
+    "Home description": "Home description"
+  },
+  "about": {
+    "About title": "About title",
+    "About description": "About description"
+  },
+  "header": {
+    "Getting Started": "Getting Started",
+    "Services": "Services",
+    "Get In Touch": "Get In Touch",
+    "Packages": "Packages",
+    "FAQs": "FAQs"
+  },
+
+  "smartestPayment": {
+    "smartest payment heading": " Smartest Payment Gateway for Car Rentals",
+    "FreeSignup": " Sign Up for Free",
+    "applicationApproval": "Get Application Approval within 24 hours ",
+    "receivingPayments": "Start Receiving Payments ",
+    "buttonSignin": " Sign Up"
+  },
+
+  "goinngGlobal": {
+    " global Title": " Going Global?",
+    "global heading": "We got your business covered ",
+    "global content": "With MyridePay, geography will be history. To cater to online businesses with global reach, our secure and seamless global payment gateway can support customers by facilitating payments through multiple payment options like American Express, MasterCard, Visa, mada, SADAD, STC Pay, OmanNet and   many more. ",
+    "global point1": " Easy Monthly Installments",
+    "global point2": " Payment Tokenization",
+    "global point3": "Subscriptions ",
+    "global point4": "Recurring Payments "
+  },
+
+  "platform to align": {
+    "plateform title": "Platform to Align Your Car Rental Collections Once and For All ",
+    "platform content": "In any business platform, secure payments are the biggest concern. Car rental industry in UAE has vast prospects, and with that comes a concern to keep an established payment gateway for the renters all around the world. MyRide being the devotees for cars wanted an easy process of receiving, converting and tracking the payments received by the renters all around the world. Hence, MyRidePay was born. So no matter what kind of car rental industry you have, let us handle your payment gateway and be free of excessive processes to handle the payments. "
+  },
+
+  "why choose my ride": {
+    "choose us title": " Why Choose MyRidePay for a Car Rental Gateway?",
+    "choose us content": "To provide car rental companies with the most secure payment gateway, we have partnered with PayTabs. PayTabs is one of the leading payment gateway providers for every industry. Our years of experience in the automobile industry and PayTabs experience combined can solve all of your payment problems. ",
+    "choose us point 1": "Accept payments from anywhere in the world with multiple alternative payment options, our payment gateway makes car rental for your customers hassle-free which subsequently helps you to grow your business ",
+    "choose us point 2": "Payment security and fraud prevention are the main focus of this venture. We keep your customers' data secure, so they can rely on you for your services. ",
+    "choose us point 3": " Boost your processing speed with this payment platform, more reliability and better acceptance rates.",
+    "choose us point 4": "You will have a personal and dedicated account team and live transaction monitoring option for closer accessibility. ",
+    "choose us point 5": " Simple website integrations with API solutions, SDK, HTTPS redirection and secure hosting",
+    "choose us point 6": " Quickly receive access to the amount paid by your customers.",
+    "choose us point 7": "Accept payments securely and immediately via Visa and Mastercard and we will settle your sales automatically to your bank account. ",
+    "choose us btn": "Checkout Our Awesome Packages "
+  },
+
+  "services": {
+    "services heading": "Services ",
+    "service1": " Online Payment Solution",
+    "service 2": "Payment Links ",
+
+    "service 3": "Payment Tokenization ",
+    "service 4": "Recurring Payments "
+  },
+
+  "FAQ": {
+    "FAQ heading": "FAQs ",
+    "Q1": "When Can You Integrate with MyridePay Payment Gateway? ",
+    "Ans1": "  MyridePay offers a test before you go live. You can register online and test our services. Once you are satisfied, you can integrate the gateway and go live.",
+    "Q2": " What is a Payment Gateway?",
+    "Ans2": " Whenever someone makes a payment through their credit card, the information is sent to the cardholder’s account to check if the transaction is allowed or not. In an E-commerce setting, this process is done via Payment Gateway. Every company who wishes to accept credit cards require a safe portal through which the transactions can pass. MyridePay offers a secure portal for online payments for car rental companies. ",
+    "Q3": "How Long Does It Take To Integrate MyridePay Payment Gateway? ",
+    "Ans3": " The integration process of MyridePay Payment Gateway can take anywhere between 24 to 48 hours.",
+    "Q4": " What Do I Need to Start Accepting Credit Cards?",
+    "Ans4": "You need a working online website for renting cars. Once we have verified your credentials, you will be provided with a login and password bank account with our affiliated bank ",
+    "Q5": "What Kind of Credit/Debit Cards are Accepted? ",
+    "Ans5": "You will be able to accept major credit/debit cards from MasterCard, Visa, American Express* at this moment. We will be adding more card processors ",
+    "Q6": "Do I Need Another Software for Credit Card Payments? ",
+    "Ans6": "Our system works with all the operating systems and mobile operating systems, so you don’t have to plug in any other software. Once you have created an account with us, we will provide you with simple coding and you’re done. ",
+    "Q7": " Can I Get Details of the Payments?",
+    "Ans7": " Details of transactions are available 24/7 in your account. You can check them anytime.",
+    "Q8": "What Documents do I require to get a Payment Gateway?an I have multiple activities in a single feature? ",
+    "Ans8": "To activate your application, MyridePay requires clear scanned copy the following documents: ",
+    "Ans8 p1": "Personal IDs issued by the Government of Your Car Rental Business owner and partner(s) if any. ",
+    "Ans8 p2": "Government Issued Business License/Commercial Registration (CR). ",
+    "Ans8 p3": " Company’s Bank Statement (3 months) on the Bank’s official letterhead, containing complete account information IBAN, account number, beneficiary name etc.",
+    "Ans8 p4": "Your logo will be required after signing up when you have started using the payment gateway. ",
+    "Ans8 p5": "Proof of Address (eg: Rental lease, Electricity Bill) ",
+    "Ans8 p6": " Rental Company’s Terms and Conditions.",
+    "Ans8 p7": "MOA / if Applicable. ",
+    "Ans8 content": "Further documentation can be demanded to help demonstrate the financial stability and continuity of the business. Note: Upload clear copies of the requested documents. State required details as accurately as possible to avoid delays in the approval process. Contact us for further assistance. ",
+    "Q9": " Why is My Payment Gateway Taking Long to be Live?",
+    "Ans9": " Here are some reasons for delays in your Account.",
+    "Ans9 p1": " There is an issue with the validity of the documents.",
+    "Ans9 p2": " We require additional documentation regarding your establishment.",
+    "Ans9 p3": " There might be a delay in the bank’s process.",
+    "Ans9 p4": "The application requires special approval. ",
+    "Q10": "What is a Pay-Out Schedule?",
+    "Ans10": "Car rentals will be paid within 10-20 days. However, MyridePay may hold the amount for a longer period, including but not limited to a proprietary set of rules, chargeback rates, transaction behaviour, and other supplemental data about your business. "
+  },
+
+  "Ready to start": {
+    "ready heading": " Ready to get started?",
+    "ready content1 ": "Apply for the MyRidePay Online Payment Gateway Program online by submitting your details.",
+    "ready content2": "Our Agent will contact you and guide you through the whole process. ",
+    "ready content3": "Our Agent will contact you and guide you through the whole process. ",
+    "onboarding heading ": " Onboarding",
+    "onboarding content ": " We will assess your credentials and request for relevant documentation, to assess the eligibility. Within 24 to 48 hours we will confirm your account, and you can take the test tour or simply go live by integrating our payment portal. ",
+    " integration heading": "Integration ",
+    " integration content": "It is time to integrate our payment solutions on your car rental website and start receiving your payments through a secure, easier and faster method. ",
+    "create online payment heading ": "Create Your Online Payments Account Now ",
+    " input company name": "Company Name* ",
+    " input person name": " Contact Person*",
+    "input contact ": "Contact Numbers* ",
+    " input no of cars": "Number of Cars* ",
+    "request call back btn": "REQUEST A CALL BACK "
+  },
+
+  "service-provider": {
+    " service provider heading": " Our Service Provider",
+    "bankingservice": " Banking Service Provider",
+    " payment gateway": "Payment Gateway Provider ",
+    " technology provider": " Technology Provider "
+  },
+
+  "footer": {
+    "Useful Links": "Useful Links",
+    "Getting started": "Getting started",
+    "Services": "Services",
+    "Get in touch": "Get in touch",
+    "Packages": "Packages",
+    "FAQs": "FAQs",
+    "Terms & Condition": "Terms & Condition",
+    "Refusal": "Refusal",
+    "Return Policy": "Return Policy",
+    "Delivery and Collection": "Delivery and Collection",
+    "Privacy Policy": "Privacy Policy",
+
+    "Download App": "Download App",
+
+    "Address": "Address"
+  }
+}

@@ -124,3 +124,13 @@ overflow:hidden;
   }
   
 }
+.arrow_bg{
+ 
+    background: linear-gradient(90deg, #ff0000 0%, #bf0000 100%);
+}
+.arrowHover{
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+}
+/* .tawk-header-background-color{
+  background-color: #ff0000!important;
+} */

@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from "react";
 //import { SlideDown } from "react-slidedown";
 import Image from "next/image";
+import Link from "next/link";
 import Container from "../ui/Container";
 //import Chat from "../ui/chat";
 import Arrow from "../ui/Arrow";
+import { useRouter } from "next/router";
 const Header = () => {
  
   const [scrollTop, setScrollTop] = useState("");
   const [showHeader, setShowHeader] = useState(false);
 
+  // let router = useRouter();
+  // let greeting= 
+  // router.locale ==="en"?"getting staerted"
+  // : router.locale==="de"? "ابدء" : " ";
   
 //  const [chat, setChat] = useState(false);
 //  const handleChat=()=>{
@@ -98,7 +104,7 @@ const Header = () => {
               ? "fixed transition-all duration-[0.3s] ease-in-out "
               : "relative"
           } top-0 left-0  w-full  py-6  bg-background bg-cover bg-no-repeat z-30  shadow-sm `}
-         >
+        >
           <Container>
             <div className="  w-full  flex xl:ml-0 xl:gap-24  lg:gap-12 md:gap-0 sm:gap-64 gap-32 sm:p-0   text-[#707070]">
               <div className=" flex lg:pl-2 md:pt-2 md:pb-2 ">
@@ -131,15 +137,15 @@ const Header = () => {
               {isMenu && (
                 <ul className="  md:invisible visible w-[70%]   pb-8 fixed mt-[55px] shadow bg-white    items-center justify-between font-raleway leading-[26px]  ">
                   <li className=" cursor-pointer pl-14 border-b  py-3">
-                    Getting Started
+                    <Link href="/">Getting Started</Link>
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer">
-                    Services
+                    <Link href="/Services"> Services</Link>
                   </li>
 
                   <li className="pl-14 border-b  py-3 cursor-pointer">
-                    Get In Touch
+                    <Link href="/GetInTouch"> Get In Touch </Link>
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer">
@@ -147,7 +153,7 @@ const Header = () => {
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer ">
-                    FAQs
+                    <Link href="/FAQ"> FAQs</Link>
                   </li>
 
                   <li className="flex  gap-1 cursor-pointer pl-14 border-b  py-3">
@@ -165,19 +171,19 @@ const Header = () => {
               )}
               <ul className="md:flex hidden  lg:gap-7 pr-2  md:gap-4  items-center justify-between font-raleway leading-[26px] ">
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  Getting Started
+                  <Link href="/">Getting Started</Link>
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  Services
+                  <Link href="/Services"> Services</Link>
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  Get In Touch
+                  <Link href="/GetInTouch"> Get In Touch </Link>
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
                   Packages
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer ">
-                  FAQs
+                  <Link href="/FAQ"> FAQs</Link>
                 </li>
                 <li className="flex hover:border-b-[1px] gap-1 border-[#FF0000] cursor-pointer">
                   <div className="w-[30px] h-[20px]">
@@ -195,15 +201,14 @@ const Header = () => {
           </Container>
         </div>
 
-<div>
+        <div>
   <Arrow/>
 </div>
 
-{/* <div className=" fixed  w-14 ml-[90%] mt-[40%] cursor-pointer "  onClick={handleChat}>
+        {/* <div className=" fixed  w-14 ml-[90%] mt-[40%] cursor-pointer "  onClick={handleChat}>
   <Image src="/chat.svg" alt="chat" fill className="custom_img"/>
 </div>
 {chat&&<Chat/>} */}
-
       </div>
     </>
   );

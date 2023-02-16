@@ -82,13 +82,13 @@ const Footer = () => {
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    Services
+                    <Link href="/Services">Services</Link>
                   </p>
                 </div>
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    Get in touch
+                    <Link href="/GetInTouch"> Get In Touch </Link>
                   </p>
                 </div>
 
@@ -102,7 +102,7 @@ const Footer = () => {
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
-                    FAQs
+                    <Link href="/FAQ"> FAQs</Link>
                   </p>
                 </div>
 
@@ -133,7 +133,6 @@ const Footer = () => {
                   </p>
                 </div>
 
-
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
@@ -161,7 +160,7 @@ const Footer = () => {
                       className="custom_img"
                     />
                   </div>
-                 
+
                   <div className="xl:mt-16 lg:mt-24 md:mt-14 sm:mt-8 mt-6 ">
                     <div className="xl:w-20 lg:h-10 h-6 lg:w-20 sm:w-12 w-8 cursor-pointer  ">
                       <Image
@@ -182,8 +181,6 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-
-               
               </div>
             </div>
 
@@ -271,7 +268,6 @@ const Footer = () => {
             </div>
           </div>
 
-        
           <div className="text-center mt-8 md:text-base sm:text-xsw xs:text-[5px]">
             © Copyright 2022 Myride Pay. All Rights Reserved.
           </div>

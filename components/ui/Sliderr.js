@@ -1,42 +1,43 @@
 // import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
- //import Button from "../../ui/Button";
+//import Button from "../../ui/Button";
 // import Container from "../../ui/Container";
+import Link from "next/link";
 import Slider from "react-slick";
 import Container from "./Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Sliderr = ()=> {
+const Sliderr = () => {
+  //const [loading, setLoading] = useState(true);
+  const settings = {
+    //className: "slick-prev:before",
+    dots: true,
+    arrows: true,
 
- //const [loading, setLoading] = useState(true);
-    const settings = {
-      //className: "slick-prev:before",
-      dots: true,
-      arrows: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
 
-      infinite: false,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-   
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-      ],
-    };
-     //setTimeout(() => setLoading(false), 3000);
-    return (
-      <div className="md:text-2xl sm:text:lg text-xs  font-sans">
-        <Container>
-          <Slider {...settings}>
-            <div className="  ">
+      },
+    ],
+  };
+  //setTimeout(() => setLoading(false), 3000);
+  return (
+    <div className="md:text-2xl sm:text:lg text-xs  font-sans">
+      <Container>
+        <Slider {...settings}>
+          <Link href="/OnlinePayment">
+            <div className=" cursor-pointer  ">
               <div className=" cursor-pointer  ">
                 <Image
                   src="/OnlinePayment.webp"
@@ -50,70 +51,70 @@ const Sliderr = ()=> {
                 Online Payment Solutions
               </p>
             </div>
-            <div className="  ">
-              <div className=" cursor-pointer ">
-                <Image
-                  src="/PaymentLinks.webp"
-                  fill
-                  alt="online payment system"
-                  className="custom_img"
-                />
-              </div>
+          </Link>
 
-              <p className="text-center cursor-pointer ">Payment Links</p>
+          <div className="  ">
+            <div className=" cursor-pointer ">
+              <Image
+                src="/PaymentLinks.webp"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
             </div>
-            <div className=" ">
-              <div className=" cursor-pointer ">
-                <Image
-                  src="/PaymentTokenization.webp"
-                  fill
-                  alt="online payment system"
-                  className="custom_img"
-                />
-              </div>
-              <p className="text-center  cursor-pointer">
-                Payment Tokenization
-              </p>
+
+            <p className="text-center cursor-pointer ">Payment Links</p>
+          </div>
+          <div className=" ">
+            <div className=" cursor-pointer ">
+              <Image
+                src="/PaymentTokenization.webp"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
             </div>
-            <div className=" ">
-              <div className=" cursor-pointer ">
-                <Image
-                  src="/RecurringPayments.webp"
-                  fill
-                  alt="online payment system"
-                  className="custom_img"
-                />
-              </div>
-              <p className="text-center cursor-pointer">Recurring Payments</p>
+            <p className="text-center  cursor-pointer">Payment Tokenization</p>
+          </div>
+          <div className=" ">
+            <div className=" cursor-pointer ">
+              <Image
+                src="/RecurringPayments.webp"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
             </div>
-            <div className=" ">
-              <div className=" cursor-pointer ">
-                <Image
-                  src="/RecurringPayments.webp"
-                  fill
-                  alt="online payment system"
-                  className="custom_img"
-                />
-              </div>
-              <p className="text-center cursor-pointer">Recurring Payments </p>
+            <p className="text-center cursor-pointer">Recurring Payments</p>
+          </div>
+          <div className=" ">
+            <div className=" cursor-pointer ">
+              <Image
+                src="/RecurringPayments.webp"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
             </div>
-            <div className="   ">
-              <div className=" cursor-pointer">
-                <Image
-                  src="/OnlinePayment.webp"
-                  fill
-                  alt="online payment system"
-                  className="custom_img"
-                />
-              </div>
-              <p className="text-center cursor-pointer">
-                Online Payment Solutions
-              </p>
+            <p className="text-center cursor-pointer">Recurring Payments </p>
+          </div>
+          <div className="   ">
+            <div className=" cursor-pointer">
+              <Image
+                src="/OnlinePayment.webp"
+                fill
+                alt="online payment system"
+                className="custom_img"
+              />
             </div>
-          </Slider>
-        </Container>
-      </div>
-    );
+            <p className="text-center cursor-pointer">
+              Online Payment Solutions
+            </p>
+          </div>
+        </Slider>
+      </Container>
+    </div>
+  );
 };
 
 export default Sliderr;
