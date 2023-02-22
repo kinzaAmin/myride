@@ -1,13 +1,12 @@
-import DefaultLayout from '@/components/Layout/Layout';
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false; 
-import '@/styles/globals.css'
-import Script from 'next/script';
-export default function App({ Component, pageProps }) {
+import DefaultLayout from "@/components/Layout/Layout";
 
-  if( Component.getLayout){
-    return Component.getLayout
- (<Component {...pageProps} />);
+import "@/styles/globals.css";
+import Script from "next/script";
+import { appWithTranslation } from "next-i18next";
+
+const MyApp = ({ Component, pageProps }) => {
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />);
   }
 
   return (
@@ -26,9 +25,8 @@ export default function App({ Component, pageProps }) {
           s0.parentNode.insertBefore(s1,s0);
           })();`}
       </Script>
-
-      
     </DefaultLayout>
   );
-}
+};
 
+export default appWithTranslation( MyApp);

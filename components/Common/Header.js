@@ -1,26 +1,42 @@
 import React, { useState, useEffect } from "react";
-//import { SlideDown } from "react-slidedown";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../ui/Container";
-//import Chat from "../ui/chat";
-import Arrow from "../ui/Arrow";
+import { useTranslation } from "next-i18next";
+import LocaleSwitcher from "../ui/Locale-switcher";
 import { useRouter } from "next/router";
-const Header = () => {
- 
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// //import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+
+
+import Arrow from "../ui/Arrow";
+
+export default  function Header()  {
+
+
+  
+
+
+   const router = useRouter();
+    const { t } = useTranslation("");
+    console.log(router)
+
+    useEffect(() => {
+      let dir = router.locale == "ar" ? "rtl" : "ltr";
+      let lang = router.locale == "ar" ? "ar" : "en";
+      document.querySelector("html").setAttribute("dir", dir);
+      document.querySelector("html").setAttribute("lang", lang);
+
+      
+    }, [router.locale]);
+
+  
   const [scrollTop, setScrollTop] = useState("");
   const [showHeader, setShowHeader] = useState(false);
 
-  // let router = useRouter();
-  // let greeting= 
-  // router.locale ==="en"?"getting staerted"
-  // : router.locale==="de"? "ابدء" : " ";
   
-//  const [chat, setChat] = useState(false);
-//  const handleChat=()=>{
-//   setChat(true)
-//  }
-
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -42,8 +58,6 @@ const Header = () => {
       setShowHeader(false);
     }
   }, [scrollTop]);
-
-  
 
   const [isMenu, setMenu] = useState(false);
 
@@ -133,19 +147,19 @@ const Header = () => {
                   button
                 </div>
               )}
-
+              {/*============================================= mobile View=================================== */}
               {isMenu && (
                 <ul className="  md:invisible visible w-[70%]   pb-8 fixed mt-[55px] shadow bg-white    items-center justify-between font-raleway leading-[26px]  ">
                   <li className=" cursor-pointer pl-14 border-b  py-3">
-                    <Link href="/">Getting Started</Link>
+                    Getting Started
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer">
-                    <Link href="/Services"> Services</Link>
+                    Services
                   </li>
 
                   <li className="pl-14 border-b  py-3 cursor-pointer">
-                    <Link href="/GetInTouch"> Get In Touch </Link>
+                    Get In Touch
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer">
@@ -153,7 +167,7 @@ const Header = () => {
                   </li>
 
                   <li className=" pl-14 border-b  py-3 cursor-pointer ">
-                    <Link href="/FAQ"> FAQs</Link>
+                    FAQs
                   </li>
 
                   <li className="flex  gap-1 cursor-pointer pl-14 border-b  py-3">
@@ -169,32 +183,38 @@ const Header = () => {
                   </li>
                 </ul>
               )}
+              {/*============================================= desktop View=================================== */}
               <ul className="md:flex hidden  lg:gap-7 pr-2  md:gap-4  items-center justify-between font-raleway leading-[26px] ">
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  <Link href="/">Getting Started</Link>
+                  {/* <Link href="/">Getting Started</Link> */}
+                  {t("header.Getting Started")}
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  <Link href="/Services"> Services</Link>
+                  {/* <Link href="/Services"> Services</Link> */}
+                  {t("header.Services")}
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  <Link href="/GetInTouch"> Get In Touch </Link>
+                  {t("header.Get In Touch")}
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer">
-                  Packages
+                  {t("header.Packages")}
                 </li>
                 <li className="hover:border-b-[1px] border-[#FF0000] cursor-pointer ">
-                  <Link href="/FAQ"> FAQs</Link>
+                  {t("header.FAQs")}
                 </li>
+
                 <li className="flex hover:border-b-[1px] gap-1 border-[#FF0000] cursor-pointer">
-                  <div className="w-[30px] h-[20px]">
+                  <LocaleSwitcher />
+                  {/* {i18n.language == "en" ? "English" : "ar"} */}
+                  {/* <div className="w-[30px] h-[20px]">
                     <Image
-                      src="/flag.png"
+                      src="/en.png"
                       fill
                       alt="flag"
                       className="custom_img"
                     />
                   </div>
-                  <span>عربى</span>
+                  <span>عربى</span> */}
                 </li>
               </ul>
             </div>
@@ -202,16 +222,19 @@ const Header = () => {
         </div>
 
         <div>
-  <Arrow/>
-</div>
-
-        {/* <div className=" fixed  w-14 ml-[90%] mt-[40%] cursor-pointer "  onClick={handleChat}>
-  <Image src="/chat.svg" alt="chat" fill className="custom_img"/>
-</div>
-{chat&&<Chat/>} */}
+          <Arrow />
+        </div>
       </div>
     </>
   );
 };
 
-export default Header;
+
+
+// export async function getStaticProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["common"])),
+//     },
+//   };
+// }

@@ -2,31 +2,55 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 //import styles from '@/styles/Home.module.css'
 import Container from "@/components/ui/Container";
-import GetInTouch from "./GetInTouch";
+import Slider from "react-slick";
+//import GetInTouch from "./GetInTouch";
 import { useState } from "react";
-import Services from "./Services";
-import FAQ from "./FAQ";
+import { useRouter } from "next/router";
 import Sliderr from "@/components/ui/Sliderr";
 import Slider1 from "@/components/ui/Slider1";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import YouTube from "react-youtube";
+
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  // const [Faq1, setFaq1] = useState(false);
-  // const [Faq2, setFaq2] = useState(false);
-  // const [Faq3, setFaq3] = useState(false);
-  // const [Faq4, setFaq4] = useState(false);
-  // const [Faq5, setFaq5] = useState(false);
-  // const [Faq6, setFaq6] = useState(false);
-  // const [Faq7, setFaq7] = useState(false);
-  // const [Faq8, setFaq8] = useState(false);
-  // const [Faq9, setFaq9] = useState(false);
-  // const [Faq10, setFaq10] = useState(false);
+export default function Home({ _nextI18Next }) {
+  const router = useRouter();
+  console.log(router);
+  const { t} = useTranslation("");
+  const settings = {
+    //className: "slick-prev:before",
+    dots: true,
+    arrows: true,
+
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  const [Faq1, setFaq1] = useState(false);
+  const [Faq2, setFaq2] = useState(false);
+  const [Faq3, setFaq3] = useState(false);
+  const [Faq4, setFaq4] = useState(false);
+  const [Faq5, setFaq5] = useState(false);
+  const [Faq6, setFaq6] = useState(false);
+  const [Faq7, setFaq7] = useState(false);
+  const [Faq8, setFaq8] = useState(false);
+  const [Faq9, setFaq9] = useState(false);
+  const [Faq10, setFaq10] = useState(false);
   return (
     <>
       <Head>
@@ -59,19 +83,6 @@ export default function Home() {
                 title="How To Pay For Luxury Car Rentals | Solution For The Payments | MyRidePay"
                 className="custom_img"
               />
-
-              {/* <iframe
-                class="elementor-video"
-                frameborder="0"
-                allowfullscreen="1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                title="How To Pay For Luxury Car Rentals | Solution For The Payments | MyRidePay"
-                width="640"
-                height="360"
-                src="https://www.youtube.com/embed/pxOu8gO5mTI?controls=1&amp;rel=0&amp;playsinline=1&amp;modestbranding=1&amp;autoplay=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmyridepay.com&amp;widgetid=1"
-                id="widget2"
-                data-gtm-yt-inspected-4="true"
-              ></iframe> */}
             </div>
           </div>
         </div>
@@ -80,7 +91,8 @@ export default function Home() {
         <div className="  mt-[20px] mx-3 p-5  z-0  bg-background bg-center bg-cover bg-no-repeat">
           <Container>
             <div className="text-center leading-[30px] md:ml-0 ml-2 sm:p-0 md:p-6 md:text-3xl text-lg  font-bold leading-1 font-sans">
-              Smartest Payment Gateway for
+              {t("smartestPayment.smartest payment heading")}
+
               <span className="text-red-600"> Car Rentals</span>
             </div>
 
@@ -94,7 +106,10 @@ export default function Home() {
                     className="custom_img"
                   />
                 </div>
-                <div className=" text-center">Sign Up for Free</div>
+                <div className=" text-center">
+                  {" "}
+                  {t("smartestPayment.FreeSignup")}
+                </div>
               </div>
               <div className=" flex-col justify-between items-center ">
                 <div className=" ">
@@ -106,7 +121,7 @@ export default function Home() {
                   />
                 </div>
                 <div className=" text-center  ">
-                  Get Application Approval
+                  {t("smartestPayment.applicationApproval")}
                   <span className="ml-1 ">within 24 hours</span>
                 </div>
               </div>
@@ -120,12 +135,14 @@ export default function Home() {
                     className="custom_img"
                   />
                 </div>
-                <div className="text-center">Start Receiving Payments</div>
+                <div className="text-center">
+                  {t("smartestPayment.receivingPayments")}{" "}
+                </div>
               </div>
             </div>
 
             <div className="bg-[#ff0000]  md:text-[22px] text-[12px] font-normal font-Roboto cursor-pointer  text-white hover:text-[#ff0000]  hover:bg-white hover:border border-2 table  border-[#ff0000] md:w-24 sm:w-20 w-14 rounded  text-center mt-5 lg:ml-[46%] ml-[44%]">
-              <span className="p-1 ">Sign Up</span>
+              <span className="p-1 "> {t("smartestPayment.buttonSignin")}</span>
             </div>
           </Container>
         </div>
@@ -143,18 +160,13 @@ export default function Home() {
               <div className="md:flex gap-5  ">
                 <div className="md:w-[50%] w-full md:p-4 sm:p-2 sm:pr-0 pl-8 pr-8">
                   <span className="md:text-[22px] text-[16px] text-darkGray font-serif font-semibold">
-                    Going Global?
+                    {t("goinngGlobal.global title")}
                   </span>
                   <p className=" md:text-[22px] text-[16px] text-darkGray leading-[26px] font-nova font-semibold">
-                    We got your business covered
+                    {t("goinngGlobal.global heading")}
                   </p>
                   <span className="w-10 text-darkGray text-base font-light font-sans leading-[27px] text-[16px] text-center">
-                    With MyridePay, geography will be history. To cater to
-                    online businesses with global reach, our secure and seamless
-                    global payment gateway can support customers by facilitating
-                    payments through multiple payment options like American
-                    Express, MasterCard, Visa, mada, SADAD, STC Pay, OmanNet and
-                    many more.
+                    {t("goinngGlobal.global content")}
                   </span>
                 </div>
 
@@ -168,7 +180,9 @@ export default function Home() {
                         height={10}
                         className="relative  "
                       />
-                      <span className="w-full ">Easy Monthly Installments</span>
+                      <span className="w-full ">
+                        {t("goinngGlobal.global point1")}
+                      </span>
                     </div>
                     <div className="md:flex  flex gap-4 md:mt-0 mt-2">
                       <Image
@@ -178,7 +192,9 @@ export default function Home() {
                         height={10}
                         className="relative   md:mt-0 mt-2"
                       />
-                      <span className="mt-2">Payment Tokenization</span>
+                      <span className="mt-2">
+                        {t("goinngGlobal.global point2")}
+                      </span>
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-2 justify-between ">
@@ -190,7 +206,9 @@ export default function Home() {
                         height={10}
                         className="relative  md:mt-0 mt-4"
                       />
-                      <span className=" md:mt-0  mt-4">Subscriptions</span>
+                      <span className=" md:mt-0  mt-4">
+                        {t("goinngGlobal.global point3")}
+                      </span>
                     </div>
                     <div className="md:flex  flex gap-4 mt-2">
                       <Image
@@ -200,7 +218,9 @@ export default function Home() {
                         height={10}
                         className="relative  md:mt-0 "
                       />
-                      <span className="">Recurring Payments</span>
+                      <span className="">
+                        {t("goinngGlobal.global point4")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -214,20 +234,11 @@ export default function Home() {
             <div className="w-full  md:flex flex-shrink-0 md:p-4 md:gap-7 mt-5 text-[16px]  ">
               <div className="md:w-[50%] w-full md:p-0 sm:p-2 p-8 ">
                 <span className="md:text-[25px] text-[16px] leading-3 font-sans text-darkGray    font-semibold ">
-                  Platform to Align Your Car Rental Collections Once and For All
+                  {t("platform to align.plateform title")}
                 </span>
 
                 <div className="md:w-[456px] font-Roboto w-full  text-darkGray ">
-                  In any business platform, secure payments are the biggest
-                  concern. Car rental industry in UAE has vast prospects, and
-                  with that comes a concern to keep an established payment
-                  gateway for the renters all around the world. MyRide being the
-                  devotees for cars wanted an easy process of receiving,
-                  converting and tracking the payments received by the renters
-                  all around the world. Hence, MyRidePay was born. So no matter
-                  what kind of car rental industry you have, let us handle your
-                  payment gateway and be free of excessive processes to handle
-                  the payments.
+                  {t("platform to align.platform content")}
                 </div>
               </div>
               <div className="w-[50%] mx-auto md:pl-[13%]">
@@ -259,48 +270,21 @@ export default function Home() {
               </div>
               <div className=" md:w-[50%] w-full text-left  md:p-4 sm:p-4 p-8">
                 <span className=" md:text-[25px] text-[16px] text-left leading-3  font-sans font-semibold text-darkGray">
-                  Why Choose MyRidePay for a Car Rental Gateway?
+                  {t("why choose my ride.choose us title")}
                 </span>
 
                 <div className="text-[16px] items-center font-Roboto  text-darkGray w-full">
-                  To provide car rental companies with the most secure payment
-                  gateway, we have partnered with PayTabs. PayTabs is one of the
-                  leading payment gateway providers for every industry. Our
-                  years of experience in the automobile industry and PayTabs
-                  experience combined can solve all of your payment problems.
-                  <li>
-                    Accept payments from anywhere in the world with multiple
-                    alternative payment options, our payment gateway makes car
-                    rental for your customers hassle-free which subsequently
-                    helps you to grow your business.
-                  </li>
-                  <li>
-                    Payment security and fraud prevention are the main focus of
-                    this venture. We keep your customers data secure, so they
-                    can rely on you for your services.
-                  </li>
-                  <li>
-                    Boost your processing speed with this payment platform, more
-                    reliability and better acceptance rates.
-                  </li>
-                  <li>
-                    You will have a personal and dedicated account team and live
-                    transaction monitoring option for closer accessibility.
-                  </li>
-                  <li>
-                    Simple website integrations with API solutions, SDK, HTTPS
-                    redirection and secure hosting.
-                  </li>
-                  <li>
-                    Quickly receive access to the amount paid by your customers.
-                  </li>
-                  <li>
-                    Accept payments securely and immediately via Visa and
-                    Mastercard and we will settle your sales automatically to
-                    your bank account.
-                  </li>
+                  {t("why choose my ride.")}
+                  <li>{t("why choose my ride.choose us content")}</li>
+                  <li>{t("why choose my ride.choose us point 1")}</li>
+                  <li>{t("why choose my ride.choose us point 2")}</li>
+                  <li>{t("why choose my ride.choose us point 3")}</li>
+                  <li>{t("why choose my ride.choose us point 4")}</li>
+                  <li>{t("why choose my ride.choose us point 5")}</li>
+                  <li>{t("why choose my ride.choose us point 6")}</li>
+                  <li>{t("why choose my ride.choose us point 7")}</li>
                   <div className="  text-[10px]  px-[3px] md:py-[10px] py-[15px] font-Roboto bg-gradient-to-r from-[#ff0000] to-[#bf0000] cursor-pointer   text-white sm:text-xs   font-bold text-center lg:w-[60%] md:w-[80%] sm:w-[50%] w-[60%]  md:ml-0 ml-3 p-2 rounded mt-6 ">
-                    Checkout Our Awesome Packages
+                    {t("why choose my ride.choose us btn")}
                   </div>
                 </div>
               </div>
@@ -310,25 +294,810 @@ export default function Home() {
         {/*================================================== Services Slider ============================================ */}
 
         <div className=" md:px-0 px-10  ">
-          <Services />
+          <div className=" md:px-0 px-10  ">
+            <p className="text-center text-4xl text-[2rem] font-normal ">
+              {t("services.services heading")}
+            </p>
+            <div className=" mx-5  min-w-md ">
+              {/* <Sliderr /> */}
+
+              <div className="md:text-2xl sm:text:lg text-xs  font-sans">
+                <Container>
+                  <Slider {...settings}>
+                    <Link href="">
+                      <div className="   ">
+                        <div className=" cursor-pointer  ">
+                          <Image
+                            src="/OnlinePayment.webp"
+                            fill
+                            alt="online payment system"
+                            className="custom_img cursor-pointer"
+                          />
+                        </div>
+
+                        <p className="text-center cursor-pointer">
+                          {t("services.service1")}
+                        </p>
+                      </div>
+                    </Link>
+
+                    <div className="  ">
+                      <div className=" cursor-pointer ">
+                        <Image
+                          src="/PaymentLinks.webp"
+                          fill
+                          alt="online payment system"
+                          className="custom_img"
+                        />
+                      </div>
+
+                      <p className="text-center cursor-pointer ">
+                        {t("services.service 2")}
+                      </p>
+                    </div>
+                    <div className=" ">
+                      <div className=" cursor-pointer ">
+                        <Image
+                          src="/PaymentTokenization.webp"
+                          fill
+                          alt="online payment system"
+                          className="custom_img"
+                        />
+                      </div>
+                      <p className="text-center  cursor-pointer">
+                        {t("services.service 3")}
+                      </p>
+                    </div>
+                    <div className=" ">
+                      <div className=" cursor-pointer ">
+                        <Image
+                          src="/RecurringPayments.webp"
+                          fill
+                          alt="online payment system"
+                          className="custom_img"
+                        />
+                      </div>
+                      <p className="text-center cursor-pointer">
+                        {t("services.service 4")}
+                      </p>
+                    </div>
+                    <div className=" ">
+                      <div className=" cursor-pointer ">
+                        <Image
+                          src="/RecurringPayments.webp"
+                          fill
+                          alt="online payment system"
+                          className="custom_img"
+                        />
+                      </div>
+                      <p className="text-center cursor-pointer">
+                        {t("services.service 4")}
+                      </p>
+                    </div>
+                    <div className="   ">
+                      <div className=" cursor-pointer">
+                        <Image
+                          src="/OnlinePayment.webp"
+                          fill
+                          alt="online payment system"
+                          className="custom_img"
+                        />
+                      </div>
+                      <p className="text-center cursor-pointer">
+                        {t("services.service1")}
+                      </p>
+                    </div>
+                  </Slider>
+                </Container>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/*================================================== FAQs =================================================== */}
-        <FAQ />
+        <div className=" mt-8 ">
+          <Container>
+            <div className="w-full justify-between md:p-4 sm:p-0 p-8   ">
+              <span className="text-4xl text-[#212529] text-[24px] indent-[22px] font-raleway px-6 ">
+                {t("FAQ.FAQ heading")}
+              </span>
+              <div className="md:flex justify-between w-full mt-5">
+                <div className="md:w-[50%] w-full bg-gray-100">
+                  <div className="bg-white w-full ">
+                    <div className="flex h-12 text-[#0e314c] font-medium font-raleway text-[16px] ">
+                      {Faq1 ? (
+                        <div
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                          onClick={() => setFaq1(false)}
+                        >
+                          <div className="w-5">
+                            <Image
+                              src="/SubtractWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-3 md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <div
+                          className="sm:w-[10%] w-[13%] h-full bg-[#ff0000]  p-2  text-center text-white font-bold cursor-pointer"
+                          onClick={() => {
+                            setFaq1(true);
+                            setFaq2(false);
+                            setFaq3(false);
+                            setFaq4(false);
+                            setFaq5(false);
+                          }}
+                        >
+                          {/* <FontAwesomeIcon icon="fa-solid fa-plus" style={{color:"white"}} /> */}
+                          <div className="w-5">
+                            <Image
+                              src="/AddWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      <div className=" p-3 leading-[16px]">{t("FAQ.Q1")}</div>
+                    </div>
+
+                    {Faq1 ? (
+                      <SlideDown>
+                        <div className="flex border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px] font-raleway  text-[#212529] shadow-sm  ">
+                            {t("FAQ.Ans1")}
+                          </div>
+                        </div>
+                      </SlideDown>
+                    ) : (
+                      " "
+                    )}
+                  </div>
+                  <div>
+                    <div className="bg-white ">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq2 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq2(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq2(true),
+                                setFaq3(false),
+                                setFaq4(false),
+                                setFaq5(false);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q2")}</div>
+                      </div>
+
+                      {Faq2 ? (
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3">
+                            <div className="px-8 font-[300] text-[16px] leading-[27px] font-raleway text-[#57647c] shadow-sm">
+                              {t("FAQ.Ans2")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                    <div className="bg-white">
+                      <div className="flex h-16 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq3 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq3(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-3 "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full  bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq2(false),
+                                setFaq3(true),
+                                setFaq4(false),
+                                setFaq5(false);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-2 md:ml-[2px] mt-3 "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px] ">{t("FAQ.Q3")}</div>
+                      </div>
+
+                      {Faq3 ? (
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 transition duration-500 ease-in-out">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              {t("FAQ.Ans3")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="bg-white">
+                    <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                      {Faq4 ? (
+                        <div
+                          className="md:w-[10%] sm:w-[8%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                          onClick={() => setFaq4(false)}
+                        >
+                          <div className="w-5">
+                            <Image
+                              src="/SubtractWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <div
+                          className="md:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
+                          onClick={() => {
+                            setFaq1(false),
+                              setFaq2(false),
+                              setFaq2(false),
+                              setFaq3(false),
+                              setFaq4(true),
+                              setFaq5(false);
+                          }}
+                        >
+                          <div className="w-5">
+                            <Image
+                              src="/AddWhite.svg"
+                              fill
+                              alt="plus"
+                              className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px] "
+                            />
+                          </div>
+                        </div>
+                      )}
+                      <div className="p-3 leading-[16px]">{t("FAQ.Q4")}</div>
+                    </div>
+
+                    {Faq4 ? (
+                      <SlideDown>
+                        <div className="flex  border-t-2 pt-3">
+                          <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                            {t("FAQ.Ans4")}
+                          </div>
+                        </div>
+                      </SlideDown>
+                    ) : (
+                      " "
+                    )}
+                  </div>
+
+                  <div className="">
+                    <div className="bg-white">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq5 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%]  bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq5(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[7px] md:ml-[2px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq1(false),
+                                setFaq1(false),
+                                setFaq2(false),
+                                setFaq3(false),
+                                setFaq4(false),
+                                setFaq5(true);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[8px] md:ml-[2px] mt-[6px]  "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q5")}</div>
+                      </div>
+
+                      {Faq5 ? (
+                        <SlideDown>
+                          <div className="flex justify-between border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px] font-raleway shadow-sm leading-[24px] text-[#212529]">
+                              {t("FAQ.Ans5")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/*=============================================== FAQs 2nd part ===========================================================*/}
+
+                <div className="md:w-[50%] bg-gray-100 w-full md:mt-0 mt-5">
+                  <div>
+                    <div className="bg-white">
+                      <div className="flex h-12  text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq6 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq6(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(true),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(true);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        )}
+
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q6")}</div>
+                      </div>
+
+                      {Faq6 ? (
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 ">
+                            <div className=" px-7 font-[300] text-[16px]  leading-[27px] font-raleway text-[#57647c] shadow-sm">
+                              {t("FAQ.Ans6")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="bg-white">
+                      <div className="flex h-12  mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq7 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2 text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq7(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(true),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(false);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q7")}</div>
+                      </div>
+
+                      {Faq7 ? (
+                        <SlideDown>
+                          <div className="flex border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              {t("FAQ.Ans7")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="bg-white">
+                      <div className="flex h-16 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq8 ? (
+                          <div
+                            className="w-[15%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq8(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-3 "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="w-[15%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(true),
+                                setFaq9(false),
+                                setFaq10(false);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-3 "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q8")}</div>
+                      </div>
+
+                      {Faq8 ? (
+                        <SlideDown>
+                          <div className="flex  border-t-2 pt-3 text-[#0e314c] font-medium font-raleway text-[16px] items-center ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              {t("FAQ.Ans8")}
+                              <li>{t("FAQ.Ans8 p1")}</li>
+                              <li>{t("FAQ.Ans8 p2")}</li>
+                              <li>{t("FAQ.Ans8 p3")}</li>
+                              <li>{t("FAQ.Ans8 p4")}</li>
+                              <li>{t("FAQ.Ans8 p5")}</li>
+                              <li>{t("FAQ.Ans8 p6")}</li>
+                              <li>{t("FAQ.Ans8 p7")}</li>
+                              {t("FAQ.Ans8 content")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="bg-white">
+                      <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq9 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq9(false)}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] h-full bg-[#ff0000] p-2  text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(true),
+                                setFaq10(false);
+                            }}
+                          >
+                            <div className="w-5">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q9")}</div>
+                      </div>
+
+                      {Faq9 ? (
+                        <SlideDown>
+                          <div className="flex   border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px] shadow-sm leading-[24px] font-raleway text-[#212529] ">
+                              {t("FAQ.Ans9")}
+                              <li>{t("FAQ.Ans9 p1")} </li>
+                              <li>{t("FAQ.Ans9 p2")}</li>
+                              <li>T{t("FAQ.Ans9 p3")}</li>
+                              <li>{t("FAQ.Ans9 p4")}</li>
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="bg-white">
+                      <div className="flex h-12 mt-5 text-[#0e314c] font-medium font-raleway text-[16px] items-center">
+                        {Faq10 ? (
+                          <div
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full text-center text-white font-bold cursor-pointer"
+                            onClick={() => setFaq10(false)}
+                          >
+                            <div className="w-5 ">
+                              <Image
+                                src="/SubtractWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="sm:w-[10%] w-[13%] bg-[#ff0000] p-2 h-full items-center text-center text-white font-bold cursor-pointer "
+                            onClick={() => {
+                              setFaq6(false),
+                                setFaq7(false),
+                                setFaq8(false),
+                                setFaq9(false),
+                                setFaq10(true);
+                            }}
+                          >
+                            <div className="w-5  ">
+                              <Image
+                                src="/AddWhite.svg"
+                                fill
+                                alt="plus"
+                                className="custom_img lg:ml-[10px] md:ml-[3px] mt-[6px] "
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3 leading-[16px]">{t("FAQ.Q10")}</div>
+                      </div>
+
+                      {Faq10 ? (
+                        <SlideDown>
+                          <div className="flex  border-t-2 pt-3 ">
+                            <div className="px-8 font-normal text-[16px]  leading-[24px] font-raleway text-[#212529] shadow-sm">
+                              {t("FAQ.Ans10")}
+                            </div>
+                          </div>
+                        </SlideDown>
+                      ) : (
+                        " "
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
         {/*======================================================== Create Your Online Payments Account Now======================================== */}
 
-        <GetInTouch />
+        <div className="from-[#25252517]   bg-background1 bg-center bg-cover bg-no-repeat mt-8 ">
+          <Container className="">
+            <div className="md:flex justify-between text-white  xs:p-11 p-7">
+              <div className="md:w-[50%] w-full mt-5 mb-2">
+                <div>
+                  <span className="md:text-[25px] leading-[25px] text-[20px] font-bold text-[#FFFFFF] ">
+                    {t("GetStarted.Ready to get started")}
+                  </span>
+
+                  <span className="text-[16px] leading-[27px] text-[#FFFFFF] font-Roboto font-light">
+                    <p className="w-[90%]">{t("GetStarted.Ready point1")}</p>
+
+                    <p>{t("GetStarted.Ready point2")}</p>
+                    <p>{t("GetStarted.Ready point3")}</p>
+                  </span>
+                </div>
+
+                <div className="md:mt-2  mt-8">
+                  <span className="md:text-[25px] leading-[30px] text-[20px] font-bold text-[#FFFFFF]">
+                    {t("GetStarted.Onboarding")}
+                  </span>
+
+                  <p className="mt-3 text-[16px] leading-[27px] text-[#FFFFFF] font-Roboto font-light ">
+                    {t("GetStarted.Onboarding point1")}
+                  </p>
+                </div>
+
+                <div className="md:mt-2 mt-8">
+                  <span className="md:text-[25px] font-raleway leading-[43px] font-normal text-[20px]  text-[#FFFFFF]">
+                    {t("GetStarted.Integration")}
+                  </span>
+
+                  <p className="mt-3 text-[16px] leading-[27px] font-Roboto text-[#FFFFFF] font-light">
+                    {t("GetStarted.Integration point1")}
+                  </p>
+                </div>
+              </div>
+
+              <div className=" md:w-[50%] w-full mt-5 ">
+                <p className="md:text-center font-medium font-Roboto leading-[24px]  text-[24px]">
+                  {t("GetStarted.Create Payment")}
+                </p>
+
+                <div className="  grid  md:grid-cols-2 grid-cols-1 justify-between gap-4 md:ml-4 mt-5 text-[#7A8489]">
+                  <input
+                    type="text"
+                    required
+                    placeholder={t("GetStarted.Create input1")}
+                    className="focus:outline-0 focus:border:none w-full  p-2"
+                  />
+
+                  <input
+                    type="text"
+                    required
+                    placeholder={t("GetStarted.Create input2")}
+                    className="focus:outline-0  w-full p-2 md:mt-0 mt-3"
+                  />
+                </div>
+
+                <div className="  grid  md:grid-cols-2 grid-cols-1 justify-between  gap-1 md:ml-4 md:mt-5 mt-3 w-full text-[#7A8489]">
+                  <input
+                    type="text"
+                    required
+                    placeholder={t("GetStarted.Create input3")}
+                    className="focus:outline-0 md:w-[96%] md:mt-0 mt-3  p-2"
+                  />
+
+                  <select
+                    name="Number of Cars*"
+                    id="cars"
+                    required
+                    className=" p-2 md:w-[95%] w-full md:mt-0 mt-4 focus:outline-0  "
+                  >
+                    <option value="volvo">
+                      {t("GetStarted.Create input4")}
+                    </option>
+                    <option value="saab">(1-10)</option>
+                    <option value="mercedes">(11-30)</option>
+                    <option value="audi">(31-50)</option>
+                    <option value="audi">(50+)</option>
+                  </select>
+                </div>
+
+                <div className="bg-[#4f504d] md:w-[240px] w-[80%] px-[14px] py-[15px] text-center sm:text-[16px] text-[12px] font-Roboto font-medium rounded mt-8 md:ml-32 sm:ml-10 ml-4 cursor-pointer">
+                  {t("GetStarted.Request a Call Back")}
+                </div>
+
+                <div className="flex gap-3 md:visible  invisible mt-14 ml-14">
+                  <div className="w-[163px]">
+                    <Image
+                      src="./onlineRegistration.svg"
+                      fill
+                      className="custom_img"
+                    />
+                  </div>
+
+                  <div className="w-[163px]">
+                    <Image
+                      src="/getApplication.webp"
+                      fill
+                      className="custom_img"
+                    />
+                  </div>
+                  <div className="w-[163px]">
+                    <Image
+                      src="/RecevingPayments.webp"
+                      fill
+                      className="custom_img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
 
         {/*===================================================== Our Service Provider======================================= */}
         <div className="w-full mt-8    ">
           <div className="text-center md:text-4xl text-[16px] font-sans font-normal text-[#7c7c7c] p-4 ">
-            Our Service Provider
+            {t("service-provider. service provider heading")}
           </div>
 
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:flex-row flex-col">
             <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
               <div className=" 2xl:text-2xl lg:text-xl md:text-lg text-base  text-[#212529] font-raleway font-normal">
-                Banking Service Provider
+                {t("service-provider.bankingservice")}
               </div>
 
               <div className=" grid md:grid-cols-2  grid-cols-1 gap-5">
@@ -354,7 +1123,7 @@ export default function Home() {
 
             <div className="bg-[#e9e9e9] p-10 gap-5 flex flex-col items-center justify-center">
               <div className=" text-[24px] leading-[29px]  text-[#212529] font-raleway font-normal">
-                Payment Gateway Provider
+                {t("service-provider. payment gateway")}
               </div>
               <div className=" w-[40%]">
                 <Image
@@ -368,7 +1137,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center justify-between gap-5 p-10 bg-[#e9e9e9]">
               <div className=" text-[24px] leading-[29px]  text-[#212529] font-raleway font-normal">
-                Technology Provider
+                {t("service-provider. technology provider")}
               </div>
               <div className=" w-[40%]">
                 <Image
@@ -384,4 +1153,13 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

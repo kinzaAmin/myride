@@ -1,22 +1,24 @@
+// // const { i18n } = require("./next-i18next.config");
+
+// const nextConfig = {
+//   reactStrictMode: false,
+//   // i18n,
+//   images: {
+//     remotePatterns: [
+//       {
+//          protocol: "https",
+//          hostname: "i0.wp.com",
+//         port: "",
+//         // pathname: "/account123/**",
+//       },
+//     ],
+//   },
+// };
 const { i18n } = require("./next-i18next.config");
-/** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
-//   i18:{
-// locales:["en" , "ar"],
-// defaultLocales:"en",
-//     }
-   i18n,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i0.wp.com",
-        // port: "",
-        // pathname: "/account123/**",
-      },
-    ],
-  },
-};
-
+  swcMinify: true,
+  i18n,
+};  
 module.exports = nextConfig;

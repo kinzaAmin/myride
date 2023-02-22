@@ -1,8 +1,13 @@
 import React from "react";
 import Container from "../ui/Container";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 const Footer = () => {
+  const router = useRouter();
+ 
+  const { t } = useTranslation("");
   return (
     <>
       <div className="  w-full h-[40%]  bg-darkGray text-[#e4e4e4] font-raleway  flex-col pt-3 justify-between md:p-0 p-7">
@@ -66,7 +71,7 @@ const Footer = () => {
 
             <div className=" w-[255px]h-[359px]  md:mt-0 mt-6 font-light">
               <div className=" text-[24px] leading-[29px] mt-5 gap-9  font-bold ">
-                USEFUL LINKS
+                {t("footer.Useful Links")}
               </div>
               <div className=" flex w-full mt-2">
                 <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>
@@ -76,67 +81,67 @@ const Footer = () => {
                 <div className="flex gap-2 ">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] cursor-pointer leading-[29px]">
-                    Getting started
+                    {t("footer.Getting started")}
                   </p>
                 </div>
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <Link href="/Services">Services</Link>
+                    {t("footer.Services")}
                   </p>
                 </div>
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <Link href="/GetInTouch"> Get In Touch </Link>
+                    {t("footer.Get in touch")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    Packages
+                    {t("footer.Packages")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
-                    <Link href="/FAQ"> FAQs</Link>
+                    {t("footer.FAQs")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <Link href="/Terms">Terms & Conditions</Link>
+                    {t("footer.Terms & Condition")}
                   </p>
                 </div>
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <Link href="/Refusal"> Refusal</Link>
+                    {t("footer.Refusal")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px]  cursor-pointer">
-                    <Link href="/ReturnPolicy ">Return Policy</Link>
+                    {t("footer.Return Policy")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px]   leading-[29px] cursor-pointer">
-                    <Link href="/ Delivery "> Delivery and Collection</Link>
+                    {t("footer.Delivery and Collection")}
                   </p>
                 </div>
 
                 <div className="flex gap-2 mt-4">
                   <div className="bg-[#ff0000] w-2 h-2 mt-2"></div>
                   <p className="hover:text-[#ff0000] text-[16px] leading-[29px] cursor-pointer">
-                    <Link href="/PrivacyPolicy mt-[-2%]"> Privacy Policy </Link>
+                    {t("footer.Privacy Policy")}
                   </p>
                 </div>
               </div>
@@ -144,7 +149,7 @@ const Footer = () => {
 
             <div className="flex-col justify-between md:mt-0 mt-6 ">
               <div className="text-[24px] leading-[29px] font-bold  mt-5">
-                Download App
+                {t("footer.Download App")}
               </div>
               <div className=" flex w-full mt-2">
                 <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000] "></div>
@@ -152,14 +157,14 @@ const Footer = () => {
               </div>
               <div className="grid grid-cols-2 justify-between  gap-20 sm:mt-3 mt-6">
                 <div>
-                  <div className="absolute xl:w-[15%] md:w-[19%] sm:w-[18%] w-[30%]">
+                  {/* <div className="absolute xl:w-[15%] md:w-[19%] sm:w-[18%] w-[30%]">
                     <Image
                       src="https://i0.wp.com/myridepay.com/wp-content/uploads/2022/01/QR-Design.png"
                       fill
                       alt="QR_CODE"
                       className="custom_img"
                     />
-                  </div>
+                  </div> */}
 
                   <div className="xl:mt-16 lg:mt-24 md:mt-14 sm:mt-8 mt-6 ">
                     <div className="xl:w-20 lg:h-10 h-6 lg:w-20 sm:w-12 w-8 cursor-pointer  ">
@@ -187,7 +192,7 @@ const Footer = () => {
             <div>
               <div className="md:mt-0 mt-6 ">
                 <div className="text-[24px] leading-[29px]  mt-5  font-bold">
-                  Address
+                  {t("footer.Address")}
                 </div>
                 <div className=" flex w-full mt-2">
                   <div className="md:w-[30%] w-16 h-[1px] bg-[#ff0000]"></div>

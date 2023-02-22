@@ -16,15 +16,15 @@
   },
 
   "smartestPayment": {
-    "smartest payment heading":" Smartest Payment Gateway for Car Rentals",
+    "smartest payment heading": " Smartest Payment Gateway for Car Rentals",
     "FreeSignup": " Sign Up for Free",
     "applicationApproval": "Get Application Approval within 24 hours ",
-    "receivingPayments":"Start Receiving Payments ",
+    "receivingPayments": "Start Receiving Payments ",
     "buttonSignin": " Sign Up"
   },
 
   "goinngGlobal": {
-    " global Title": " Going Global?",
+    "global title": " Going Global?",
     "global heading": "We got your business covered ",
     "global content": "With MyridePay, geography will be history. To cater to online businesses with global reach, our secure and seamless global payment gateway can support customers by facilitating payments through multiple payment options like American Express, MasterCard, Visa, mada, SADAD, STC Pay, OmanNet and   many more. ",
     "global point1": " Easy Monthly Installments",
@@ -95,22 +95,21 @@
     "Q10": "What is a Pay-Out Schedule?",
     "Ans10": "Car rentals will be paid within 10-20 days. However, MyridePay may hold the amount for a longer period, including but not limited to a proprietary set of rules, chargeback rates, transaction behaviour, and other supplemental data about your business. "
   },
-
-  "Ready to start": {
-    "ready heading": " Ready to get started?",
-    "ready content1 ": "Apply for the MyRidePay Online Payment Gateway Program online by submitting your details.",
-    "ready content2": "Our Agent will contact you and guide you through the whole process. ",
-    "ready content3": "Our Agent will contact you and guide you through the whole process. ",
-    "onboarding heading ": " Onboarding",
-    "onboarding content ": " We will assess your credentials and request for relevant documentation, to assess the eligibility. Within 24 to 48 hours we will confirm your account, and you can take the test tour or simply go live by integrating our payment portal. ",
-    " integration heading": "Integration ",
-    " integration content": "It is time to integrate our payment solutions on your car rental website and start receiving your payments through a secure, easier and faster method. ",
-    "create online payment heading ": "Create Your Online Payments Account Now ",
-    " input company name": "Company Name* ",
-    " input person name": " Contact Person*",
-    "input contact ": "Contact Numbers* ",
-    " input no of cars": "Number of Cars* ",
-    "request call back btn": "REQUEST A CALL BACK "
+  
+  "GetStarted": {
+    "Ready to get started": "Ready to get started?",
+    "Ready point1": "Apply for the MyRidePay Online Payment Gateway Program online by submitting your details.",
+    "Ready point2": "Our Agent will contact you and guide you through the whole process.",
+    "Onboarding": "Onboarding",
+    "Onboarding point1": "We will assess your credentials and request for relevant documentation, to assess the eligibility. Within 24 to 48 hours we will confirm your account, and you can take the test tour or simply go live by integrating our payment portal.",
+    "Integration": "Integration",
+    "Integration point1": "It is time to integrate our payment solutions on your car rental website and start receiving your payments through a secure, easier and faster method.",
+    "Create Payment": "Create Your Online Payments Account Now",
+    "Create input1": "Company Name*",
+    "Create input2": "Contact Person*",
+    "Create input3": "Contact Number*",
+    "Create input4": "Number of Cars*",
+    "Request a Call Back": "Request a Call Back"
   },
 
   "service-provider": {
